@@ -110,6 +110,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
         } else {
             Bitmap showBitmap = BitmapUtils.decorateBitmapWithNums(bitmap, getActivity(), count);
             ownMessageReceiverBtn.setImageBitmap(showBitmap);
+
         }
     }
     /*设置系统消息显示*/
