@@ -1,0 +1,508 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-101:12
+MERGED from [com.github.xxl6097:okhttputils:2.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\okhttputils-2.4.1.aar\fb3f3a3462ce43879c6cc9d7288a693f\AndroidManifest.xml:2:1-11:12
+MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:2:1-30:12
+MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-24:12
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:17:1-31:12
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:2:1-17:12
+MERGED from [com.kyleduo.switchbutton:library:1.4.6] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.4.6.aar\efe194c4e0ca4a0e8a5954310c1a2486\AndroidManifest.xml:2:1-12:12
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:2:1-16:12
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:2:1-28:12
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:2:1-36:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\a857203cbf68d64e614731aaf727c3cc\AndroidManifest.xml:2:1-7:12
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:2:1-11:12
+MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:2:1-16:12
+MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:17:1-28:12
+MERGED from [com.soundcloud.android.crop:lib_crop:1.0.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\lib_crop-1.0.0.aar\4bf474a07a5d59503b1401fc31c1fd60\AndroidManifest.xml:2:1-12:12
+MERGED from [me.shaohui.advancedluban:library:1.3.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.3.2.aar\26cca17dc721d0e131d22206ffde3c9e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:17:1-31:12
+MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\f29e607d96f6186287ba4a9aacfe0fbe\AndroidManifest.xml:15:1-21:12
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-101:12
+	package
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:3:5-45
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-101:12
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-101:12
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-67
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.CAMERA
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:6:5-65
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:12:5-65
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:6:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:7:22-68
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:8:5-81
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:11:5-81
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.FLASHLIGHT
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:9:5-69
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:9:22-66
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:10:5-79
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-79
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-79
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:11:5-79
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:11:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:12:22-72
+uses-feature#android.hardware.camera.autofocus
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:14:5-70
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:14:19-67
+uses-feature#0x00020000
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:15:5-17:35
+	android:glEsVersion
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:16:9-41
+	android:required
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:17:9-32
+application
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:19:5-99:19
+MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:11:5-28:19
+MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:11:5-28:19
+MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
+MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-22:19
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-22:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:29:5-20
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:11:5-15:19
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:11:5-14:19
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:11:5-14:19
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:14:5-26:19
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:14:5-26:19
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:13:5-34:19
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:13:5-34:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:9:5-20
+MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:11:5-14:19
+MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:29:5-20
+	android:supportsRtl
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:25:9-35
+	android:label
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:23:9-41
+	android:roundIcon
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:24:9-54
+	android:icon
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:22:9-43
+	android:allowBackup
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:21:9-35
+	android:theme
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:26:9-40
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:20:9-40
+activity#com.example.wkj_pc.fitnesslive.activity.MainActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:27:9-33:20
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:27:19-56
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:28:13-32:29
+action#android.intent.action.MAIN
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:29:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:31:27-74
+activity#com.tencent.tauth.AuthActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:34:9-46:20
+	android:launchMode
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:36:13-44
+	android:noHistory
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:35:13-58
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:38:13-45:29
+action#android.intent.action.VIEW
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:39:25-66
+category#android.intent.category.DEFAULT
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:41:17-76
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:41:27-73
+category#android.intent.category.BROWSABLE
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:42:17-78
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:42:27-75
+data
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:44:17-53
+	android:scheme
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:44:23-50
+activity#com.tencent.connect.common.AssistActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:47:9-50:75
+	android:configChanges
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:49:13-74
+	android:theme
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:48:13-69
+activity#com.example.wkj_pc.fitnesslive.activity.RegisterActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:51:9-63
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:51:19-60
+activity#com.example.wkj_pc.fitnesslive.activity.LoginActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:52:9-60
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:52:19-57
+activity#com.example.wkj_pc.fitnesslive.activity.FindPasswordActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:53:9-67
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:53:19-64
+activity#com.example.wkj_pc.fitnesslive.wxapi.WXEntryActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:54:9-57:46
+	android:launchMode
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:57:13-43
+	android:exported
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:56:13-36
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:55:13-50
+activity#com.example.wkj_pc.fitnesslive.activity.VideoPlayerActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:58:9-61:52
+	android:screenOrientation
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:61:13-49
+	android:configChanges
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:60:13-74
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:59:13-57
+activity#com.example.wkj_pc.fitnesslive.activity.LiveActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:62:9-64:55
+	android:windowSoftInputMode
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:64:13-52
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:63:13-50
+activity#com.example.wkj_pc.fitnesslive.activity.SysMessageActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:65:9-65
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:65:19-62
+activity#com.example.wkj_pc.fitnesslive.activity.UserInfoEditActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:66:9-67
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:66:19-64
+activity#com.example.wkj_pc.fitnesslive.activity.TakePicActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:67:9-70:52
+	android:screenOrientation
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:70:13-49
+	android:configChanges
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:69:13-74
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:68:13-53
+activity#com.example.wkj_pc.fitnesslive.activity.PicResultActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:71:9-64
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:71:19-61
+activity#com.example.wkj_pc.fitnesslive.activity.FindPwdNextActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:72:9-66
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:72:19-63
+activity#com.example.wkj_pc.fitnesslive.activity.RegisterNextActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:73:9-67
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:73:19-64
+activity#com.example.wkj_pc.fitnesslive.activity.PreparedLiveActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:74:9-67
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:74:19-64
+activity#com.example.wkj_pc.fitnesslive.activity.TakeVideoActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:75:9-64
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:75:19-61
+activity#com.example.wkj_pc.fitnesslive.activity.UploadVideoActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:76:9-66
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:76:19-63
+activity#com.example.wkj_pc.fitnesslive.activity.OwnUploadVideoActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:77:9-69
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:77:19-66
+activity#com.example.wkj_pc.fitnesslive.activity.UploadNativeVideoActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:78:9-72
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:78:19-69
+activity#com.example.wkj_pc.fitnesslive.activity.WatchUserLiveActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:79:9-81:55
+	android:windowSoftInputMode
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:81:13-52
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:80:13-59
+activity#io.vov.vitamio.activity.InitActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:82:9-87:63
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:16:9-21:63
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:16:9-21:63
+	android:launchMode
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:85:13-43
+	android:windowSoftInputMode
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:87:13-60
+	android:configChanges
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:84:13-113
+	android:theme
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:86:13-60
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:83:13-64
+service#com.example.wkj_pc.fitnesslive.service.LoginService
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:89:9-92:39
+	android:enabled
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:91:13-35
+	android:exported
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:92:13-36
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:90:13-49
+service#com.example.wkj_pc.fitnesslive.service.LiveService
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:93:9-96:39
+	android:enabled
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:95:13-35
+	android:exported
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:96:13-36
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:94:13-48
+activity#com.example.wkj_pc.fitnesslive.activity.HomeSearchActivity
+ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:98:9-74
+	android:name
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:98:19-62
+uses-sdk
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+MERGED from [com.github.xxl6097:okhttputils:2.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\okhttputils-2.4.1.aar\fb3f3a3462ce43879c6cc9d7288a693f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.xxl6097:okhttputils:2.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\okhttputils-2.4.1.aar\fb3f3a3462ce43879c6cc9d7288a693f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:7:5-9:41
+MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:7:5-9:41
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:21:5-23:62
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kyleduo.switchbutton:library:1.4.6] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.4.6.aar\efe194c4e0ca4a0e8a5954310c1a2486\AndroidManifest.xml:8:5-10:41
+MERGED from [com.kyleduo.switchbutton:library:1.4.6] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.4.6.aar\efe194c4e0ca4a0e8a5954310c1a2486\AndroidManifest.xml:8:5-10:41
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:7:5-9:41
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\a857203cbf68d64e614731aaf727c3cc\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\a857203cbf68d64e614731aaf727c3cc\AndroidManifest.xml:5:5-43
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:5:5-7:41
+MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:7:5-9:41
+MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:20:5-44
+MERGED from [com.soundcloud.android.crop:lib_crop:1.0.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\lib_crop-1.0.0.aar\4bf474a07a5d59503b1401fc31c1fd60\AndroidManifest.xml:8:5-10:41
+MERGED from [com.soundcloud.android.crop:lib_crop:1.0.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\lib_crop-1.0.0.aar\4bf474a07a5d59503b1401fc31c1fd60\AndroidManifest.xml:8:5-10:41
+MERGED from [me.shaohui.advancedluban:library:1.3.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.3.2.aar\26cca17dc721d0e131d22206ffde3c9e\AndroidManifest.xml:7:5-9:41
+MERGED from [me.shaohui.advancedluban:library:1.3.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.3.2.aar\26cca17dc721d0e131d22206ffde3c9e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:21:5-23:58
+MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\f29e607d96f6186287ba4a9aacfe0fbe\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\f29e607d96f6186287ba4a9aacfe0fbe\AndroidManifest.xml:19:5-43
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
+activity#com.sina.weibo.sdk.web.WeiboSdkWebActivity
+ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:12:9-17:20
+	android:windowSoftInputMode
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:16:13-55
+	android:exported
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:15:13-37
+	android:configChanges
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:14:13-63
+	android:name
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:13:13-70
+activity#com.sina.weibo.sdk.share.WbShareTransActivity
+ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:18:9-27:20
+	android:launchMode
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:20:13-44
+	android:theme
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:21:13-83
+	android:name
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:19:13-73
+intent-filter#android.intent.category.DEFAULT+com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:22:13-26:29
+action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:23:17-92
+	android:name
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:23:25-89
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:22-65
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:26:9-47
+activity#com.soundcloud.android.crop.CropImageActivity
+ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:15:9-82
+	android:name
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:15:19-79
+provider#android.support.v4.content.FileProvider
+ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:17:9-25:20
+	android:grantUriPermissions
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:21:13-47
+	android:authorities
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:19:13-64
+	android:exported
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:18:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:22:13-24:54
+	android:resource
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:24:17-51
+	android:name
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:23:17-67
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:11:22-77
+activity#com.darsh.multipleimageselect.activities.AlbumSelectActivity
+ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:16:9-24:20
+	android:label
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:19:13-45
+	android:configChanges
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:18:13-59
+	android:theme
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:20:13-60
+	android:name
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:17:13-88
+intent-filter#android.intent.category.DEFAULT
+ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:21:13-23:29
+activity#com.darsh.multipleimageselect.activities.ImageSelectActivity
+ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:25:9-33:20
+	android:label
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:28:13-45
+	android:configChanges
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:27:13-59
+	android:theme
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:29:13-60
+	android:name
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:26:13-88

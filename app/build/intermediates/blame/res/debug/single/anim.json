@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\start_fullscreen.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\9e2bc5fc86e46db01be72bd6b1cfab01dad20df8\\output\\res\\anim\\start_fullscreen.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\quit_fullscreen.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\9e2bc5fc86e46db01be72bd6b1cfab01dad20df8\\output\\res\\anim\\quit_fullscreen.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\ppwindow_hide_anim.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\anim\\ppwindow_hide_anim.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\ppwindow_show_anim.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\anim\\ppwindow_show_anim.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\anim\\abc_fade_out.xml"
+    }
+]

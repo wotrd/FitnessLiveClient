@@ -1,0 +1,426 @@
+[
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mediacontroller.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\vitamio\\build\\intermediates\\bundles\\default\\res\\layout\\mediacontroller.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\115774e1e6b83ea63575c4071196810f2c6fed19\\output\\res\\layout\\toolbar.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\widget_view_send_btn.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\widget_view_send_btn.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_upload_video_show_items.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\user_upload_video_show_items.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_next.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_register_next.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bottom_sheet_dialog_fragment.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\bottom_sheet_dialog_fragment.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_find_pwd_next.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_find_pwd_next.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_prepared_live.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_prepared_live.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_take_pic.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_take_pic.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\live_user_tag_item.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\live_user_tag_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chatting_message_show_item.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\chatting_message_show_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\jc_layout_base.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\9e2bc5fc86e46db01be72bd6b1cfab01dad20df8\\output\\res\\layout\\jc_layout_base.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tools_about_edit_user_infos_item.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\tools_about_edit_user_infos_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upload_native_video.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_upload_native_video.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\webo_web_layout.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\d63939d37440ea2625a172d0f3f6fe8378a42d99\\output\\res\\layout\\webo_web_layout.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\prepared_live_themes_edit_items.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\prepared_live_themes_edit_items.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\jc_dialog_progress.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\9e2bc5fc86e46db01be72bd6b1cfab01dad20df8\\output\\res\\layout\\jc_dialog_progress.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tools_about_edit_user_info_item.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\tools_about_edit_user_info_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_video_player.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_video_player.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_page.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\fragment_home_page.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_dynamic.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\fragment_dynamic.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\jc_dialog_brightness.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\9e2bc5fc86e46db01be72bd6b1cfab01dad20df8\\output\\res\\layout\\jc_dialog_brightness.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_live.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_live.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_album_select.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\115774e1e6b83ea63575c4071196810f2c6fed19\\output\\res\\layout\\activity_album_select.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\crop__activity_crop.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\0ab12bde6b9c61817506ed1ed90615df35afaf05\\output\\res\\layout\\crop__activity_crop.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_video.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_video.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_user_live_show_item.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\home_user_live_show_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main_page.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\fragment_main_page.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\jc_dialog_volume.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\9e2bc5fc86e46db01be72bd6b1cfab01dad20df8\\output\\res\\layout\\jc_dialog_volume.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_about_edit_user_amatar_popupwindow_item.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\fragment_about_edit_user_amatar_popupwindow_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_watch_user_live.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_watch_user_live.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\avtivity_login.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\avtivity_login.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_image_select.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\115774e1e6b83ea63575c4071196810f2c6fed19\\output\\res\\layout\\activity_image_select.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\image_show.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\image_show.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_live_user_bottom_info_toast.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\fragment_live_user_bottom_info_toast.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\watch_user_show_reyclerview.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\watch_user_show_reyclerview.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\jc_layout_standard.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\9e2bc5fc86e46db01be72bd6b1cfab01dad20df8\\output\\res\\layout\\jc_layout_standard.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home_search.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_home_search.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\upload_native_video_show_items.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\upload_native_video_show_items.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_own_user_info.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\fragment_own_user_info.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grid_view_item_image_select.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\115774e1e6b83ea63575c4071196810f2c6fed19\\output\\res\\layout\\grid_view_item_image_select.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sys_message.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_sys_message.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\crop__layout_done_cancel.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\0ab12bde6b9c61817506ed1ed90615df35afaf05\\output\\res\\layout\\crop__layout_done_cancel.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\ee84fd2de3cbc3adc692e4b28a697a0e0b69724c\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_user_info_edit.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\fragment_user_info_edit.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_about_us.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\fragment_about_us.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pic_result.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_pic_result.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upload_video.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_upload_video.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_own_upload_video.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_own_upload_video.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grid_view_item_album_select.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\115774e1e6b83ea63575c4071196810f2c6fed19\\output\\res\\layout\\grid_view_item_album_select.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_find_password.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_find_password.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_user_info_edit.xml",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_user_info_edit.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "F:\\Android\\avd\\.android\\build-cache\\52c9ffef683a9753f1c78eb51c35d8b7334ad240\\output\\res\\layout\\abc_action_mode_bar.xml"
+    }
+]

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.jph.takephoto:takephoto_library-4.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/takephoto_library-4.0.3.aar/627679374b70a69de07bdbe3387d530a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/takephoto_library-4.0.3.aar/627679374b70a69de07bdbe3387d530a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jph.takephoto/takephoto_library/4.0.3/60c2185e43c6dcc617d343f09bb20f5040c2261/takephoto_library-4.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

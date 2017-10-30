@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,97,161,215",
+                        "endColumns": "41,63,53,54",
+                        "endOffsets": "92,156,210,265"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "279,321,385,439",
+                        "endColumns": "41,63,53,54",
+                        "endOffsets": "316,380,434,489"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\permissionschecker-0.0.1-beta2.aar\\b201f1b7c3561ff00da99432c914bc08\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,102,178,229",
+                        "endColumns": "46,75,50,49",
+                        "endOffsets": "97,173,224,274"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,97,161,215",
+                        "endColumns": "41,63,53,54",
+                        "endOffsets": "92,156,210,265"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "279,321,385,439",
+                        "endColumns": "41,63,53,54",
+                        "endOffsets": "316,380,434,489"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\permissionschecker-0.0.1-beta2.aar\\b201f1b7c3561ff00da99432c914bc08\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,102,178,229",
+                        "endColumns": "46,75,50,49",
+                        "endOffsets": "97,173,224,274"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="F:\project\android\mycode\FitnessLive\yasea\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c6fb45bfb8800fa7198983f41529908db9cd99a1">
+        <dex dex="F:\project\android\mycode\FitnessLive\app\build\intermediates\pre-dexed\debug\classes_ac3701017fb1e4ee4da2c876601ffc135700bf4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\project\android\mycode\FitnessLive\app\libs\mta-sdk-1.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="F:\project\android\mycode\FitnessLive\app\build\intermediates\pre-dexed\debug\mta-sdk-1.6.2_37ebee12b6bf53a568d2221cf89834ab450b11a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\project\android\mycode\FitnessLive\vitamio\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f158bce9b52ca1f23796765d26584004306a5230">
+        <dex dex="F:\project\android\mycode\FitnessLive\app\build\intermediates\pre-dexed\debug\classes_f2fbdbb6fd46d7bf2c2277dafed033efd5615545.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\project\android\mycode\FitnessLive\app\libs\open_sdk_r5509.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="538ea8fb21ea76e8cb424598ac38127cb3344d79">
+        <dex dex="F:\project\android\mycode\FitnessLive\app\build\intermediates\pre-dexed\debug\open_sdk_r5509_062c7eba37b80ef65099d3918ece4ac936209841.jar" />
+    </item>
+
+</items>

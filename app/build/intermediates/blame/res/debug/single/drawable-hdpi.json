@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\biglivepic.png",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable-hdpi\\biglivepic.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_menu_black_24dp.png",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_menu_black_24dp.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_home_normal.png",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable-hdpi\\icon_home_normal.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_selfinfo_normal.png",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable-hdpi\\icon_selfinfo_normal.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_back_login_img.png",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable-hdpi\\ic_action_back_login_img.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_home_pressed.png",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable-hdpi\\icon_home_pressed.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_main_menu_white.png",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable-hdpi\\ic_action_main_menu_white.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon_selfinfo_pressed.png",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable-hdpi\\icon_selfinfo_pressed.png"
+    }
+]

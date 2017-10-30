@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">FitnessLive</string>
+    <string name="app_login">登录</string>
+    <string name="app_nextstep">下一步</string>
+    <string name="app_start">开始</string>
+    <string name="app_stop">停止</string>
+    <string name="app_pause">暂停</string>
+    <string name="app_reset">重置</string>
+    <string name="app_register">注册</string>
+    <string name="app_main_page">首页</string>
+    <string name="app_main_dynamic">动态</string>
+    <string name="app_settings">设置</string>
+    <string name="app_about_us">关于我们</string>
+    <string name="app_destroy">注销</string>
+    <string name="app_alter_password">确定</string>
+    <string name="app_get_verify_code">获取验证码</string>
+    <string name="app_exit">退出</string>
+    <string name="app_edit_comment_text">请输入信息</string>
+    <string name="app_video_upload_srs_server_url">rtmp://119.29.154.229:1935/live/</string>
+
+    <string name="app_message_websocket_customer_live_url">ws://192.168.191.1/websocket/</string>
+    <string name="app_longrequest_url">192.168.191.1</string>
+    <string name="app_customer_register_user_url">http://192.168.191.1/customer/login/registerUser</string>
+    <string name="app_customer_user_update_password_url">http://192.168.191.1/customer/login/updateUserPassword</string>
+    <string name="app_get_verifycode_url">http://192.168.191.1/customer/login/getVerifycode</string>
+    <string name="app_login_url">http://192.168.191.1/customer/login/toLogin</string>
+    <string name="app_get_user_info_url">http://192.168.191.1/customer/login/getUserInfo</string>
+    <string name="app_get_fans_user_info_url">http://192.168.191.1/customer/login/getFansUserInfo</string>
+    <string name="app_get_attention_user_info_url">http://192.168.191.1/customer/login/getAttentionUserInfo</string>
+    <string name="app_destroy_url">http://192.168.191.1/customer/login/quitLogin</string>
+    <string name="app_update_user_info_url">http://192.168.191.1/customer/login/updateUserInfo</string>
+    <string name="app_customer_live_updateLiveUserStyle">http://192.168.191.1/customer/live/updateLiveUserStyle</string>
+    <string name="app_customer_live_getHomeLiveUserInfos_url">http://192.168.191.1/customer/live/getHomeLiveUserInfos</string>
+    <string name="app_customer_live_getHomeLivetags_url">http://192.168.191.1/customer/live/getHomeUserLiveThemes</string>
+    <string name="app_customer_live_uploadUserVideoUrl">http://192.168.191.1/customer/live/uploadRecoderVideo</string>
+    <string name="app_customer_live_getUserUploadVideoUrl">http://192.168.191.1/customer/live/getUserUploadVideo</string>
+    <string name="app_customer_live_closeLiveStatusUrl">http://192.168.191.1/customer/live/closeLiveStatus</string>
+    <string name="app_customer_live_getLiveUserInfo_url">http://47.93.20.45/customer/live/getLiveUserInfo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

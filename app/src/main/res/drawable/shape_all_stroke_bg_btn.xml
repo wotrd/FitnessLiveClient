@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!--填充的颜色-->
+            <solid android:color="@color/colorStroke"/>
+            <!--设置按钮的四个圆角为弧形-->
+            <corners android:radius="30dip"/>
+            <!--设置radius为半径-->
+            <stroke android:width="5px" android:color="@color/colorStroke" />
+            <!--边框的宽度和颜色-->
+        </shape>
+    </item>
+</layer-list>
+
