@@ -102,6 +102,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
     /*设置系统消息*/
     private void initMessageReceiver() {
         int count = 3;
+
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.icon_action_message_receiver)
                 .copy(Bitmap.Config.ARGB_8888, true);
         if (count < 1) {
