@@ -114,8 +114,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
         }
     }
     /*设置系统消息显示*/
-    private void setSysMessageShow() {
-    }
+    private void setSysMessageShow() {}
     @Override
     public void onClick(View v) {
         switch(v.getId()){
