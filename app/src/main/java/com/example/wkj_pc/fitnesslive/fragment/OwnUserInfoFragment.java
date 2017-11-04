@@ -32,9 +32,7 @@ import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
-
 import de.hdodenhof.circleimageview.CircleImageView;
-
 import static android.content.Context.MODE_PRIVATE;
 
 
@@ -58,6 +56,8 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
     private FragmentManager manager;
     private FragmentTransaction tran1;
     private SharedPreferences relativeUsershowfragtype;
+    private LinearLayout ownUserInfoMyAttentionLinearLayout;
+    private LinearLayout ownUserInfoMyFansLinearLayout;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -93,15 +93,15 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
         ownUserInfoDestroyLinearLayout.setOnClickListener(this);
         ownUserInfoAmatartAccountLinearLayout = (LinearLayout) view.findViewById(R.id.own_user_info_amatar_account_linearlayout);
         ownUserInfoAmatartAccountLinearLayout.setOnClickListener(this);
-        ownUserInfoAmatartAccountLinearLayout = (LinearLayout) view.findViewById(R.id.own_user_info_my_attention_linearlayout);
-        ownUserInfoAmatartAccountLinearLayout.setOnClickListener(this);
-
+        ownUserInfoMyAttentionLinearLayout = (LinearLayout) view.findViewById(R.id.own_user_info_my_attention_linearlayout);
+        ownUserInfoMyAttentionLinearLayout.setOnClickListener(this);
+        ownUserInfoMyFansLinearLayout = (LinearLayout) view.findViewById(R.id.own_user_fansnum_linearlayout);
+        ownUserInfoMyFansLinearLayout.setOnClickListener(this);
         return view;
     }
     /*设置系统消息*/
     private void initMessageReceiver() {
         int count = 3;
-
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.icon_action_message_receiver)
                 .copy(Bitmap.Config.ARGB_8888, true);
         if (count < 1) {
@@ -109,7 +109,6 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
         } else {
             Bitmap showBitmap = BitmapUtils.decorateBitmapWithNums(bitmap, getActivity(), count);
             ownMessageReceiverBtn.setImageBitmap(showBitmap);
-
         }
     }
     /*设置系统消息显示*/
@@ -117,6 +116,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
     @Override
     public void onClick(View v) {
         switch(v.getId()){
+            /** 用户个人信息页面点击粉丝按钮，跳转到粉丝列表页面显示 */
             case R.id.own_user_fansnum_linearlayout:
                 if (null == MainApplication.loginUser){
                     startActivity(new Intent(getActivity(),LoginActivity.class));
@@ -126,9 +126,11 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                     edit.apply();
                     tran = manager.beginTransaction();
                     tran.replace(R.id.home_main_content_fragment,new RelativeUserInfoFragment());
+                    tran.addToBackStack("fans");
                     tran.commit();
                 }
                 break;
+            /** 用户点击个人信息页面，关注按钮跳转到关注用户列表页面显示    */
             case R.id.own_user_info_my_attention_linearlayout:
                 if (null == MainApplication.loginUser){
                     startActivity(new Intent(getActivity(),LoginActivity.class));
@@ -138,6 +140,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                     edit.apply();
                     tran = manager.beginTransaction();
                     tran.replace(R.id.home_main_content_fragment,new RelativeUserInfoFragment());
+                    tran.addToBackStack("fans");
                     tran.commit();
                 }
                 break;

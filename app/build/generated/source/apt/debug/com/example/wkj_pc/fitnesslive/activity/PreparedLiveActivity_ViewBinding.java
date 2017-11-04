@@ -18,15 +18,15 @@ import java.lang.Override;
 public class PreparedLiveActivity_ViewBinding implements Unbinder {
   private PreparedLiveActivity target;
 
-  private View view2131230942;
+  private View view2131230945;
 
-  private View view2131230936;
-
-  private View view2131230934;
+  private View view2131230939;
 
   private View view2131230937;
 
-  private View view2131230935;
+  private View view2131230940;
+
+  private View view2131230938;
 
   @UiThread
   public PreparedLiveActivity_ViewBinding(PreparedLiveActivity target) {
@@ -40,7 +40,7 @@ public class PreparedLiveActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.prepared_live_user_back_image_view, "field 'preparedLiveUserBackImageView' and method 'onViewClicked'");
     target.preparedLiveUserBackImageView = Utils.castView(view, R.id.prepared_live_user_back_image_view, "field 'preparedLiveUserBackImageView'", ImageView.class);
-    view2131230942 = view;
+    view2131230945 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -49,7 +49,7 @@ public class PreparedLiveActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.prepared_live_set_to_live_text_view, "field 'preparedLiveSetToLiveTextView' and method 'onViewClicked'");
     target.preparedLiveSetToLiveTextView = Utils.castView(view, R.id.prepared_live_set_to_live_text_view, "field 'preparedLiveSetToLiveTextView'", TextView.class);
-    view2131230936 = view;
+    view2131230939 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -58,7 +58,7 @@ public class PreparedLiveActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.prepared_live_big_img_set_img_view, "field 'preparedLiveBigImgSetImgView' and method 'onViewClicked'");
     target.preparedLiveBigImgSetImgView = Utils.castView(view, R.id.prepared_live_big_img_set_img_view, "field 'preparedLiveBigImgSetImgView'", ImageView.class);
-    view2131230934 = view;
+    view2131230937 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -68,7 +68,7 @@ public class PreparedLiveActivity_ViewBinding implements Unbinder {
     target.preparedLiveThemeEditText = Utils.findRequiredViewAsType(source, R.id.prepared_live_theme_edit_text, "field 'preparedLiveThemeEditText'", EditText.class);
     view = Utils.findRequiredView(source, R.id.prepared_live_theme_append_button, "field 'preparedLiveThemeAppendButton' and method 'onViewClicked'");
     target.preparedLiveThemeAppendButton = Utils.castView(view, R.id.prepared_live_theme_append_button, "field 'preparedLiveThemeAppendButton'", TextView.class);
-    view2131230937 = view;
+    view2131230940 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -78,7 +78,7 @@ public class PreparedLiveActivity_ViewBinding implements Unbinder {
     target.preparedLiveThemeEditShowRecyclerView = Utils.findRequiredViewAsType(source, R.id.prepared_live_theme_edit_show_recycler_view, "field 'preparedLiveThemeEditShowRecyclerView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.prepared_live_big_img_set_text_view, "field 'preparedLiveBigImgSetTextView' and method 'onViewClicked'");
     target.preparedLiveBigImgSetTextView = Utils.castView(view, R.id.prepared_live_big_img_set_text_view, "field 'preparedLiveBigImgSetTextView'", TextView.class);
-    view2131230935 = view;
+    view2131230938 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -102,15 +102,15 @@ public class PreparedLiveActivity_ViewBinding implements Unbinder {
     target.preparedLiveThemeEditShowRecyclerView = null;
     target.preparedLiveBigImgSetTextView = null;
 
-    view2131230942.setOnClickListener(null);
-    view2131230942 = null;
-    view2131230936.setOnClickListener(null);
-    view2131230936 = null;
-    view2131230934.setOnClickListener(null);
-    view2131230934 = null;
+    view2131230945.setOnClickListener(null);
+    view2131230945 = null;
+    view2131230939.setOnClickListener(null);
+    view2131230939 = null;
     view2131230937.setOnClickListener(null);
     view2131230937 = null;
-    view2131230935.setOnClickListener(null);
-    view2131230935 = null;
+    view2131230940.setOnClickListener(null);
+    view2131230940 = null;
+    view2131230938.setOnClickListener(null);
+    view2131230938 = null;
   }
 }

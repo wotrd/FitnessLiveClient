@@ -16,13 +16,13 @@ public final class R {
     }
     public static final class id {
         public static final int load_bar = 0x7f0800a5;
-        public static final int retry_btn = 0x7f0800f2;
-        public static final int retry_layout = 0x7f0800f3;
-        public static final int retry_title = 0x7f0800f4;
-        public static final int title_layout = 0x7f080132;
-        public static final int title_left_btn = 0x7f080133;
-        public static final int title_text = 0x7f080135;
-        public static final int web_view = 0x7f080179;
+        public static final int retry_btn = 0x7f0800f5;
+        public static final int retry_layout = 0x7f0800f6;
+        public static final int retry_title = 0x7f0800f7;
+        public static final int title_layout = 0x7f080135;
+        public static final int title_left_btn = 0x7f080136;
+        public static final int title_text = 0x7f080138;
+        public static final int web_view = 0x7f08017c;
     }
     public static final class layout {
         public static final int webo_web_layout = 0x7f0a0070;

@@ -16,11 +16,11 @@ import java.lang.Override;
 public class UploadVideoActivity_ViewBinding implements Unbinder {
   private UploadVideoActivity target;
 
-  private View view2131231076;
+  private View view2131231079;
 
-  private View view2131231031;
+  private View view2131231034;
 
-  private View view2131231033;
+  private View view2131231036;
 
   @UiThread
   public UploadVideoActivity_ViewBinding(UploadVideoActivity target) {
@@ -35,7 +35,7 @@ public class UploadVideoActivity_ViewBinding implements Unbinder {
     target.userUploadVideoTitleEditText = Utils.findRequiredViewAsType(source, R.id.user_upload_video_title_edit_text, "field 'userUploadVideoTitleEditText'", EditText.class);
     view = Utils.findRequiredView(source, R.id.user_upload_video_thumbnails_img_view, "field 'userUploadVideoThumbnailsImgView' and method 'onViewClicked'");
     target.userUploadVideoThumbnailsImgView = Utils.castView(view, R.id.user_upload_video_thumbnails_img_view, "field 'userUploadVideoThumbnailsImgView'", ImageView.class);
-    view2131231076 = view;
+    view2131231079 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,7 +43,7 @@ public class UploadVideoActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.tools_user_info_edit_cancel_text_view, "method 'onViewClicked'");
-    view2131231031 = view;
+    view2131231034 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,7 +51,7 @@ public class UploadVideoActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.tools_user_info_edit_confirm_text_view, "method 'onViewClicked'");
-    view2131231033 = view;
+    view2131231036 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,11 +70,11 @@ public class UploadVideoActivity_ViewBinding implements Unbinder {
     target.userUploadVideoTitleEditText = null;
     target.userUploadVideoThumbnailsImgView = null;
 
-    view2131231076.setOnClickListener(null);
-    view2131231076 = null;
-    view2131231031.setOnClickListener(null);
-    view2131231031 = null;
-    view2131231033.setOnClickListener(null);
-    view2131231033 = null;
+    view2131231079.setOnClickListener(null);
+    view2131231079 = null;
+    view2131231034.setOnClickListener(null);
+    view2131231034 = null;
+    view2131231036.setOnClickListener(null);
+    view2131231036 = null;
   }
 }
