@@ -18,7 +18,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
@@ -182,7 +181,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                         ownUserInfoMyAttention.setText("0");
                         ownFansNum.setText("0");
                     }
-                },"取消",null,"提醒","您将退出登录!");
+                },"取消",null, "提醒","您将退出登录!");
                 break;
             case R.id.own_user_video_linearlayout:   //个人视频
                 if (null==MainApplication.loginUser){
