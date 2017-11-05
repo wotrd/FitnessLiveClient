@@ -15,16 +15,16 @@ public final class R {
         public static final int weibosdk_empty_failed = 0x7f0700d3;
     }
     public static final class id {
-        public static final int load_bar = 0x7f0800a5;
-        public static final int retry_btn = 0x7f0800f5;
-        public static final int retry_layout = 0x7f0800f6;
-        public static final int retry_title = 0x7f0800f7;
-        public static final int title_layout = 0x7f080135;
-        public static final int title_left_btn = 0x7f080136;
-        public static final int title_text = 0x7f080138;
-        public static final int web_view = 0x7f08017c;
+        public static final int load_bar = 0x7f0800a8;
+        public static final int retry_btn = 0x7f0800f8;
+        public static final int retry_layout = 0x7f0800f9;
+        public static final int retry_title = 0x7f0800fa;
+        public static final int title_layout = 0x7f080138;
+        public static final int title_left_btn = 0x7f080139;
+        public static final int title_text = 0x7f08013b;
+        public static final int web_view = 0x7f08017f;
     }
     public static final class layout {
-        public static final int webo_web_layout = 0x7f0a0070;
+        public static final int webo_web_layout = 0x7f0a0071;
     }
 }

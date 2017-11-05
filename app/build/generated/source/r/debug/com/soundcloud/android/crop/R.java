@@ -38,7 +38,7 @@ public final class R {
         public static final int changing = 0x7f080043;
         public static final int crop_image = 0x7f08004e;
         public static final int done_cancel_bar = 0x7f08005a;
-        public static final int never = 0x7f0800b9;
+        public static final int never = 0x7f0800bc;
     }
     public static final class layout {
         public static final int crop__activity_crop = 0x7f0a0032;
