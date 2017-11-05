@@ -3,40 +3,57 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:layout_marginTop="5dp"
+    android:id="@+id/fragment_own_relatvie_user_item_linearlayout"
     >
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="0dp"
-        android:layout_weight="3"
+        android:layout_weight="2"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         android:id="@+id/fragment_own_relative_user_item_logo_img_view"
         android:src="@drawable/head_img"
         android:layout_height="match_parent" />
     <LinearLayout
         android:layout_width="0dp"
-        android:orientation="vertical"
-        android:layout_weight="4"
-        android:layout_height="match_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:text="1000001"
-            android:id="@+id/fragment_own_relatvie_user_item_account"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/fragment_own_relative_user_item_nickname"
-            android:text="..."
-            />
-    </LinearLayout>
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:textSize="24sp"
         android:layout_height="match_parent"
-        android:text=">"
-        android:layout_marginRight="20dp"
-        android:gravity="right"
-        />
+        android:layout_weight="8"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="1000001"
+                    android:id="@+id/fragment_own_relatvie_user_item_account"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/fragment_own_relative_user_item_nickname"
+                    android:text="..."
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textColor="#ccc"
+                android:layout_height="match_parent"
+                android:text=">"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

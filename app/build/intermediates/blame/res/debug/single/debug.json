@@ -8,12 +8,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\lib_crop-1.0.0.aar\\4bf474a07a5d59503b1401fc31c1fd60\\res\\drawable-xhdpi-v4\\crop__ic_cancel.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -104,24 +104,24 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jc_bottom_seek_progress.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable\\jc_bottom_seek_progress.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mediacontroller_pause.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\vitamio\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\mediacontroller_pause.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mediacontroller_pause.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\vitamio\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\mediacontroller_pause.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_ab_back_material.xml.flat",
@@ -264,12 +264,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_tint_switch_track.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_crop__ic_done.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\lib_crop-1.0.0.aar\\4bf474a07a5d59503b1401fc31c1fd60\\res\\drawable-mdpi-v4\\crop__ic_done.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_snackbar_background.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_crop__ic_done.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\lib_crop-1.0.0.aar\\4bf474a07a5d59503b1401fc31c1fd60\\res\\drawable-mdpi-v4\\crop__ic_done.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap_ic_action_login_back_gray.png.flat",
@@ -324,24 +324,24 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon_home_user_search_img.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-hdpi\\icon_home_user_search_img.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout_image_show.xml.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\image_show.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon_user_uplaod_video_img.png.flat",
@@ -536,12 +536,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\multipleimageselect-1.0.4.aar\\0261e77fee5837383b8c14a953f4d91b\\res\\menu\\menu_contextual_action_bar.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_stroke_bg_btn.xml.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable\\shape_stroke_bg_btn.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_stroke_bg_btn.xml.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable\\shape_stroke_bg_btn.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -592,20 +592,20 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_account_img.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_account_img.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_amaro.glsl.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\amaro.glsl"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_account_img.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_account_img.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_amatar_img.png.flat",
@@ -616,20 +616,20 @@
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\fragment_own_user_info.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\drawable\\navigation_empty_icon.xml"
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon_user_destroy_login.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-hdpi\\icon_user_destroy_login.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon_mobile_bg_img.png.flat",
@@ -668,12 +668,12 @@
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-mdpi\\icon_check_single_select_right_img.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon_about_us_finish_img.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-hdpi\\icon_about_us_finish_img.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_login_img.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-hdpi\\ic_login_img.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon_about_us_finish_img.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-hdpi\\icon_about_us_finish_img.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -704,12 +704,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_tint_spinner.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_live_video_call.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_live_video_call.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout_upload_native_video_show_items.xml.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\upload_native_video_show_items.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_live_video_call.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_live_video_call.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon_user_uplaod_video_img.png.flat",
@@ -744,28 +744,28 @@
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\layout\\activity_pic_result.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11_notification_template_big_media_custom.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout-v11\\notification_template_big_media_custom.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jc_volume_progress_bg.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable\\jc_volume_progress_bg.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11_notification_template_big_media_custom.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout-v11\\notification_template_big_media_custom.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-v23\\abc_control_background_material.xml"
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon_user_upvote_img.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-hdpi\\icon_user_upvote_img.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon_user_upvote_img.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-hdpi\\icon_user_upvote_img.png"
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-v23\\abc_control_background_material.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -888,12 +888,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_login_img.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_login_img.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -928,16 +928,16 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon_own_user_light_img.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xxhdpi\\icon_own_user_light_img.png"
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_launcher.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\vitamio\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_launcher.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLive\\vitamio\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon_own_user_light_img.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xxhdpi\\icon_own_user_light_img.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -952,12 +952,12 @@
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-hdpi\\icon_own_user_light_img.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_settings_img.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_settings_img.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon_own_user_pickup_img.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-hdpi\\icon_own_user_pickup_img.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_settings_img.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_settings_img.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_about_us_img.png.flat",
@@ -980,12 +980,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color-v23\\abc_tint_spinner.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_dark.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_hint_foreground_material_dark.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_dark.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -1004,16 +1004,16 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_dark.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_default.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_tint_default.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\anim_quit_fullscreen.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\anim\\quit_fullscreen.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_default.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_tint_default.xml"
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_dark.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\raw_whitecat.glsl.flat",
@@ -1024,12 +1024,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\color-v23\\design_tint_password_toggle.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_design_layout_snackbar.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_password_eye.xml.flat",
@@ -1088,20 +1088,20 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_tint_seek_thumb.xml"
-    },
-    {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_n1977.glsl.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\n1977.glsl"
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_thumb.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color-v23\\abc_tint_switch_thumb.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_jc_volume_icon.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable-xhdpi-v4\\jc_volume_icon.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_thumb.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color-v23\\abc_tint_switch_thumb.xml"
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_n1977.glsl.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\n1977.glsl"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
@@ -1132,12 +1132,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_earlybird.glsl.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\earlybird.glsl"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_earlybird.glsl.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\earlybird.glsl"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout_jc_dialog_volume.xml.flat",
@@ -1168,12 +1168,12 @@
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\layout\\activity_take_pic.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_relative_user_info.xml.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\layout\\fragment_relative_user_info.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_back_login_img.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_back_login_img.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_relative_user_info.xml.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\layout\\fragment_relative_user_info.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
@@ -1260,12 +1260,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -1304,12 +1304,12 @@
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-mdpi\\icon_upload_native_video_checked.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -1340,28 +1340,28 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jc_title_bg.9.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable\\jc_title_bg.9.png"
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_jc_enlarge.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable-xhdpi-v4\\jc_enlarge.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jc_title_bg.9.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable\\jc_title_bg.9.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_register_img.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_register_img.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1408,12 +1408,12 @@
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\layout\\activity_pic_result.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_jc_layout_standard.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\layout\\jc_layout_standard.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon_user_upvote_img.png.flat",
@@ -1448,12 +1448,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_hefe.glsl.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\hefe.glsl"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_close_white_24dp.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\drawable-mdpi\\ic_close_white_24dp.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_hefe.glsl.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\hefe.glsl"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -1548,12 +1548,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jc_click_error_selector.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable\\jc_click_error_selector.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_edittext.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jc_click_error_selector.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable\\jc_click_error_selector.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
@@ -1616,12 +1616,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_jc_back_normal.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable-xhdpi-v4\\jc_back_normal.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_separator.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_jc_back_normal.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable-xhdpi-v4\\jc_back_normal.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_icon_upload_native_video_checked.png.flat",
@@ -1680,12 +1680,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\xml_file_paths.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\takephoto_library-4.0.3.aar\\627679374b70a69de07bdbe3387d530a\\res\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
@@ -1812,12 +1812,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11_notification_template_big_media_narrow_custom.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_small_material.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon_own_user_grade_img.png.flat",
@@ -1912,12 +1912,12 @@
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-hdpi\\ic_login_back_btn_img.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_stroke_bg_btn.xml.flat",
@@ -1960,12 +1960,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon_own_user_grade_img.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-mdpi\\icon_own_user_grade_img.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_pixar.glsl.flat",
@@ -1976,12 +1976,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_register_img.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_register_img.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jc_click_back_tiny_selector.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable\\jc_click_back_tiny_selector.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_register_img.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_register_img.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
@@ -2008,12 +2008,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\multipleimageselect-1.0.4.aar\\0261e77fee5837383b8c14a953f4d91b\\res\\drawable-mdpi-v4\\ic_arrow_back.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_crop__divider.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\lib_crop-1.0.0.aar\\4bf474a07a5d59503b1401fc31c1fd60\\res\\drawable-xhdpi-v4\\crop__divider.9.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",
@@ -2144,12 +2144,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\jiecaovideoplayer-5.5.4.aar\\bbc03fddf6bf1557baf94e90deb6275d\\res\\drawable-xhdpi-v4\\jc_play_normal.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_upload_video.xml.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\layout\\activity_upload_video.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_upload_video.xml.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\layout\\activity_upload_video.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
@@ -2212,12 +2212,12 @@
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_seek_thumb.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color-v23\\abc_tint_seek_thumb.xml"
-    },
-    {
         "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_constrast.glsl.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\constrast.glsl"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_seek_thumb.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_bg.xml.flat",
@@ -2432,20 +2432,20 @@
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\lookup.glsl"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_icon_user_destroy_login_img.png.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xhdpi\\icon_user_destroy_login_img.png"
-    },
-    {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_fragment.glsl.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\fragment.glsl"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\raw_fragment.glsl.flat",
-        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\yasea\\build\\intermediates\\bundles\\debug\\res\\raw\\fragment.glsl"
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_icon_user_destroy_login_img.png.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\mipmap-xhdpi\\icon_user_destroy_login_img.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility.png.flat",
@@ -2652,24 +2652,24 @@
         "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\drawable\\shape_all_stroke_bg_btn.xml"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_item_layout.xml.flat",
-        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout\\abc_popup_menu_item_layout.xml"
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_about_us_img.png.flat",
         "source": "F:\\project\\android\\mycode\\FitnessLive\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_about_us_img.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_item_layout.xml.flat",
+        "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon_user_upvote_img.png.flat",
@@ -4830,6 +4830,10 @@
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_info_show.xml.flat",
+        "source": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\src\\main\\res\\layout\\activity_user_info_show.xml"
     },
     {
         "merged": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_menu_black_24dp.png.flat",

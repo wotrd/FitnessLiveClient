@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.po.Fans;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
+
 import java.util.List;
 
 /**
@@ -23,15 +24,22 @@ public class FansShowAdapter extends RecyclerView.Adapter<FansShowAdapter.FansHo
     private final List<Fans> fans;
     private Context context;
 
-    public FansShowAdapter(List<Fans> fans) {
+    public FansShowAdapter(List<Fans> fans,Context context) {
         this.fans=fans;
+        this.context=context;
     }
-    static class FansHolder extends RecyclerView.ViewHolder{
+    class FansHolder extends RecyclerView.ViewHolder{
         private final ImageView logoImg;
         private final TextView nickname;
         private final TextView account;
         public FansHolder(View itemView) {
             super(itemView);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ToastUtils.showToast(context,fans.get(getAdapterPosition()).getFaccount(), Toast.LENGTH_SHORT);
+                }
+            });
             logoImg = (ImageView) itemView.findViewById(R.id.fragment_own_relative_user_item_logo_img_view);
             nickname = (TextView) itemView.findViewById(R.id.fragment_own_relative_user_item_nickname);
             account = (TextView) itemView.findViewById(R.id.fragment_own_relatvie_user_item_account);
@@ -42,12 +50,6 @@ public class FansShowAdapter extends RecyclerView.Adapter<FansShowAdapter.FansHo
         context = parent.getContext();
         View view = LayoutInflater.from(parent.getContext()).
                 inflate(R.layout.fragment_own_relative_user_item, parent, false);
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ToastUtils.showToast(parent.getContext(),"nihao", Toast.LENGTH_SHORT);
-            }
-        });
         return new FansHolder(view);
     }
     @Override
@@ -61,6 +63,10 @@ public class FansShowAdapter extends RecyclerView.Adapter<FansShowAdapter.FansHo
     }
     @Override
     public int getItemCount() {
-        return fans.size();
+        if (null!=fans){
+            return fans.size();
+        }else {
+            return 0;
+        }
     }
 }

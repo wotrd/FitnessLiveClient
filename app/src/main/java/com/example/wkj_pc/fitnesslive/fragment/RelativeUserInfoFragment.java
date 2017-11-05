@@ -56,13 +56,13 @@ public class RelativeUserInfoFragment extends Fragment {
         if (type.equals("fansnum")){
             textView.setText("粉丝");
             if (null!=MainApplication.fans){
-                FansShowAdapter adpter=new FansShowAdapter(MainApplication.fans);
+                FansShowAdapter adpter=new FansShowAdapter(MainApplication.fans,getActivity());
                 userRecyclearview.setAdapter(adpter);
             }
         }else {
             textView.setText("关注");
             if (null!=MainApplication.attentions){
-                AttentionsShowAdapter adpter=new AttentionsShowAdapter(MainApplication.attentions);
+                AttentionsShowAdapter adpter=new AttentionsShowAdapter(MainApplication.attentions,getActivity());
                 userRecyclearview.setAdapter(adpter);
             }
         }

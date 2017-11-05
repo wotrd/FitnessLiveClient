@@ -19,9 +19,9 @@ import java.lang.Override;
 public class FindPasswordActivity_ViewBinding implements Unbinder {
   private FindPasswordActivity target;
 
-  private View view2131230892;
+  private View view2131230893;
 
-  private View view2131230842;
+  private View view2131230843;
 
   private View view2131230832;
 
@@ -41,7 +41,7 @@ public class FindPasswordActivity_ViewBinding implements Unbinder {
     target.findPwdVerifycodeLinearlayout = Utils.findRequiredViewAsType(source, R.id.find_pwd_verifycode_linearlayout, "field 'findPwdVerifycodeLinearlayout'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.login_user_find_pwd_back_text_view, "field 'loginUserFindPwdBackTextView' and method 'onViewClicked'");
     target.loginUserFindPwdBackTextView = Utils.castView(view, R.id.login_user_find_pwd_back_text_view, "field 'loginUserFindPwdBackTextView'", ImageView.class);
-    view2131230892 = view;
+    view2131230893 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public class FindPasswordActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.getVerifycodeTextView, "field 'getVerifycodeTextView' and method 'onViewClicked'");
     target.getVerifycodeTextView = Utils.castView(view, R.id.getVerifycodeTextView, "field 'getVerifycodeTextView'", TextView.class);
-    view2131230842 = view;
+    view2131230843 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -83,10 +83,10 @@ public class FindPasswordActivity_ViewBinding implements Unbinder {
     target.getVerifycodeTextView = null;
     target.findPwdNextstepBtn = null;
 
-    view2131230892.setOnClickListener(null);
-    view2131230892 = null;
-    view2131230842.setOnClickListener(null);
-    view2131230842 = null;
+    view2131230893.setOnClickListener(null);
+    view2131230893 = null;
+    view2131230843.setOnClickListener(null);
+    view2131230843 = null;
     view2131230832.setOnClickListener(null);
     view2131230832 = null;
   }

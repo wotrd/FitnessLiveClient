@@ -95,7 +95,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".activity.HomeSearchActivity"></activity>
+        <activity android:name=".activity.HomeSearchActivity" />
+        <activity android:name=".activity.UserInfoShowActivity"></activity>
     </application>
 
 </manifest>

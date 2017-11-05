@@ -53,26 +53,63 @@ public class LoginService extends Service {
             Runnable loginUserRunnable = new Runnable() {
                 @Override
                 public void run() {
-                    LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(), MainApplication.cookie, new Callback() {
+                LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(), MainApplication.cookie, new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {}
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        String responseData = response.body().string();
+                        try {
+                            User loginUser = GsonUtils.getGson().fromJson(responseData, User.class);
+                            MainApplication.loginUser = loginUser;
+                        } catch (Exception e) {
+                            MainApplication.loginUser = null;
+                            e.printStackTrace();
+                        }
+                    }
+                });
+                }
+            };
+            /**  获取登录用户的关注和粉丝用户 */
+            Runnable attentionRunnable=new Runnable() {
+                @Override
+                public void run() {
+                    LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
                         @Override
                         public void onFailure(Call call, IOException e) {}
                         @Override
                         public void onResponse(Call call, Response response) throws IOException {
                             String responseData = response.body().string();
                             try {
-                                User loginUser = GsonUtils.getGson().fromJson(responseData, User.class);
-                                MainApplication.loginUser = loginUser;
+                                List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
+                                }.getType());
+                                MainApplication.attentions = attentions;
                             } catch (Exception e) {
-                                MainApplication.loginUser = null;
                                 e.printStackTrace();
                             }
                         }
                     });
                 }
             };
-            /**  获取登录用户的关注和粉丝用户 */
-            Runnable attentionRunnable = getRelativeUserRunnable(attentionUserUrl,MainApplication.loginUser.getAccount());
-            Runnable fansRunnable = getRelativeUserRunnable(fansUserUrl,MainApplication.loginUser.getAccount());
+            Runnable fansRunnable=new Runnable() {
+                @Override
+                public void run() {
+                    LoginUtils.getRelativeUserInfo(fansUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+                        @Override
+                        public void onFailure(Call call, IOException e) {}
+                        @Override
+                        public void onResponse(Call call, Response response) throws IOException {
+                            String responseData = response.body().string();
+                                try {
+                                    List<Fans> fans = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Fans>>() {}.getType());
+                                    MainApplication.fans = fans;
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                        }
+                    });
+                }
+            };
             cachedThreaPoolExecutors.execute(loginUserRunnable);
             cachedThreaPoolExecutors.execute(attentionRunnable);
             cachedThreaPoolExecutors.execute(fansRunnable);
@@ -89,36 +126,5 @@ public class LoginService extends Service {
             }
         }
         return super.onStartCommand(intent, flags, startId);
-    }
-
-    @NonNull
-    private Runnable getRelativeUserRunnable(final String url,final String account) {
-        return new Runnable() {
-            @Override
-            public void run() {
-                LoginUtils.getRelativeUserInfo(url, account, new Callback() {
-                    @Override
-                    public void onFailure(Call call, IOException e) {}
-                    @Override
-                    public void onResponse(Call call, Response response) throws IOException {
-                        String responseData = response.body().string();
-                        try {
-                            List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
-                            }.getType());
-                            MainApplication.attentions = attentions;
-                        } catch (Exception e) {
-                            MainApplication.attentions = null;
-                            try {
-                                List<Fans> fans = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Fans>>() {}.getType());
-                                MainApplication.fans = fans;
-                            } catch (Exception e1) {
-                                MainApplication.fans = null;
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-                });
-            }
-        };
     }
 }

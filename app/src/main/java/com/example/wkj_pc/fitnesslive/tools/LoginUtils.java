@@ -217,9 +217,9 @@ public class LoginUtils {
         OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
     }
     /** 获取关注和粉丝的信息*/
-    public static void getRelativeUserInfo(String longRequestUrl, String account, Callback callback) {
+    public static void getRelativeUserInfo(String longRequestUrl, int uid, Callback callback) {
         RequestBody body=new FormBody.Builder()
-                .add("account",account)
+                .add("uid",String.valueOf(uid))
                 .build();
         Request request=new Request.Builder()
                 .url(longRequestUrl)

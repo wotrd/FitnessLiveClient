@@ -16,7 +16,7 @@ import java.lang.Override;
 public class FindPwdNextActivity_ViewBinding implements Unbinder {
   private FindPwdNextActivity target;
 
-  private View view2131230892;
+  private View view2131230893;
 
   private View view2131230757;
 
@@ -35,7 +35,7 @@ public class FindPwdNextActivity_ViewBinding implements Unbinder {
     target.findPwdNextVerifyPwdEditText = Utils.findRequiredViewAsType(source, R.id.find_pwd_next_verify_pwd_edit_text, "field 'findPwdNextVerifyPwdEditText'", EditText.class);
     target.findPwdNextVerifyPwdLinearlayout = Utils.findRequiredViewAsType(source, R.id.find_pwd_next_verify_pwd_linearlayout, "field 'findPwdNextVerifyPwdLinearlayout'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.login_user_find_pwd_back_text_view, "method 'onViewClicked'");
-    view2131230892 = view;
+    view2131230893 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -64,8 +64,8 @@ public class FindPwdNextActivity_ViewBinding implements Unbinder {
     target.findPwdNextVerifyPwdEditText = null;
     target.findPwdNextVerifyPwdLinearlayout = null;
 
-    view2131230892.setOnClickListener(null);
-    view2131230892 = null;
+    view2131230893.setOnClickListener(null);
+    view2131230893 = null;
     view2131230757.setOnClickListener(null);
     view2131230757 = null;
   }
