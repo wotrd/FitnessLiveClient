@@ -21,9 +21,11 @@ import android.widget.Toast;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.adapter.UploadNativeVideoAdapter;
 import com.example.wkj_pc.fitnesslive.po.UploadVideo;
+import com.example.wkj_pc.fitnesslive.tools.ThreadPoolExecutorUtils;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -109,19 +111,20 @@ public class UploadNativeVideoActivity extends AppCompatActivity {
      * 获取全部本地视频
      */
     public void getNativeVideos() {
-        new Thread(new Runnable() {
+        ExecutorService poolExecutors = ThreadPoolExecutorUtils.getCachedThreaPoolExecutors();
+        poolExecutors.execute(new Runnable() {
             @Override
             public void run() {
                 Uri mImageUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
-                String[] proj = { MediaStore.Video.Thumbnails.DATA};
-                Cursor mCursor = getContentResolver().query(mImageUri,proj,MediaStore.Video.Media.MIME_TYPE + "=?",
-                        new String[]{"video/mp4"},MediaStore.Video.Media.DATE_MODIFIED+" desc");
-                if(mCursor!=null){
-                    nativeVideos=new ArrayList<UploadVideo>();
+                String[] proj = {MediaStore.Video.Thumbnails.DATA};
+                Cursor mCursor = getContentResolver().query(mImageUri, proj, MediaStore.Video.Media.MIME_TYPE + "=?",
+                        new String[]{"video/mp4"}, MediaStore.Video.Media.DATE_MODIFIED + " desc");
+                if (mCursor != null) {
+                    nativeVideos = new ArrayList<UploadVideo>();
                     while (mCursor.moveToNext()) {
                         // 获取视频的路径
                         String path = mCursor.getString(mCursor.getColumnIndex(MediaStore.Video.Media.DATA));
-                        UploadVideo video=new UploadVideo();
+                        UploadVideo video = new UploadVideo();
                         video.setVideourl(path);
                         video.setThumbnailurl(path);
                         nativeVideos.add(video);
@@ -135,7 +138,7 @@ public class UploadNativeVideoActivity extends AppCompatActivity {
                     }
                 });
             }
-        }).start();
+        });
     }
 
     @Override

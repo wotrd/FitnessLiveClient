@@ -34,6 +34,10 @@ public class AttentionsShowAdapter extends RecyclerView.Adapter<AttentionsShowAd
     }
     @Override
     public int getItemCount() {
-        return attentions.size();
+        if (null!=attentions){
+            return attentions.size();
+        }else {
+            return 0;
+        }
     }
 }

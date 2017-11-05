@@ -1,4 +1,4 @@
-#Sat Nov 04 22:53:09 CST 2017
+#Sun Nov 05 16:10:57 CST 2017
 base.0=F\:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\37
 renamed.0=classes.dex
 file.0=F\:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\37\\classes.dex

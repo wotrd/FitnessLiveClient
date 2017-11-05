@@ -32,11 +32,14 @@ import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
+import com.example.wkj_pc.fitnesslive.tools.ThreadPoolExecutorUtils;
 import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.ExecutorService;
+
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -50,11 +53,13 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
     private Timer timer;
     private TimerTask timerTask;
     private HomeLiveVideoShowAdapter liveadapter;
-
+    private String getHomeLiveUserInfoUrl;
+    private String getHomeLiveUserTagUrl;
     /** 接收到定时器的消息，跟新页面 */
-    private Handler handler=new Handler(){
+    private Handler handler= new Handler(){
         @Override
         public void handleMessage(Message msg) {
+
             super.handleMessage(msg);
             switch (msg.what){
                 case 1:     //跟新主要上直播的用户
@@ -63,8 +68,6 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
             }
         }
     };
-    private String getHomeLiveUserInfoUrl;
-    private String getHomeLiveUserTagUrl;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -126,16 +129,18 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
 
     /** 初始化直播用户的页面，头像风格和大图 */
     private void initRecyclerView() {
-        LinearLayoutManager lMamager=new LinearLayoutManager(getActivity());
-        homeUserLiveShowRecyclerView.setLayoutManager(lMamager);
-        liveadapter = new HomeLiveVideoShowAdapter(MainApplication.liveUsers,getActivity());
-        homeUserLiveShowRecyclerView.setAdapter(liveadapter);
-        liveadapter.notifyDataSetChanged();
+        if (null!=MainApplication.liveUsers && MainApplication.liveUsers.size()>0){
+            LinearLayoutManager lMamager=new LinearLayoutManager(getActivity());
+            homeUserLiveShowRecyclerView.setLayoutManager(lMamager);
+            liveadapter = new HomeLiveVideoShowAdapter(MainApplication.liveUsers,getActivity());
+            homeUserLiveShowRecyclerView.setAdapter(liveadapter);
+            liveadapter.notifyDataSetChanged();
+        }
     }
     /**  fragment创建的时候获取直播用户的信息 */
     private void getLiveInfos(final String getHomeLiveUserTagUrl, final String getHomeLiveUserInfoUrl) {
-
-        new Thread(new Runnable() {
+        ExecutorService poolExecutors = ThreadPoolExecutorUtils.getCachedThreaPoolExecutors();
+        poolExecutors.execute(new Runnable() {
             @Override
             public void run() {
                 LoginUtils.longGetUserLiveTagFromServer(getHomeLiveUserTagUrl, new Callback() {
@@ -154,8 +159,8 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
                     }
                 });
             }
-        }).start();
-        new Thread(new Runnable() {
+        });
+        poolExecutors.execute(new Runnable() {
             @Override
             public void run() {
                 LoginUtils.longGetUserLiveInfosFromServer(getHomeLiveUserInfoUrl, new Callback() {
@@ -176,7 +181,7 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
                     }
                 });
             }
-        }).start();
+        });
     }
     @Override
     public void onClick(View v) {
