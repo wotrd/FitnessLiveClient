@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="com.kyleduo.switchbutton:library-1.4.6">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.4.6.aar/efe194c4e0ca4a0e8a5954310c1a2486/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.4.6.aar/efe194c4e0ca4a0e8a5954310c1a2486/jars/classes.jar!/" />
+      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/library-1.4.6.aar/95bc61fb0154c266c4df3abb4ea211fa/res" />
+      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/library-1.4.6.aar/95bc61fb0154c266c4df3abb4ea211fa/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kyleduo.switchbutton/library/1.4.6/d9986eeac13fd90fb43bba5264bdcec3e591dbad/library-1.4.6-sources.jar!/" />
+      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/modules-2/files-2.1/com.kyleduo.switchbutton/library/1.4.6/d9986eeac13fd90fb43bba5264bdcec3e591dbad/library-1.4.6-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

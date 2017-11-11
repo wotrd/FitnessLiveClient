@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="com.werb.permissionschecker:permissionschecker-0.0.1-beta2">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/permissionschecker-0.0.1-beta2.aar/b201f1b7c3561ff00da99432c914bc08/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/permissionschecker-0.0.1-beta2.aar/b201f1b7c3561ff00da99432c914bc08/res" />
+      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/permissionschecker-0.0.1-beta2.aar/1fdfdc12c33f4d4f0c89a891fa6eca8e/res" />
+      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/permissionschecker-0.0.1-beta2.aar/1fdfdc12c33f4d4f0c89a891fa6eca8e/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.werb.permissionschecker/permissionschecker/0.0.1-beta2/58685818d16618ebadc1c78790659153893704b7/permissionschecker-0.0.1-beta2-sources.jar!/" />
+      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/modules-2/files-2.1/com.werb.permissionschecker/permissionschecker/0.0.1-beta2/58685818d16618ebadc1c78790659153893704b7/permissionschecker-0.0.1-beta2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

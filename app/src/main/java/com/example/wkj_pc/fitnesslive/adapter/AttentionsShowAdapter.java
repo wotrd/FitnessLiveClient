@@ -51,6 +51,7 @@ public class AttentionsShowAdapter extends RecyclerView.Adapter<AttentionsShowAd
         if (!TextUtils.isEmpty(attention.getGzamatar())){
             Glide.with(context).load(attention.getGzamatar()).asBitmap().into(holder.logoImg);
         }
+
     }
     @Override
     public AttentionViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -70,4 +71,5 @@ public class AttentionsShowAdapter extends RecyclerView.Adapter<AttentionsShowAd
             return 0;
         }
     }
+
 }
