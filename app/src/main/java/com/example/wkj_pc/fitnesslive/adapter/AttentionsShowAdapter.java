@@ -68,6 +68,7 @@ public class AttentionsShowAdapter extends RecyclerView.Adapter<AttentionsShowAd
         if (null!=attentions){
             return attentions.size();
         }else {
+
             return 0;
         }
     }
