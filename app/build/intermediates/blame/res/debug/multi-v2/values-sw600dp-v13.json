@@ -4,17 +4,7 @@
             "outputFile": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "F:\\ideinstall\\gradle-4.2.1\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\a9be7dfd1809eba01ccf3386b5fa40ee\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -31,39 +21,15 @@
                         "endColumns": "59,69,70,71,57,57,105,63,62,12",
                         "endOffsets": "666,736,807,879,937,995,1101,1165,1228,1410"
                     }
-                }
-            ]
-        },
-        {
-            "outputFile": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-            "map": [
+                },
                 {
-                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "F:\\ideinstall\\gradle-4.2.1\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\d6a856417b409e6c0848e816d0cd0c92\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
                         "startOffsets": "55,124,193,263,337,413,472,543",
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\656bbe7846d6f0e67cf78685b7a8f1a5\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,115,185,256,328,386,444,550,614,677",
-                        "endLines": "2,3,4,5,6,7,8,9,10,14",
-                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
-                        "endOffsets": "110,180,251,323,381,439,545,609,672,854"
-                    },
-                    "to": {
-                        "startLines": "10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "611,671,741,812,884,942,1000,1106,1170,1233",
-                        "endLines": "10,11,12,13,14,15,16,17,18,22",
-                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
-                        "endOffsets": "666,736,807,879,937,995,1101,1165,1228,1410"
                     }
                 }
             ]

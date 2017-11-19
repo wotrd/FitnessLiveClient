@@ -16,9 +16,9 @@ import java.lang.Override;
 public class UploadNativeVideoActivity_ViewBinding implements Unbinder {
   private UploadNativeVideoActivity target;
 
-  private View view2131231076;
-
   private View view2131231077;
+
+  private View view2131231078;
 
   @UiThread
   public UploadNativeVideoActivity_ViewBinding(UploadNativeVideoActivity target) {
@@ -34,7 +34,7 @@ public class UploadNativeVideoActivity_ViewBinding implements Unbinder {
     target.uploadNativeVideoChooseRecyclerView = Utils.findRequiredViewAsType(source, R.id.upload_native_video_choose_recycler_view, "field 'uploadNativeVideoChooseRecyclerView'", RecyclerView.class);
     target.uploadNativeVideoShowImageView = Utils.findRequiredViewAsType(source, R.id.upload_native_video_show_image_view, "field 'uploadNativeVideoShowImageView'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.user_upload_native_video_cancel_text_view, "method 'onViewClicked'");
-    view2131231076 = view;
+    view2131231077 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class UploadNativeVideoActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.user_upload_native_video_choose_text_view, "method 'onViewClicked'");
-    view2131231077 = view;
+    view2131231078 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,9 +61,9 @@ public class UploadNativeVideoActivity_ViewBinding implements Unbinder {
     target.uploadNativeVideoChooseRecyclerView = null;
     target.uploadNativeVideoShowImageView = null;
 
-    view2131231076.setOnClickListener(null);
-    view2131231076 = null;
     view2131231077.setOnClickListener(null);
     view2131231077 = null;
+    view2131231078.setOnClickListener(null);
+    view2131231078 = null;
   }
 }

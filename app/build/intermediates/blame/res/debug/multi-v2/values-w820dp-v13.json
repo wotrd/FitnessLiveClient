@@ -1,25 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\takephoto_library-4.0.3.aar\\627679374b70a69de07bdbe3387d530a\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "57",
-                        "endOffsets": "108"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\takephoto_library-4.0.3.aar\\627679374b70a69de07bdbe3387d530a\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "source": "F:\\ideinstall\\gradle-4.2.1\\caches\\transforms-1\\files-1.1\\takephoto_library-4.0.3.aar\\7dd63f37844872620d14f0ebb69c3b29\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

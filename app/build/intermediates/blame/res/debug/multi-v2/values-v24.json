@@ -1,25 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\project\\android\\mycode\\FitnessLive\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,212,347,416,480,549",
-                        "endColumns": "156,134,68,63,68,69",
-                        "endOffsets": "207,342,411,475,544,614"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "F:\\project\\android\\mycode\\FitnessLiveClient\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\wkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\bcd3c2aaa5be2c1593d8b83cc7b32360\\res\\values-v24\\values-v24.xml",
+                    "source": "F:\\ideinstall\\gradle-4.2.1\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\d6a856417b409e6c0848e816d0cd0c92\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

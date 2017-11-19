@@ -37,6 +37,7 @@ public class FansShowAdapter extends RecyclerView.Adapter<FansShowAdapter.FansHo
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+
                     ToastUtils.showToast(context,fans.get(getAdapterPosition()).getFaccount(), Toast.LENGTH_SHORT);
                 }
             });

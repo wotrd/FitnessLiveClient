@@ -112,6 +112,7 @@
             android:exported="true" />
 
         <activity android:name="com.example.wkj_pc.fitnesslive.activity.HomeSearchActivity" />
+        <activity android:name="com.example.wkj_pc.fitnesslive.activity.UserInfoShowActivity" />
         <activity
             android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
             android:configChanges="keyboardHidden|orientation"

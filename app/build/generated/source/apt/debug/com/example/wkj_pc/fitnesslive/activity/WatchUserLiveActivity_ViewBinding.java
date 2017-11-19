@@ -19,11 +19,11 @@ import java.lang.Override;
 public class WatchUserLiveActivity_ViewBinding implements Unbinder {
   private WatchUserLiveActivity target;
 
-  private View view2131231099;
+  private View view2131231100;
+
+  private View view2131231098;
 
   private View view2131231097;
-
-  private View view2131231096;
 
   @UiThread
   public WatchUserLiveActivity_ViewBinding(WatchUserLiveActivity target) {
@@ -38,7 +38,7 @@ public class WatchUserLiveActivity_ViewBinding implements Unbinder {
     target.watchVideoView = Utils.findRequiredViewAsType(source, R.id.watch_video_view, "field 'watchVideoView'", VideoView.class);
     view = Utils.findRequiredView(source, R.id.watcher_login_watch_live_logo, "field 'loginWatchLiveLogo' and method 'onViewClicked'");
     target.loginWatchLiveLogo = Utils.castView(view, R.id.watcher_login_watch_live_logo, "field 'loginWatchLiveLogo'", ImageView.class);
-    view2131231099 = view;
+    view2131231100 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class WatchUserLiveActivity_ViewBinding implements Unbinder {
     target.watcherWhileLiveCloseShowTextView = Utils.findRequiredViewAsType(source, R.id.watcher_while_live_close_show_text_view, "field 'watcherWhileLiveCloseShowTextView'", TextView.class);
     view = Utils.findRequiredView(source, R.id.watcher_ic_send_watch_comment_message_icon, "field 'watcherIcSendWatchCommentMessageIcon' and method 'onViewClicked'");
     target.watcherIcSendWatchCommentMessageIcon = Utils.castView(view, R.id.watcher_ic_send_watch_comment_message_icon, "field 'watcherIcSendWatchCommentMessageIcon'", ImageView.class);
-    view2131231097 = view;
+    view2131231098 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class WatchUserLiveActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.watcher_close_watch_live_icon, "field 'watcherCloseWatchLiveIcon' and method 'onViewClicked'");
     target.watcherCloseWatchLiveIcon = Utils.castView(view, R.id.watcher_close_watch_live_icon, "field 'watcherCloseWatchLiveIcon'", ImageView.class);
-    view2131231096 = view;
+    view2131231097 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -89,11 +89,11 @@ public class WatchUserLiveActivity_ViewBinding implements Unbinder {
     target.watcherIcSendWatchCommentMessageIcon = null;
     target.watcherCloseWatchLiveIcon = null;
 
-    view2131231099.setOnClickListener(null);
-    view2131231099 = null;
+    view2131231100.setOnClickListener(null);
+    view2131231100 = null;
+    view2131231098.setOnClickListener(null);
+    view2131231098 = null;
     view2131231097.setOnClickListener(null);
     view2131231097 = null;
-    view2131231096.setOnClickListener(null);
-    view2131231096 = null;
   }
 }

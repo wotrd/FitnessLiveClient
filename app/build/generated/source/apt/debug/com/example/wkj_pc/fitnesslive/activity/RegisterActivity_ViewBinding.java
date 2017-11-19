@@ -17,19 +17,19 @@ import java.lang.Override;
 public class RegisterActivity_ViewBinding implements Unbinder {
   private RegisterActivity target;
 
-  private View view2131230960;
-
-  private View view2131230958;
-
-  private View view2131230967;
-
-  private View view2131230957;
-
-  private View view2131230968;
+  private View view2131230961;
 
   private View view2131230959;
 
-  private View view2131230966;
+  private View view2131230968;
+
+  private View view2131230958;
+
+  private View view2131230969;
+
+  private View view2131230960;
+
+  private View view2131230967;
 
   @UiThread
   public RegisterActivity_ViewBinding(RegisterActivity target) {
@@ -43,7 +43,7 @@ public class RegisterActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.register_user_mobile_edit_text, "field 'registerUserMobileEditText' and method 'onViewClicked'");
     target.registerUserMobileEditText = Utils.castView(view, R.id.register_user_mobile_edit_text, "field 'registerUserMobileEditText'", EditText.class);
-    view2131230960 = view;
+    view2131230961 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -52,7 +52,7 @@ public class RegisterActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.register_mobile_number_linearlayout, "field 'registerMobileNumberLinearlayout' and method 'onViewClicked'");
     target.registerMobileNumberLinearlayout = Utils.castView(view, R.id.register_mobile_number_linearlayout, "field 'registerMobileNumberLinearlayout'", LinearLayout.class);
-    view2131230958 = view;
+    view2131230959 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class RegisterActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.register_user_verifycode_edit_text, "field 'registerUserVerifycodeEditText' and method 'onViewClicked'");
     target.registerUserVerifycodeEditText = Utils.castView(view, R.id.register_user_verifycode_edit_text, "field 'registerUserVerifycodeEditText'", EditText.class);
-    view2131230967 = view;
+    view2131230968 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,7 +70,7 @@ public class RegisterActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.registerGetVerifycodeTextView, "field 'registerGetVerifycodeTextView' and method 'onViewClicked'");
     target.registerGetVerifycodeTextView = Utils.castView(view, R.id.registerGetVerifycodeTextView, "field 'registerGetVerifycodeTextView'", TextView.class);
-    view2131230957 = view;
+    view2131230958 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -79,7 +79,7 @@ public class RegisterActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.register_user_verifycode_linearlayout, "field 'registerUserVerifycodeLinearlayout' and method 'onViewClicked'");
     target.registerUserVerifycodeLinearlayout = Utils.castView(view, R.id.register_user_verifycode_linearlayout, "field 'registerUserVerifycodeLinearlayout'", LinearLayout.class);
-    view2131230968 = view;
+    view2131230969 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -87,7 +87,7 @@ public class RegisterActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.register_user_find_pwd_back_text_view, "method 'onViewClicked'");
-    view2131230959 = view;
+    view2131230960 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -95,7 +95,7 @@ public class RegisterActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.register_user_nextstep_btn, "method 'onViewClicked'");
-    view2131230966 = view;
+    view2131230967 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -117,19 +117,19 @@ public class RegisterActivity_ViewBinding implements Unbinder {
     target.registerGetVerifycodeTextView = null;
     target.registerUserVerifycodeLinearlayout = null;
 
-    view2131230960.setOnClickListener(null);
-    view2131230960 = null;
-    view2131230958.setOnClickListener(null);
-    view2131230958 = null;
-    view2131230967.setOnClickListener(null);
-    view2131230967 = null;
-    view2131230957.setOnClickListener(null);
-    view2131230957 = null;
-    view2131230968.setOnClickListener(null);
-    view2131230968 = null;
+    view2131230961.setOnClickListener(null);
+    view2131230961 = null;
     view2131230959.setOnClickListener(null);
     view2131230959 = null;
-    view2131230966.setOnClickListener(null);
-    view2131230966 = null;
+    view2131230968.setOnClickListener(null);
+    view2131230968 = null;
+    view2131230958.setOnClickListener(null);
+    view2131230958 = null;
+    view2131230969.setOnClickListener(null);
+    view2131230969 = null;
+    view2131230960.setOnClickListener(null);
+    view2131230960 = null;
+    view2131230967.setOnClickListener(null);
+    view2131230967 = null;
   }
 }

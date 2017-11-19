@@ -4,35 +4,35 @@ ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManif
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-102:12
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-102:12
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-102:12
-MERGED from [com.github.xxl6097:okhttputils:2.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\okhttputils-2.4.1.aar\fb3f3a3462ce43879c6cc9d7288a693f\AndroidManifest.xml:2:1-11:12
-MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:2:1-30:12
+MERGED from [com.github.xxl6097:okhttputils:2.4.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\okhttputils-2.4.1.aar\9f033c8c07ac5b1ca6e36a534d1b0a8e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:2:1-30:12
 MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-24:12
-MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:17:1-31:12
-MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:2:1-17:12
-MERGED from [com.kyleduo.switchbutton:library:1.4.6] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.4.6.aar\efe194c4e0ca4a0e8a5954310c1a2486\AndroidManifest.xml:2:1-12:12
-MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:2:1-16:12
-MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:2:1-28:12
-MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:2:1-36:12
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:2:1-11:12
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\a857203cbf68d64e614731aaf727c3cc\AndroidManifest.xml:2:1-7:12
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:2:1-11:12
-MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:2:1-16:12
-MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:17:1-28:12
-MERGED from [com.soundcloud.android.crop:lib_crop:1.0.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\lib_crop-1.0.0.aar\4bf474a07a5d59503b1401fc31c1fd60\AndroidManifest.xml:2:1-12:12
-MERGED from [me.shaohui.advancedluban:library:1.3.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.3.2.aar\26cca17dc721d0e131d22206ffde3c9e\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:17:1-26:12
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:17:1-31:12
-MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\f29e607d96f6186287ba4a9aacfe0fbe\AndroidManifest.xml:15:1-21:12
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\9f8abac769e15d999a652694fc5607db\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\design-25.3.1.aar\a9be7dfd1809eba01ccf3386b5fa40ee\AndroidManifest.xml:17:1-31:12
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\3ee6a0031b0e14d81a36c180a2ab15c0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.kyleduo.switchbutton:library:1.4.6] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\library-1.4.6.aar\95bc61fb0154c266c4df3abb4ea211fa\AndroidManifest.xml:2:1-12:12
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\1fdfdc12c33f4d4f0c89a891fa6eca8e\AndroidManifest.xml:2:1-16:12
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:2:1-28:12
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:2:1-36:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\d6a856417b409e6c0848e816d0cd0c92\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4b089b7d39c112e658f311516b9ca4ad\AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:8.5.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\f56c6b981aa3d7406c955ea64060a0d3\AndroidManifest.xml:2:1-7:12
+MERGED from [de.hdodenhof:circleimageview:2.1.0] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\c4a5eb0b92cf3cd7dbc967b508f78878\AndroidManifest.xml:2:1-11:12
+MERGED from [org.litepal.android:core:1.4.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-1.4.1.aar\0daa2c8c9a6c5225fa38b520209094f6\AndroidManifest.xml:2:1-16:12
+MERGED from [com.android.support:transition:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\transition-25.3.1.aar\628095d4fbe0ec55c15a15110fcc9492\AndroidManifest.xml:17:1-28:12
+MERGED from [com.soundcloud.android.crop:lib_crop:1.0.0] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\lib_crop-1.0.0.aar\60f3c45413b424b93262036c641ad571\AndroidManifest.xml:2:1-12:12
+MERGED from [me.shaohui.advancedluban:library:1.3.2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\library-1.3.2.aar\f14bd41345a79ad356c2e8946d3509f4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\14cf5b48547b3d27a294d0395972dc5d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\4bd8937caeba70cc495cba92f37b592f\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:support-fragment:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\73b3c542b46404e850decd8147217de9\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\640cab743c34bc63f64f905812432c68\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\d54390c477e8ff017c9e4d68f1399e33\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3354a45f1a08e863f61f7b97034636f7\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0de6c1ad9ae96f63139b56e85a086c58\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\1f589888e248672c03da797a9af2e4f6\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\16cba03e3100dbf5e032ab610dee233b\AndroidManifest.xml:17:1-31:12
+MERGED from [io.reactivex:rxandroid:1.2.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\7176c0125660f38e0648af0bac9285dd\AndroidManifest.xml:15:1-21:12
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-102:12
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-102:12
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-102:12
@@ -58,8 +58,8 @@ MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build
 		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.CAMERA
 ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:6:5-65
-MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:12:5-65
-MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:12:5-65
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:12:5-65
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:12:5-65
 	android:name
 		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:6:22-62
 uses-permission#android.permission.RECORD_AUDIO
@@ -68,8 +68,8 @@ ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManif
 		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:8:5-81
-MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:11:5-81
-MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:11:5-81
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:11:5-81
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:8:22-78
 uses-permission#android.permission.FLASHLIGHT
@@ -80,8 +80,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:10:5-79
 MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-79
 MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-79
-MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:11:5-79
-MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:11:5-79
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\9f8abac769e15d999a652694fc5607db\AndroidManifest.xml:11:5-79
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\9f8abac769e15d999a652694fc5607db\AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
@@ -104,48 +104,48 @@ ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManif
 		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:17:9-32
 application
 ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:19:5-100:19
-MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:11:5-28:19
-MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:11:5-28:19
+MERGED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:11:5-28:19
+MERGED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:11:5-28:19
 MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
 MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
 MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-22:19
 MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-22:19
-MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:29:5-20
-MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:11:5-15:19
-MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:11:5-15:19
-MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:11:5-14:19
-MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:11:5-14:19
-MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:14:5-26:19
-MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:14:5-26:19
-MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:13:5-34:19
-MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:13:5-34:19
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:9:5-20
-MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:11:5-14:19
-MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\design-25.3.1.aar\a9be7dfd1809eba01ccf3386b5fa40ee\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\design-25.3.1.aar\a9be7dfd1809eba01ccf3386b5fa40ee\AndroidManifest.xml:29:5-20
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\3ee6a0031b0e14d81a36c180a2ab15c0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\3ee6a0031b0e14d81a36c180a2ab15c0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\1fdfdc12c33f4d4f0c89a891fa6eca8e\AndroidManifest.xml:11:5-14:19
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\1fdfdc12c33f4d4f0c89a891fa6eca8e\AndroidManifest.xml:11:5-14:19
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:14:5-26:19
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:14:5-26:19
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:13:5-34:19
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:13:5-34:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\d6a856417b409e6c0848e816d0cd0c92\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\d6a856417b409e6c0848e816d0cd0c92\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4b089b7d39c112e658f311516b9ca4ad\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4b089b7d39c112e658f311516b9ca4ad\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\c4a5eb0b92cf3cd7dbc967b508f78878\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\c4a5eb0b92cf3cd7dbc967b508f78878\AndroidManifest.xml:9:5-20
+MERGED from [org.litepal.android:core:1.4.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-1.4.1.aar\0daa2c8c9a6c5225fa38b520209094f6\AndroidManifest.xml:11:5-14:19
+MERGED from [org.litepal.android:core:1.4.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-1.4.1.aar\0daa2c8c9a6c5225fa38b520209094f6\AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support:transition:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\transition-25.3.1.aar\628095d4fbe0ec55c15a15110fcc9492\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\transition-25.3.1.aar\628095d4fbe0ec55c15a15110fcc9492\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\14cf5b48547b3d27a294d0395972dc5d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\14cf5b48547b3d27a294d0395972dc5d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\73b3c542b46404e850decd8147217de9\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\73b3c542b46404e850decd8147217de9\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\640cab743c34bc63f64f905812432c68\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\640cab743c34bc63f64f905812432c68\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\d54390c477e8ff017c9e4d68f1399e33\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\d54390c477e8ff017c9e4d68f1399e33\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3354a45f1a08e863f61f7b97034636f7\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3354a45f1a08e863f61f7b97034636f7\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0de6c1ad9ae96f63139b56e85a086c58\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0de6c1ad9ae96f63139b56e85a086c58\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\1f589888e248672c03da797a9af2e4f6\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\1f589888e248672c03da797a9af2e4f6\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\16cba03e3100dbf5e032ab610dee233b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\16cba03e3100dbf5e032ab610dee233b\AndroidManifest.xml:29:5-20
 	android:supportsRtl
 		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:25:9-35
 	android:label
@@ -338,68 +338,68 @@ uses-sdk
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
-MERGED from [com.github.xxl6097:okhttputils:2.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\okhttputils-2.4.1.aar\fb3f3a3462ce43879c6cc9d7288a693f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.xxl6097:okhttputils:2.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\okhttputils-2.4.1.aar\fb3f3a3462ce43879c6cc9d7288a693f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:7:5-9:41
-MERGED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.xxl6097:okhttputils:2.4.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\okhttputils-2.4.1.aar\9f033c8c07ac5b1ca6e36a534d1b0a8e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.xxl6097:okhttputils:2.4.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\okhttputils-2.4.1.aar\9f033c8c07ac5b1ca6e36a534d1b0a8e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:7:5-9:41
+MERGED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:7:5-9:41
 MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:yasea] F:\project\android\mycode\FitnessLiveClient\yasea\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:7:5-9:41
-MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\bbc03fddf6bf1557baf94e90deb6275d\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:21:5-23:62
-MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\57716db8cf5c739a9fe50a69ca0cd1a7\AndroidManifest.xml:7:5-9:41
-MERGED from [com.kyleduo.switchbutton:library:1.4.6] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.4.6.aar\efe194c4e0ca4a0e8a5954310c1a2486\AndroidManifest.xml:8:5-10:41
-MERGED from [com.kyleduo.switchbutton:library:1.4.6] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.4.6.aar\efe194c4e0ca4a0e8a5954310c1a2486\AndroidManifest.xml:8:5-10:41
-MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:7:5-9:41
-MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\b201f1b7c3561ff00da99432c914bc08\AndroidManifest.xml:7:5-9:41
-MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:7:5-9:41
-MERGED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:7:5-9:41
-MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:7:5-9:41
-MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3f29cad04a3b69fd63466282d3a7fb0e\AndroidManifest.xml:5:5-7:41
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\a857203cbf68d64e614731aaf727c3cc\AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\a857203cbf68d64e614731aaf727c3cc\AndroidManifest.xml:5:5-43
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\ea8c77a319b814afba77f144b1462e9a\AndroidManifest.xml:5:5-7:41
-MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:7:5-9:41
-MERGED from [org.litepal.android:core:1.4.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-1.4.1.aar\157e43b0e11956562ca26c97a4005b33\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:20:5-44
-MERGED from [com.soundcloud.android.crop:lib_crop:1.0.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\lib_crop-1.0.0.aar\4bf474a07a5d59503b1401fc31c1fd60\AndroidManifest.xml:8:5-10:41
-MERGED from [com.soundcloud.android.crop:lib_crop:1.0.0] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\lib_crop-1.0.0.aar\4bf474a07a5d59503b1401fc31c1fd60\AndroidManifest.xml:8:5-10:41
-MERGED from [me.shaohui.advancedluban:library:1.3.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.3.2.aar\26cca17dc721d0e131d22206ffde3c9e\AndroidManifest.xml:7:5-9:41
-MERGED from [me.shaohui.advancedluban:library:1.3.2] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\library-1.3.2.aar\26cca17dc721d0e131d22206ffde3c9e\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:21:5-23:58
-MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\f29e607d96f6186287ba4a9aacfe0fbe\AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\f29e607d96f6186287ba4a9aacfe0fbe\AndroidManifest.xml:19:5-43
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\9f8abac769e15d999a652694fc5607db\AndroidManifest.xml:7:5-9:41
+MERGED from [fm.jiecao:jiecaovideoplayer:5.5.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.4.aar\9f8abac769e15d999a652694fc5607db\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\design-25.3.1.aar\a9be7dfd1809eba01ccf3386b5fa40ee\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\design-25.3.1.aar\a9be7dfd1809eba01ccf3386b5fa40ee\AndroidManifest.xml:21:5-23:62
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\3ee6a0031b0e14d81a36c180a2ab15c0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.mancj:SlideUp-Android:1.0-beta] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\SlideUp-Android-1.0-beta.aar\3ee6a0031b0e14d81a36c180a2ab15c0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kyleduo.switchbutton:library:1.4.6] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\library-1.4.6.aar\95bc61fb0154c266c4df3abb4ea211fa\AndroidManifest.xml:8:5-10:41
+MERGED from [com.kyleduo.switchbutton:library:1.4.6] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\library-1.4.6.aar\95bc61fb0154c266c4df3abb4ea211fa\AndroidManifest.xml:8:5-10:41
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\1fdfdc12c33f4d4f0c89a891fa6eca8e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.werb.permissionschecker:permissionschecker:0.0.1-beta2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\permissionschecker-0.0.1-beta2.aar\1fdfdc12c33f4d4f0c89a891fa6eca8e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:7:5-9:41
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:7:5-9:41
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\d6a856417b409e6c0848e816d0cd0c92\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\d6a856417b409e6c0848e816d0cd0c92\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4b089b7d39c112e658f311516b9ca4ad\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4b089b7d39c112e658f311516b9ca4ad\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.5.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\f56c6b981aa3d7406c955ea64060a0d3\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.5.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\f56c6b981aa3d7406c955ea64060a0d3\AndroidManifest.xml:5:5-43
+MERGED from [de.hdodenhof:circleimageview:2.1.0] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\c4a5eb0b92cf3cd7dbc967b508f78878\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\c4a5eb0b92cf3cd7dbc967b508f78878\AndroidManifest.xml:5:5-7:41
+MERGED from [org.litepal.android:core:1.4.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-1.4.1.aar\0daa2c8c9a6c5225fa38b520209094f6\AndroidManifest.xml:7:5-9:41
+MERGED from [org.litepal.android:core:1.4.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-1.4.1.aar\0daa2c8c9a6c5225fa38b520209094f6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:transition:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\transition-25.3.1.aar\628095d4fbe0ec55c15a15110fcc9492\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\transition-25.3.1.aar\628095d4fbe0ec55c15a15110fcc9492\AndroidManifest.xml:20:5-44
+MERGED from [com.soundcloud.android.crop:lib_crop:1.0.0] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\lib_crop-1.0.0.aar\60f3c45413b424b93262036c641ad571\AndroidManifest.xml:8:5-10:41
+MERGED from [com.soundcloud.android.crop:lib_crop:1.0.0] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\lib_crop-1.0.0.aar\60f3c45413b424b93262036c641ad571\AndroidManifest.xml:8:5-10:41
+MERGED from [me.shaohui.advancedluban:library:1.3.2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\library-1.3.2.aar\f14bd41345a79ad356c2e8946d3509f4\AndroidManifest.xml:7:5-9:41
+MERGED from [me.shaohui.advancedluban:library:1.3.2] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\library-1.3.2.aar\f14bd41345a79ad356c2e8946d3509f4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\14cf5b48547b3d27a294d0395972dc5d\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\14cf5b48547b3d27a294d0395972dc5d\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\4bd8937caeba70cc495cba92f37b592f\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\4bd8937caeba70cc495cba92f37b592f\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\73b3c542b46404e850decd8147217de9\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\73b3c542b46404e850decd8147217de9\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\640cab743c34bc63f64f905812432c68\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\640cab743c34bc63f64f905812432c68\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\d54390c477e8ff017c9e4d68f1399e33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\d54390c477e8ff017c9e4d68f1399e33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3354a45f1a08e863f61f7b97034636f7\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3354a45f1a08e863f61f7b97034636f7\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-media-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0de6c1ad9ae96f63139b56e85a086c58\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0de6c1ad9ae96f63139b56e85a086c58\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\1f589888e248672c03da797a9af2e4f6\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\1f589888e248672c03da797a9af2e4f6\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\16cba03e3100dbf5e032ab610dee233b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\16cba03e3100dbf5e032ab610dee233b\AndroidManifest.xml:21:5-23:58
+MERGED from [io.reactivex:rxandroid:1.2.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\7176c0125660f38e0648af0bac9285dd\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex:rxandroid:1.2.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\7176c0125660f38e0648af0bac9285dd\AndroidManifest.xml:19:5-43
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
 INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\design-25.3.1.aar\a9be7dfd1809eba01ccf3386b5fa40ee\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
 		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
@@ -409,104 +409,104 @@ INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidMa
 		ADDED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
 		INJECTED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml
 activity#com.sina.weibo.sdk.web.WeiboSdkWebActivity
-ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:12:9-17:20
+ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:12:9-17:20
 	android:windowSoftInputMode
-		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:16:13-55
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:16:13-55
 	android:exported
-		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:15:13-37
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:15:13-37
 	android:configChanges
-		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:14:13-63
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:14:13-63
 	android:name
-		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:13:13-70
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:13:13-70
 activity#com.sina.weibo.sdk.share.WbShareTransActivity
-ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:18:9-27:20
+ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:18:9-27:20
 	android:launchMode
-		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:20:13-44
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:20:13-44
 	android:theme
-		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:21:13-83
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:21:13-83
 	android:name
-		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:19:13-73
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:19:13-73
 intent-filter#android.intent.category.DEFAULT+com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
-ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:22:13-26:29
+ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:22:13-26:29
 action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
-ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:23:17-92
+ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:23:17-92
 	android:name
-		ADDED from [com.sina.weibo.sdk:core:2.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\7a21e9117b2eb96d433172d5e112b69b\AndroidManifest.xml:23:25-89
+		ADDED from [com.sina.weibo.sdk:core:2.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\core-2.0.3-openDefaultRelease.aar\859ec3de33b6531a88186669e159f99d\AndroidManifest.xml:23:25-89
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-68
 	android:name
 		ADDED from [:vitamio] F:\project\android\mycode\FitnessLiveClient\vitamio\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:22-65
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\bcd3c2aaa5be2c1593d8b83cc7b32360\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\459017a45ea95e3cbc4a1dbfc9f62dfd\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\c68699d0bac9e4885e0bb958d16b710a\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\81c8cf2b99f5d15916096a10c0daaf3d\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\e75753d16af46d63ca4a8b72203d83d9\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\7155deca3265496106736e72cd4791a9\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\faca2141c4f5835c8b4855ee85508965\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\0c49a77e974fee3c679d43dc9f7bc8e1\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0a1cd3a6edc9eda2f881de1b38fa4a2d\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\49109b36482e82b4b0fe88b4cb0ef088\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\c34f1fb29feb0b7207748ada92ccb9ff\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\design-25.3.1.aar\a9be7dfd1809eba01ccf3386b5fa40ee\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\d6a856417b409e6c0848e816d0cd0c92\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\d6a856417b409e6c0848e816d0cd0c92\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\transition-25.3.1.aar\628095d4fbe0ec55c15a15110fcc9492\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\transition-25.3.1.aar\628095d4fbe0ec55c15a15110fcc9492\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\14cf5b48547b3d27a294d0395972dc5d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\14cf5b48547b3d27a294d0395972dc5d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\4bd8937caeba70cc495cba92f37b592f\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\4bd8937caeba70cc495cba92f37b592f\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\73b3c542b46404e850decd8147217de9\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\73b3c542b46404e850decd8147217de9\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\640cab743c34bc63f64f905812432c68\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\640cab743c34bc63f64f905812432c68\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\d54390c477e8ff017c9e4d68f1399e33\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\d54390c477e8ff017c9e4d68f1399e33\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3354a45f1a08e863f61f7b97034636f7\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\3354a45f1a08e863f61f7b97034636f7\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-media-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0de6c1ad9ae96f63139b56e85a086c58\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\0de6c1ad9ae96f63139b56e85a086c58\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\1f589888e248672c03da797a9af2e4f6\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\1f589888e248672c03da797a9af2e4f6\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\16cba03e3100dbf5e032ab610dee233b\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\16cba03e3100dbf5e032ab610dee233b\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\design-25.3.1.aar\a9be7dfd1809eba01ccf3386b5fa40ee\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\656bbe7846d6f0e67cf78685b7a8f1a5\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\design-25.3.1.aar\a9be7dfd1809eba01ccf3386b5fa40ee\AndroidManifest.xml:26:9-47
 activity#com.soundcloud.android.crop.CropImageActivity
-ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:15:9-82
+ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:15:9-82
 	android:name
-		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:15:19-79
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:15:19-79
 provider#android.support.v4.content.FileProvider
-ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:17:9-25:20
+ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:17:9-25:20
 	android:grantUriPermissions
-		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:21:13-47
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:21:13-47
 	android:authorities
-		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:19:13-64
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:19:13-64
 	android:exported
-		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:20:13-37
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:18:13-67
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:18:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:22:13-24:54
+ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:22:13-24:54
 	android:resource
-		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:24:17-51
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:24:17-51
 	android:name
-		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\627679374b70a69de07bdbe3387d530a\AndroidManifest.xml:23:17-67
+		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:23:17-67
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:11:5-80
+ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:11:22-77
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:11:22-77
 activity#com.darsh.multipleimageselect.activities.AlbumSelectActivity
-ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:16:9-24:20
+ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:16:9-24:20
 	android:label
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:19:13-45
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:19:13-45
 	android:configChanges
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:18:13-59
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:18:13-59
 	android:theme
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:20:13-60
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:20:13-60
 	android:name
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:17:13-88
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:17:13-88
 intent-filter#android.intent.category.DEFAULT
-ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:21:13-23:29
+ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:21:13-23:29
 activity#com.darsh.multipleimageselect.activities.ImageSelectActivity
-ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:25:9-33:20
+ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:25:9-33:20
 	android:label
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:28:13-45
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:28:13-45
 	android:configChanges
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:27:13-59
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:27:13-59
 	android:theme
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:29:13-60
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:29:13-60
 	android:name
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] C:\Users\wkj\.gradle\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\0261e77fee5837383b8c14a953f4d91b\AndroidManifest.xml:26:13-88
+		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:26:13-88
