@@ -1,6 +1,7 @@
 package com.example.wkj_pc.fitnesslive.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -8,18 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.R;
+import com.example.wkj_pc.fitnesslive.activity.UserInfoShowActivity;
 import com.example.wkj_pc.fitnesslive.po.Fans;
-import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 
 import java.util.List;
 
 /**
  * Created by wkj on 2017/11/4.
  */
-/** 粉丝列表适配器 */
+/** 粉丝页面显示适配器，将粉丝列表进行显示，显示用户昵称账户头像，点击跳转道详细页面 */
 public class FansShowAdapter extends RecyclerView.Adapter<FansShowAdapter.FansHolder>{
     private final List<Fans> fans;
     private Context context;
@@ -37,8 +37,9 @@ public class FansShowAdapter extends RecyclerView.Adapter<FansShowAdapter.FansHo
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-                    ToastUtils.showToast(context,fans.get(getAdapterPosition()).getFaccount(), Toast.LENGTH_SHORT);
+                    Intent intent=new Intent(context,UserInfoShowActivity.class);
+                    intent.putExtra("account",fans.get(getAdapterPosition()).getFaccount());
+                    context.startActivity(intent);
                 }
             });
             logoImg = (ImageView) itemView.findViewById(R.id.fragment_own_relative_user_item_logo_img_view);

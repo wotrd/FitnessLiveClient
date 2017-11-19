@@ -1,24 +1,24 @@
 package com.example.wkj_pc.fitnesslive.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.R;
+import com.example.wkj_pc.fitnesslive.activity.UserInfoShowActivity;
 import com.example.wkj_pc.fitnesslive.po.Attention;
-import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * Created by wkj on 2017/11/4.
  */
-
+/** 关注页面显示适配器，将关注列表进行显示，显示用户昵称账户头像，点击跳转道详细页面 */
 public class AttentionsShowAdapter extends RecyclerView.Adapter<AttentionsShowAdapter.AttentionViewHolder>{
     private final List<Attention> attentions;
     private final Context context;
@@ -31,11 +31,13 @@ public class AttentionsShowAdapter extends RecyclerView.Adapter<AttentionsShowAd
 
         public AttentionViewHolder(View itemView) {
             super(itemView);
+            /** 跳转道个人信息页面进行展示*/
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-                    ToastUtils.showToast(context,attentions.get(getAdapterPosition()).getGzaccount(), Toast.LENGTH_SHORT);
+                    Intent intent = new Intent(context, UserInfoShowActivity.class);
+                    intent.putExtra("account",attentions.get(getAdapterPosition()).getGzaccount());
+                    context.startActivity(intent);
                 }
             });
             nickname = (TextView) itemView.findViewById(R.id.fragment_own_relative_user_item_nickname);

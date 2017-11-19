@@ -227,4 +227,15 @@ public class LoginUtils {
                 .build();
         OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
     }
+    /** 获取关注和粉丝的信息*/
+    public static void getRelativeUserInfo(String longRequestUrl, String account, Callback callback) {
+        RequestBody body=new FormBody.Builder()
+                .add("account",account)
+                .build();
+        Request request=new Request.Builder()
+                .url(longRequestUrl)
+                .post(body)
+                .build();
+        OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
+    }
 }

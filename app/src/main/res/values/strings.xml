@@ -37,6 +37,5 @@
     <string name="app_customer_live_closeLiveStatusUrl">http://192.168.191.1/customer/live/closeLiveStatus</string>
     <string name="app_customer_live_getLiveUserInfo_url">http://47.93.20.45/customer/live/getLiveUserInfo</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
