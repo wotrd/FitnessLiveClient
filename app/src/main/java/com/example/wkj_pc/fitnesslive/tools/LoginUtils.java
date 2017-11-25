@@ -185,6 +185,16 @@ public class LoginUtils {
         OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
 
     }
+    /** 用户通过账户上传的视频*/
+    public static void getUserUploadVideosByAccount(String getUploadVideoUrl,String account,Callback callback) {
+        RequestBody body=new FormBody.Builder()
+                .add("account",account)
+                .build();
+        Request request=new Request.Builder().url(getUploadVideoUrl)
+                .post(body)
+                .build();
+        OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
+    }
     /** 获取用户上传的视频*/
     public static void getUserUploadVideos(String getUploadVideoUrl,int uid,Callback callback) {
         RequestBody body=new FormBody.Builder()

@@ -85,7 +85,7 @@ public class OwnUploadVideoActivity extends AppCompatActivity {
         }
     }
     /**
-     * 获取用户上传的视频
+     * 获取用户自己上传的视频
      */
     public void getUploadVideo(String getUploadVideoUrl, int uid) {
         LoginUtils.getUserUploadVideos(getUploadVideoUrl, uid, new Callback() {

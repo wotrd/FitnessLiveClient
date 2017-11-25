@@ -34,6 +34,7 @@
     <string name="app_customer_live_getHomeLivetags_url">http://192.168.191.1/customer/live/getHomeUserLiveThemes</string>
     <string name="app_customer_live_uploadUserVideoUrl">http://192.168.191.1/customer/live/uploadRecoderVideo</string>
     <string name="app_customer_live_getUserUploadVideoUrl">http://192.168.191.1/customer/live/getUserUploadVideo</string>
+    <string name="app_customer_live_getUserUploadVideosUrl">http://192.168.191.1/customer/live/getUserUploadVideos</string>
     <string name="app_customer_live_closeLiveStatusUrl">http://192.168.191.1/customer/live/closeLiveStatus</string>
     <string name="app_customer_live_getLiveUserInfo_url">http://47.93.20.45/customer/live/getLiveUserInfo</string>
 

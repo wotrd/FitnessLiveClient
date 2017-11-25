@@ -485,9 +485,9 @@ ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.
 	android:name
 		ADDED from [com.jph.takephoto:takephoto_library:4.0.3] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\takephoto_library-4.0.3.aar\7dd63f37844872620d14f0ebb69c3b29\AndroidManifest.xml:23:17-67
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:11:5-80
-	android:name
-		ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:11:22-77
+IMPLIED from F:\project\android\mycode\FitnessLiveClient\app\src\main\AndroidManifest.xml:2:1-102:12 reason: com.jph.takephoto requested WRITE_EXTERNAL_STORAGE
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:11:5-80
+MERGED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:11:5-80
 activity#com.darsh.multipleimageselect.activities.AlbumSelectActivity
 ADDED from [com.darsh.multipleimageselect:multipleimageselect:1.0.4] F:\ideinstall\gradle-4.2.1\caches\transforms-1\files-1.1\multipleimageselect-1.0.4.aar\5036c00c320cd75e8bf8253e6587293d\AndroidManifest.xml:16:9-24:20
 	android:label

@@ -18,9 +18,10 @@ import com.example.wkj_pc.fitnesslive.po.UploadVideo;
 import java.util.List;
 
 /**
- * Created by wkj on 2017/9/12.
+ * @auther wkj
+ * @time 2017/9/12
+ * 用户上传的视频显示适配器
  */
-
 public class UserUploadVideoShowAdapter extends RecyclerView.Adapter<UserUploadVideoShowAdapter.ViewHolder>{
     private List<UploadVideo> uploadVideos;
     private Context context;

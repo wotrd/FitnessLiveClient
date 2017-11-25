@@ -18,7 +18,7 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_arrow_back"
+            android:src="@mipmap/ic_arrow_black_back"
             android:id="@+id/activity_user_info_show_back_img_view"
             android:layout_alignLeft="@id/activity_user_info_show_big_pic_img_view"
             android:layout_alignTop="@id/activity_user_info_show_big_pic_img_view"
@@ -72,7 +72,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:id="@+id/activity_user_info_show_nickname_text_view"
+                    android:id="@+id/activity_user_info_show_personalsign_text_view"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:ellipsize="end"
@@ -85,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-            android:id="@+id/activity_user_info_show_user_account_text_view"
+            android:id="@+id/activity_user_info_show_user_nickname_text_view"
             android:text="Tom"
             android:layout_alignTop="@id/activity_user_info_show_big_pic_img_view"
             android:layout_centerInParent="true"
