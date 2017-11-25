@@ -66,6 +66,7 @@ public class UserUploadVideoShowAdapter extends RecyclerView.Adapter<UserUploadV
 
     @Override
     public int getItemCount() {
+        if(uploadVideos==null) return 0;
         return uploadVideos.size();
     }
 

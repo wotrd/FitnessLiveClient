@@ -13,12 +13,13 @@
             android:layout_width="match_parent"
             android:id="@+id/activity_user_info_show_big_pic_img_view"
             android:layout_height="220dp"
+            android:src="@drawable/biglivepic"
             android:scaleType="centerCrop"
             />
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@mipmap/ic_arrow_black_back"
+            android:src="@mipmap/ic_arrow_white_back"
             android:id="@+id/activity_user_info_show_back_img_view"
             android:layout_alignLeft="@id/activity_user_info_show_big_pic_img_view"
             android:layout_alignTop="@id/activity_user_info_show_big_pic_img_view"
@@ -34,13 +35,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:textColor="@color/color_white"
                 android:id="@+id/activity_user_info_show_account_text_view"
                 android:text="账号：1000001"
                 />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/color_white"/>
+                android:background="#ccc"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
@@ -54,6 +56,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/color_white"
                         android:text="粉丝 : 0"
                         android:id="@+id/activity_user_info_show_fansnum_text_view"
                         />
@@ -64,6 +67,7 @@
                         />
                     <TextView
                         android:layout_width="wrap_content"
+                        android:textColor="@color/color_white"
                         android:layout_height="wrap_content"
                         android:id="@+id/activity_user_info_show_attentionnum_text_view"
                         android:text="关注 : 0"
@@ -77,6 +81,7 @@
                     android:textSize="18sp"
                     android:ellipsize="end"
                     android:text="hhhhhhhhhhhhh"
+                    android:textColor="@color/color_white"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -87,6 +92,7 @@
             android:textSize="24sp"
             android:id="@+id/activity_user_info_show_user_nickname_text_view"
             android:text="Tom"
+            android:textColor="@color/color_white"
             android:layout_alignTop="@id/activity_user_info_show_big_pic_img_view"
             android:layout_centerInParent="true"
             />

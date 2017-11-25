@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.text.TextUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.R;
+import com.example.wkj_pc.fitnesslive.adapter.UserUploadVideoShowAdapter;
 import com.example.wkj_pc.fitnesslive.po.UploadVideo;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
@@ -68,11 +70,13 @@ public class UserInfoShowActivity extends AppCompatActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Glide.with(UserInfoShowActivity.this).load(user.getLivebigpic())
-                                    .asBitmap().into(activityUserInfoShowBigPicImgView);
-                            activityUserInfoShowAccountTextView.setText(user.getAccount());
-                            activityUserInfoShowFansnumTextView.setText(user.getFansnum());
-                            activityUserInfoShowAttentionnumTextView.setText(user.getAttentionnum());
+                            if (!TextUtils.isEmpty(user.getLivebigpic())){
+                                Glide.with(UserInfoShowActivity.this).load(user.getLivebigpic())
+                                        .asBitmap().into(activityUserInfoShowBigPicImgView);
+                            }
+                            activityUserInfoShowAccountTextView.setText("账户："+user.getAccount());
+                            activityUserInfoShowFansnumTextView.setText("粉丝："+user.getFansnum());
+                            activityUserInfoShowAttentionnumTextView.setText("关注："+user.getAttentionnum());
                             activityUserInfoShowPersonalsignTextView.setText(user.getPersonalsign());
                             activityUserInfoShowUserNicknameTextView.setText(user.getNickname());
                         }
@@ -90,24 +94,29 @@ public class UserInfoShowActivity extends AppCompatActivity {
             public void onResponse(Call call, Response response) throws IOException {
                 if (response.isSuccessful()) {
                     String responseData = response.body().string();
-                    List<UploadVideo> uploadVideos = GsonUtils.getGson().fromJson(responseData,
-                            new TypeToken<List<UploadVideo>>() {}.getType());
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            initRecyclerView();
-                        }
-                    });
+                    try{
+                        final List<UploadVideo> uploadVideos = GsonUtils.getGson().fromJson(responseData,
+                                new TypeToken<List<UploadVideo>>() {}.getType());
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                initRecyclerView(uploadVideos);
+                            }
+                        });
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
                 }
             }
         });
     }
     /** 设置下方的视频 */
-    private void initRecyclerView() {
+    private void initRecyclerView(List<UploadVideo> videos) {
         StaggeredGridLayoutManager manager=new StaggeredGridLayoutManager(2,
                 StaggeredGridLayoutManager.VERTICAL);
-
-        activityUserInfoShowVideoRecyclerView;
+        UserUploadVideoShowAdapter outerShowAdapter=new UserUploadVideoShowAdapter(videos);
+        activityUserInfoShowVideoRecyclerView.setLayoutManager(manager);
+        activityUserInfoShowVideoRecyclerView.setAdapter(outerShowAdapter);
     }
     @OnClick(R.id.activity_user_info_show_back_img_view)
     public void onViewClicked() {

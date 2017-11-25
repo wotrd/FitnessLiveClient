@@ -618,7 +618,7 @@ public final class R {
         public static final int menu_contextual_action_bar = 0x7f0b0000;
     }
     public static final class mipmap {
-        public static final int ic_launcher = 0x7f0c0009;
+        public static final int ic_launcher = 0x7f0c000a;
     }
     public static final class string {
         public static final int abc_action_bar_home_description = 0x7f0e0004;
@@ -642,16 +642,16 @@ public final class R {
         public static final int abc_toolbar_collapse_description = 0x7f0e0022;
         public static final int add = 0x7f0e0023;
         public static final int album_view = 0x7f0e0024;
-        public static final int app_name = 0x7f0e003f;
-        public static final int error_null_cursor = 0x7f0e0055;
-        public static final int grant_permission = 0x7f0e0056;
-        public static final int image_view = 0x7f0e0058;
-        public static final int limit_exceeded = 0x7f0e0059;
-        public static final int permission_denied = 0x7f0e0065;
-        public static final int permission_denied_albums = 0x7f0e0066;
-        public static final int permission_denied_images = 0x7f0e0067;
-        public static final int selected = 0x7f0e006f;
-        public static final int status_bar_notification_info_overflow = 0x7f0e0070;
+        public static final int app_name = 0x7f0e0040;
+        public static final int error_null_cursor = 0x7f0e0056;
+        public static final int grant_permission = 0x7f0e0057;
+        public static final int image_view = 0x7f0e0059;
+        public static final int limit_exceeded = 0x7f0e005a;
+        public static final int permission_denied = 0x7f0e0066;
+        public static final int permission_denied_albums = 0x7f0e0067;
+        public static final int permission_denied_images = 0x7f0e0068;
+        public static final int selected = 0x7f0e0070;
+        public static final int status_bar_notification_info_overflow = 0x7f0e0071;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat = 0x7f0f0000;
