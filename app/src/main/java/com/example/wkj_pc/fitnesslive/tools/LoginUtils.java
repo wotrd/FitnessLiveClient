@@ -248,4 +248,16 @@ public class LoginUtils {
                 .build();
         OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
     }
+    /** 设置用户是否关注 */
+    public static void setUserIsAttention(String setAttentionUrl, String attention,String type, Callback callback) {
+        RequestBody body=new FormBody.Builder()
+                .add("attention",attention)
+                .add("type",type)
+                .build();
+        Request request=new Request.Builder()
+                .url(setAttentionUrl)
+                .post(body)
+                .build();
+        OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
+    }
 }

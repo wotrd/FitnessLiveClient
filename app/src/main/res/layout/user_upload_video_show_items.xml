@@ -7,17 +7,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/user_upload_video_show_title_text_view"
         android:textSize="24sp"
-        android:layout_marginRight="50dp"
-        android:textColor="#27e90d"
-        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#91918e"
         android:layout_marginTop="10dp"
+        android:text="你好"
         android:background="#faf5f5"
         />
     <ImageView
         android:id="@+id/user_upload_video_show_img_view"
         android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_height="160dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
         android:scaleType="centerCrop" />
 </LinearLayout>

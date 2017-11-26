@@ -16,9 +16,9 @@ import java.lang.Override;
 public class RegisterNextActivity_ViewBinding implements Unbinder {
   private RegisterNextActivity target;
 
-  private View view2131230969;
+  private View view2131230970;
 
-  private View view2131230974;
+  private View view2131230975;
 
   @UiThread
   public RegisterNextActivity_ViewBinding(RegisterNextActivity target) {
@@ -35,7 +35,7 @@ public class RegisterNextActivity_ViewBinding implements Unbinder {
     target.registerUserNextVerifyPwdEditText = Utils.findRequiredViewAsType(source, R.id.register_user_next_verify_pwd_edit_text, "field 'registerUserNextVerifyPwdEditText'", EditText.class);
     target.registerUserNextVerifyPwdLinearlayout = Utils.findRequiredViewAsType(source, R.id.register_user_next_verify_pwd_linearlayout, "field 'registerUserNextVerifyPwdLinearlayout'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.register_user_next_back_text_view, "method 'onViewClicked'");
-    view2131230969 = view;
+    view2131230970 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,7 +43,7 @@ public class RegisterNextActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.register_user_nextstep_btn, "method 'onViewClicked'");
-    view2131230974 = view;
+    view2131230975 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -64,9 +64,9 @@ public class RegisterNextActivity_ViewBinding implements Unbinder {
     target.registerUserNextVerifyPwdEditText = null;
     target.registerUserNextVerifyPwdLinearlayout = null;
 
-    view2131230969.setOnClickListener(null);
-    view2131230969 = null;
-    view2131230974.setOnClickListener(null);
-    view2131230974 = null;
+    view2131230970.setOnClickListener(null);
+    view2131230970 = null;
+    view2131230975.setOnClickListener(null);
+    view2131230975 = null;
   }
 }

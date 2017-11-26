@@ -17,11 +17,11 @@ import java.lang.Override;
 public class OwnUploadVideoActivity_ViewBinding implements Unbinder {
   private OwnUploadVideoActivity target;
 
-  private View view2131231089;
+  private View view2131231090;
 
-  private View view2131231093;
+  private View view2131231094;
 
-  private View view2131231087;
+  private View view2131231088;
 
   @UiThread
   public OwnUploadVideoActivity_ViewBinding(OwnUploadVideoActivity target) {
@@ -35,7 +35,7 @@ public class OwnUploadVideoActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.user_upload_video_show_recycler_view, "field 'userUploadVideoShowRecyclerView' and method 'onViewClicked'");
     target.userUploadVideoShowRecyclerView = Utils.castView(view, R.id.user_upload_video_show_recycler_view, "field 'userUploadVideoShowRecyclerView'", RecyclerView.class);
-    view2131231089 = view;
+    view2131231090 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -44,7 +44,7 @@ public class OwnUploadVideoActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.user_video_show_cancel_text_view, "field 'userVideoShowCancelTextView' and method 'onViewClicked'");
     target.userVideoShowCancelTextView = Utils.castView(view, R.id.user_video_show_cancel_text_view, "field 'userVideoShowCancelTextView'", TextView.class);
-    view2131231093 = view;
+    view2131231094 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class OwnUploadVideoActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.user_upload_video_show_confirm_text_view, "field 'userUploadVideoShowConfirmTextView' and method 'onViewClicked'");
     target.userUploadVideoShowConfirmTextView = Utils.castView(view, R.id.user_upload_video_show_confirm_text_view, "field 'userUploadVideoShowConfirmTextView'", TextView.class);
-    view2131231087 = view;
+    view2131231088 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -75,11 +75,11 @@ public class OwnUploadVideoActivity_ViewBinding implements Unbinder {
     target.userUploadVideoShowConfirmTextView = null;
     target.userUploadVideoShowBgLinearlayout = null;
 
-    view2131231089.setOnClickListener(null);
-    view2131231089 = null;
-    view2131231093.setOnClickListener(null);
-    view2131231093 = null;
-    view2131231087.setOnClickListener(null);
-    view2131231087 = null;
+    view2131231090.setOnClickListener(null);
+    view2131231090 = null;
+    view2131231094.setOnClickListener(null);
+    view2131231094 = null;
+    view2131231088.setOnClickListener(null);
+    view2131231088 = null;
   }
 }

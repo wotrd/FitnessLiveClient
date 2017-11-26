@@ -19,11 +19,11 @@ import java.lang.Override;
 public class FindPasswordActivity_ViewBinding implements Unbinder {
   private FindPasswordActivity target;
 
-  private View view2131230901;
+  private View view2131230902;
 
-  private View view2131230851;
+  private View view2131230852;
 
-  private View view2131230840;
+  private View view2131230841;
 
   @UiThread
   public FindPasswordActivity_ViewBinding(FindPasswordActivity target) {
@@ -41,7 +41,7 @@ public class FindPasswordActivity_ViewBinding implements Unbinder {
     target.findPwdVerifycodeLinearlayout = Utils.findRequiredViewAsType(source, R.id.find_pwd_verifycode_linearlayout, "field 'findPwdVerifycodeLinearlayout'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.login_user_find_pwd_back_text_view, "field 'loginUserFindPwdBackTextView' and method 'onViewClicked'");
     target.loginUserFindPwdBackTextView = Utils.castView(view, R.id.login_user_find_pwd_back_text_view, "field 'loginUserFindPwdBackTextView'", ImageView.class);
-    view2131230901 = view;
+    view2131230902 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public class FindPasswordActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.getVerifycodeTextView, "field 'getVerifycodeTextView' and method 'onViewClicked'");
     target.getVerifycodeTextView = Utils.castView(view, R.id.getVerifycodeTextView, "field 'getVerifycodeTextView'", TextView.class);
-    view2131230851 = view;
+    view2131230852 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class FindPasswordActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.find_pwd_nextstep_btn, "field 'findPwdNextstepBtn' and method 'onViewClicked'");
     target.findPwdNextstepBtn = Utils.castView(view, R.id.find_pwd_nextstep_btn, "field 'findPwdNextstepBtn'", Button.class);
-    view2131230840 = view;
+    view2131230841 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -83,11 +83,11 @@ public class FindPasswordActivity_ViewBinding implements Unbinder {
     target.getVerifycodeTextView = null;
     target.findPwdNextstepBtn = null;
 
-    view2131230901.setOnClickListener(null);
-    view2131230901 = null;
-    view2131230851.setOnClickListener(null);
-    view2131230851 = null;
-    view2131230840.setOnClickListener(null);
-    view2131230840 = null;
+    view2131230902.setOnClickListener(null);
+    view2131230902 = null;
+    view2131230852.setOnClickListener(null);
+    view2131230852 = null;
+    view2131230841.setOnClickListener(null);
+    view2131230841 = null;
   }
 }

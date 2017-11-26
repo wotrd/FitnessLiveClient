@@ -80,7 +80,6 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:ellipsize="end"
-                    android:text="hhhhhhhhhhhhh"
                     android:textColor="@color/color_white"
                     />
             </LinearLayout>
@@ -97,15 +96,36 @@
             android:layout_centerInParent="true"
             />
     </RelativeLayout>
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:textSize="24sp"
-        android:text="视频"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorStroke"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="24sp"
+            android:text="视频"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorStroke"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/activity_user_info_show_user_is_attention_text_view"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_all_stroke_bg_btn"
+            android:textColor="#b60620"
+            android:text="已关注"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
         />
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
