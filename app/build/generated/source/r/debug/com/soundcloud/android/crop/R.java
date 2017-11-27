@@ -45,11 +45,11 @@ public final class R {
         public static final int crop__layout_done_cancel = 0x7f0a0034;
     }
     public static final class string {
-        public static final int crop__cancel = 0x7f0e0051;
-        public static final int crop__done = 0x7f0e0052;
-        public static final int crop__pick_error = 0x7f0e0053;
-        public static final int crop__saving = 0x7f0e0054;
-        public static final int crop__wait = 0x7f0e0055;
+        public static final int crop__cancel = 0x7f0e0052;
+        public static final int crop__done = 0x7f0e0053;
+        public static final int crop__pick_error = 0x7f0e0054;
+        public static final int crop__saving = 0x7f0e0055;
+        public static final int crop__wait = 0x7f0e0056;
     }
     public static final class style {
         public static final int Crop = 0x7f0f00a0;

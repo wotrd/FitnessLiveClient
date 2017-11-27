@@ -157,7 +157,7 @@ public class UserInfoShowActivity extends AppCompatActivity {
                     activityUserInfoShowIsAttentionTextView.setText("已关注");
                     type="attentioned";
                 }
-                LoginUtils.setUserIsAttention(isAttentionUrl, GsonUtils.getGson().toJson(attention), type,
+                LoginUtils.setUserIsAttention(isAttentionUrl,GsonUtils.getGson().toJson(attention), type,
                         new Callback() {
                     @Override
                     public void onFailure(Call call, IOException e) {}
@@ -168,7 +168,6 @@ public class UserInfoShowActivity extends AppCompatActivity {
                 break;
         }
     }
-
     @Override
     protected void onDestroy() {
         /** 在退出之前获取登录用户的信息*/
