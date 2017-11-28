@@ -9,6 +9,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
@@ -19,6 +21,7 @@ import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.ThreadPoolExecutorUtils;
+import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 import java.util.List;
