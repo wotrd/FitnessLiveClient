@@ -37,7 +37,7 @@ public class AttentionsShowAdapter extends RecyclerView.Adapter<AttentionsShowAd
                 public void onClick(View view) {
                     Intent intent = new Intent(context, UserInfoShowActivity.class);
                     intent.putExtra("account",attentions.get(getAdapterPosition()).getGzaccount());
-                    intent.putExtra("type","attention");
+                    intent.putExtra("target","attention");
                     context.startActivity(intent);
                 }
             });

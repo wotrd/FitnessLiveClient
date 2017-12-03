@@ -9,19 +9,16 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.adapter.UserUploadVideoShowAdapter;
 import com.example.wkj_pc.fitnesslive.po.Attention;
+import com.example.wkj_pc.fitnesslive.po.Fans;
 import com.example.wkj_pc.fitnesslive.po.UploadVideo;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
-import com.example.wkj_pc.fitnesslive.tools.ThreadPoolExecutorUtils;
-import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 import java.util.List;
@@ -56,8 +53,10 @@ public class UserInfoShowActivity extends AppCompatActivity {
     private User user;
     private String type;
     private String account;
-    private Attention attention;
+    private Attention attention=null;
     String isAttentionUrl;
+    private Fans fans;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,18 +67,8 @@ public class UserInfoShowActivity extends AppCompatActivity {
         isAttentionUrl=getResources().getString(R.string.app_get_user_is_attention_url);
         String videoUrl = getResources().getString(R.string.app_customer_live_getUserUploadVideosUrl);
         account = intent.getStringExtra("account");
-        //如果type!=attention的话，将关注隐藏
-        type = intent.getStringExtra("type");
-        if (TextUtils.isEmpty(type)){
-            activityUserInfoShowIsAttentionTextView.setVisibility(View.GONE);
-        }else{
-            for (Attention att:MainApplication.attentions){
-                if (att.getGzaccount().equals(account)){
-                    attention=att;
-                    break;
-                }
-            }
-        }
+        //如果type!=attention的话，为粉丝，判断自己是否关注粉丝
+        String target = intent.getStringExtra("target");
         /** 设置用户信息显示 */
         LoginUtils.getRelativeUserInfo(url, account, new Callback() {
             @Override
@@ -108,6 +97,38 @@ public class UserInfoShowActivity extends AppCompatActivity {
                 }
             }
         });
+        if (TextUtils.isEmpty(target)){ //如果target为空的话，代表此时是粉丝，反之为关注。如果是粉丝的话，
+            //首先，我们需要查找关注表中是否有自己的账户。有的话证明自己已经关注过该粉丝，反之，没有设置文本
+            for (Attention att:MainApplication.attentions){
+                if (att.getGzaccount().equals(account)){
+                    attention = att;
+                    activityUserInfoShowIsAttentionTextView.setText("已关注");
+                    break;
+                }
+            }
+            if (null == attention){
+                activityUserInfoShowIsAttentionTextView.setText("关注");
+                for (Fans f:MainApplication.fans){
+                    if (account.equals(f.getFaccount())){
+                        attention=new Attention();
+                        attention.setUid(f.getUid());
+                        attention.setGzaccount(f.getFaccount());
+                        attention.setGzamatar(f.getFamatar());
+                        attention.setGznickname(f.getFnickname());
+                        attention.setGzphonenumber(f.getFphonenumber());
+                        break;
+                    }
+                }
+            }
+        }else{
+            for (Attention att:MainApplication.attentions){
+                if (att.getGzaccount().equals(account)){
+                    attention=att;
+                    break;
+                }
+            }
+        }
+
         /** 设置下方的视频显示*/
         LoginUtils.getUserUploadVideosByAccount(videoUrl, account, new Callback() {
             @Override
@@ -174,31 +195,55 @@ public class UserInfoShowActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         /** 在退出之前获取登录用户的信息*/
-        if (!TextUtils.isEmpty(type)){
-            final String longRequestUrl = getResources().getString(R.string.app_get_user_info_url);
-            Runnable loginUserRunnable = new Runnable() {
-                @Override
-                public void run() {
-                    LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(),
-                            MainApplication.cookie, new Callback() {
-                                @Override
-                                public void onFailure(Call call, IOException e) {}
-                                @Override
-                                public void onResponse(Call call, Response response) throws IOException {
-                                    String responseData = response.body().string();
-                                    try {
-                                        User loginUser = GsonUtils.getGson().fromJson(responseData, User.class);
-                                        MainApplication.loginUser = loginUser;
-                                    } catch (Exception e) {
-                                        MainApplication.loginUser = null;
-                                        e.printStackTrace();
-                                    }
-                                }
-                            });
+        String longRequestUrl = getResources().getString(R.string.app_get_user_info_url);
+        LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(),
+                MainApplication.cookie, new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {}
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        String responseData = response.body().string();
+                        try {
+                            User loginUser = GsonUtils.getGson().fromJson(responseData, User.class);
+                            MainApplication.loginUser = loginUser;
+                        } catch (Exception e) {
+                            MainApplication.loginUser = null;
+                            e.printStackTrace();
+                        }
+                    }
+                });
+        /**  获取登录用户的关注和粉丝用户 */
+        String attentionUserUrl = getResources().getString(R.string.app_get_attention_user_info_url);
+        LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                try {
+                    List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
+                    }.getType());
+                    MainApplication.attentions = attentions;
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-            };
-            ThreadPoolExecutorUtils.getCachedThreaPoolExecutors().execute(loginUserRunnable);
-        }
+            }
+        });
+        String fansUserUrl= getResources().getString(R.string.app_get_fans_user_info_url);
+        LoginUtils.getRelativeUserInfo(fansUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                try {
+                    List<Fans> fans = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Fans>>() {}.getType());
+                    MainApplication.fans = fans;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
         super.onDestroy();
     }
 }

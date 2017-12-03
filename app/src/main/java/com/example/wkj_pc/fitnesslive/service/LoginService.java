@@ -50,10 +50,7 @@ public class LoginService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (MainApplication.loginUser!=null){
             /** 获取登录用户的信息*/
-            Runnable loginUserRunnable = new Runnable() {
-                @Override
-                public void run() {
-                LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(), MainApplication.cookie, new Callback() {
+           LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(), MainApplication.cookie, new Callback() {
                     @Override
                     public void onFailure(Call call, IOException e) {}
                     @Override
@@ -68,52 +65,36 @@ public class LoginService extends Service {
                         }
                     }
                 });
-                }
-            };
             /**  获取登录用户的关注和粉丝用户 */
-            Runnable attentionRunnable=new Runnable() {
+            LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
                 @Override
-                public void run() {
-                    LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
-                        @Override
-                        public void onFailure(Call call, IOException e) {}
-                        @Override
-                        public void onResponse(Call call, Response response) throws IOException {
-                            String responseData = response.body().string();
+                public void onFailure(Call call, IOException e) {}
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    String responseData = response.body().string();
+                    try {
+                        List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
+                        }.getType());
+                        MainApplication.attentions = attentions;
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            LoginUtils.getRelativeUserInfo(fansUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {}
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        String responseData = response.body().string();
                             try {
-                                List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
-                                }.getType());
-                                MainApplication.attentions = attentions;
+                                List<Fans> fans = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Fans>>() {}.getType());
+                                MainApplication.fans = fans;
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
-                        }
-                    });
-                }
-            };
-            Runnable fansRunnable=new Runnable() {
-                @Override
-                public void run() {
-                    LoginUtils.getRelativeUserInfo(fansUserUrl, MainApplication.loginUser.getUid(), new Callback() {
-                        @Override
-                        public void onFailure(Call call, IOException e) {}
-                        @Override
-                        public void onResponse(Call call, Response response) throws IOException {
-                            String responseData = response.body().string();
-                                try {
-                                    List<Fans> fans = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Fans>>() {}.getType());
-                                    MainApplication.fans = fans;
-                                } catch (Exception e) {
-                                    e.printStackTrace();
-                                }
-                        }
-                    });
-                }
-            };
-            cachedThreaPoolExecutors.execute(loginUserRunnable);
-            cachedThreaPoolExecutors.execute(attentionRunnable);
-            cachedThreaPoolExecutors.execute(fansRunnable);
-
+                    }
+                });
             AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
             long triggerTime= SystemClock.elapsedRealtime()+25*60*1000;
             Intent intent1=new Intent(this,LoginService.class);

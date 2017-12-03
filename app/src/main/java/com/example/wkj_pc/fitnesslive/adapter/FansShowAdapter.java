@@ -13,7 +13,6 @@ import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.activity.UserInfoShowActivity;
 import com.example.wkj_pc.fitnesslive.po.Fans;
-
 import java.util.List;
 
 /**
