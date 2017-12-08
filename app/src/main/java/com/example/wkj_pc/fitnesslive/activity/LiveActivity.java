@@ -24,12 +24,10 @@ import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.adapter.WatchUserLiveAdapter;
 import com.example.wkj_pc.fitnesslive.adapter.LiveChattingMessagesAdapter;
-import com.example.wkj_pc.fitnesslive.fragment.BottomSheetDialogFrag;
 import com.example.wkj_pc.fitnesslive.fragment.LiveUserBottomInfoToastFragment;
 import com.example.wkj_pc.fitnesslive.po.LiveChattingMessage;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
-import com.example.wkj_pc.fitnesslive.tools.LogUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.OkHttpClientFactory;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
@@ -118,7 +116,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         if (null!=MainApplication.loginUser.getAmatar()){
             Glide.with(this).load(MainApplication.loginUser.getAmatar()).asBitmap().into(loginLiveLogo);
         }
-        loginLiveLogo.setImageResource(R.mipmap.ic_launcher);
+        loginLiveLogo.setImageResource(R.mipmap.ic_launcher1);
         /*设置观看者横向显示*/
         initAmatartRecyclerView();
         fansPeopleNumber.setText("粉丝: "+MainApplication.loginUser.getFansnum());
