@@ -109,16 +109,16 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
                 MainApplication.loginUser.getAccount()+"/" + MainApplication.loginUser.getAccount()+"/live";
         getWebSocket(messageWebSocketUrl);  //不用开启子线程,自己开启线程
         /*设置直播推流地址*/
-
         pushVideoStreamUrl = getResources().getString(R.string.app_video_upload_srs_server_url)+MainApplication.loginUser.getAccount();
 
         mPublisher = new SrsPublisher((SrsCameraView) findViewById(R.id.live_view));
         if (null!=MainApplication.loginUser.getAmatar()){
             Glide.with(this).load(MainApplication.loginUser.getAmatar()).asBitmap().into(loginLiveLogo);
+        }else{
+            loginLiveLogo.setImageResource(R.mipmap.ic_amatar_img);
         }
-        loginLiveLogo.setImageResource(R.mipmap.ic_launcher1);
         /*设置观看者横向显示*/
-        initAmatartRecyclerView();
+        initClientRecyclerView();
         fansPeopleNumber.setText("粉丝: "+MainApplication.loginUser.getFansnum());
         /*设置聊天信息展示*/
         initChattingMessageShowRecyclerView();
@@ -186,7 +186,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    initAmatartRecyclerView();
+                                    initClientRecyclerView();
                                 }
                             });
                         }catch (Exception e1){
@@ -212,8 +212,8 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
-    /** 设置观众和直播员头像显示 */
-    private void initAmatartRecyclerView() {
+    /** 设置观众列表显示 */
+    private void initClientRecyclerView() {
         if (watcherUsers!=null){
             watchPeopleNumber.setText("观看人数:"+watcherUsers.size());
             LinearLayoutManager layoutManager = new LinearLayoutManager(this);
