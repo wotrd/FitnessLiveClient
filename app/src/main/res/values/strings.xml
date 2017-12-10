@@ -24,7 +24,7 @@
     <string name="app_get_verifycode_url">http://192.168.191.1/customer/login/getVerifycode</string>
     <string name="app_login_url">http://192.168.191.1/customer/login/toLogin</string>
     <string name="app_get_user_info_url">http://192.168.191.1/customer/login/getUserInfo</string>
-    <string name="app_get_user_is_attention_url">http://192.168.191.1/customer/live/setUserIsAttention</string>
+    <string name="app_set_user_is_attention_url">http://192.168.191.1/customer/live/setUserIsAttention</string>
     <string name="app_get_fans_user_info_url">http://192.168.191.1/customer/login/getFansUserInfo</string>
     <string name="app_get_attention_user_info_url">http://192.168.191.1/customer/login/getAttentionUserInfo</string>
     <string name="app_get_attention_user_info_by_account_url">http://192.168.191.1/customer/login/getAttentionUserInfoByAccount</string>

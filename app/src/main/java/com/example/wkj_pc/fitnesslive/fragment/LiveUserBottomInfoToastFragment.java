@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
@@ -36,7 +35,7 @@ public class LiveUserBottomInfoToastFragment extends BottomSheetDialogFragment i
     private Button attentionBtn;
     private String account;
     private String type;
-
+    String isAttentionUrl;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -56,13 +55,35 @@ public class LiveUserBottomInfoToastFragment extends BottomSheetDialogFragment i
         switch (v.getId()){
             /** 进行关注与是否关注设置 */
             case R.id.user_bottom_fragment_attention_info_alert_attention_btn:
-                ToastUtils.showToast(getActivity(),"niaho", Toast.LENGTH_SHORT);
+
+                if (attentionBtn.getText().toString().equals("关注")){    //进行关注
+                  /*  LoginUtils.setUserIsAttention(isAttentionUrl, attention, "", new Callback() {
+                        @Override
+                        public void onFailure(Call call, IOException e) {}
+                        @Override
+                        public void onResponse(Call call, Response response) throws IOException {
+
+                        }
+                    });*/
+                    attentionBtn.setText("已关注");
+                }else {     //取消关注
+                  /*  LoginUtils.setUserIsAttention(isAttentionUrl, attention, "", new Callback() {
+                        @Override
+                        public void onFailure(Call call, IOException e) {}
+                        @Override
+                        public void onResponse(Call call, Response response) throws IOException {
+
+                        }
+                    });*/
+                    attentionBtn.setText("关注");
+                }
                 break;
         }
     }
     @Override
     public void onResume() {
         super.onResume();
+        isAttentionUrl=getString(R.string.app_set_user_is_attention_url);
         String getUserInfoAccountUrl=getString(R.string.app_customer_live_getLiveUserInfo_url);
         SharedPreferences spref = getActivity().getSharedPreferences("clickamatar", Context.MODE_PRIVATE);
         account = spref.getString("account", null);

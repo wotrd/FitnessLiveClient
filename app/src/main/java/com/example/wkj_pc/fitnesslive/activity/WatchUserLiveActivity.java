@@ -17,12 +17,16 @@ import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.adapter.WatchUserLiveAdapter;
 import com.example.wkj_pc.fitnesslive.adapter.LiveChattingMessagesAdapter;
 import com.example.wkj_pc.fitnesslive.fragment.LiveUserBottomInfoToastFragment;
+import com.example.wkj_pc.fitnesslive.po.Attention;
 import com.example.wkj_pc.fitnesslive.po.LiveChattingMessage;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.AlertProgressDialogUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
+import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.OkHttpClientFactory;
 import com.google.gson.reflect.TypeToken;
+
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -34,6 +38,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.vov.vitamio.MediaPlayer;
 import io.vov.vitamio.widget.VideoView;
+import okhttp3.Call;
+import okhttp3.Callback;
 import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.WebSocket;
@@ -73,13 +79,14 @@ public class WatchUserLiveActivity extends AppCompatActivity {
     private String getLiveuserInfoUrl;
     private List<User> watcherUsers;//观看直播用户的信息集合
     private SharedPreferences spref;
+    String getAttentionsUrl; //更新用户关注列表是用的地址
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_watch_user_live);
         ButterKnife.bind(this);
-        liveuser=new User();//正在直播的用户
+        getAttentionsUrl=getResources().getString(R.string.app_get_attention_user_info_by_account_url);
         liveUserAccount = getIntent().getStringExtra("liveuseraccount");
         liveMessages = new ArrayList<>();
         watcherVideoUrl = getResources().getString(R.string.app_video_upload_srs_server_url) + liveUserAccount;
@@ -104,6 +111,14 @@ public class WatchUserLiveActivity extends AppCompatActivity {
         });
         initChattingRecyclerView();
         getWebSocket(watchChattingWsUrl);   //设置用户直播聊天地址
+        //获取正在直播的用户
+        for (User user:MainApplication.liveUsers){
+            if (user.getAccount().equals(liveUserAccount)){
+                liveuser=user;
+                Glide.with(this).load(liveuser.getAmatar()).asBitmap().into(loginWatchLiveLogo);
+                break;
+            }
+        }
     }
     /**  设置聊天信息显示 */
     private void initChattingRecyclerView() {
@@ -178,13 +193,8 @@ public class WatchUserLiveActivity extends AppCompatActivity {
                                 }
                             });
                         }else if (message.getIntent() == 3) {   //用户头像地址
-                            final String content=message.getContent();
-                            runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    Glide.with(WatchUserLiveActivity.this).load(content).asBitmap().into(loginWatchLiveLogo);
-                                }
-                            });
+                            updateLoginUserAttenttions(MainApplication.loginUser.getAccount());
+
                         }
                     } catch (Exception e) {
 
@@ -231,6 +241,25 @@ public class WatchUserLiveActivity extends AppCompatActivity {
             public void onFailure(WebSocket webSocket, Throwable t, Response response) {
                 super.onFailure(webSocket, t, response);
                 baseWebSocket = null;
+            }
+        });
+    }
+    /**
+     *  更新登录用户的关注信息当有关注用户时
+     */
+    private void updateLoginUserAttenttions(String account) {
+        LoginUtils.getRelativeUserInfo(getAttentionsUrl, account, new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                try{
+                    MainApplication.attentions= GsonUtils.getGson().fromJson(responseData,
+                            new TypeToken<List<Attention>>(){}.getType());
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
     }
