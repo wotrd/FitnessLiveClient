@@ -2,6 +2,7 @@ package com.example.wkj_pc.fitnesslive.adapter;
 
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,14 +31,16 @@ public class WatchUserLiveAdapter extends RecyclerView.Adapter<WatchUserLiveAdap
 
     private final FragmentManager manager;
     private final WebSocket webSocket;
+    private final String type;
     private List<User> watchUsers;
     private Context context;
     public static User alertUser;
-    public WatchUserLiveAdapter(List<User> users, Context context, FragmentManager manager, WebSocket webSocket){
+    public WatchUserLiveAdapter(List<User> users, Context context, FragmentManager manager,String type, WebSocket webSocket){
         watchUsers=users;
         this.manager=manager;
         this.context=context;
         this.webSocket=webSocket;
+        this.type=type;
     }
     class ViewHolder extends RecyclerView.ViewHolder{
         private CircleImageView amatar;
@@ -52,8 +55,11 @@ public class WatchUserLiveAdapter extends RecyclerView.Adapter<WatchUserLiveAdap
                     sendMsg.setMid(0);
                     sendMsg.setIntent(3);
                     webSocket.send(GsonUtils.getGson().toJson(sendMsg));
-
+                    /** 设置头像列表的用户弹窗 */
                     alertUser=watchUsers.get(getAdapterPosition());
+                    SharedPreferences.Editor editor = context.getSharedPreferences("clickamatar",Context.MODE_PRIVATE).edit();
+                    editor.putString("account", alertUser.getAccount());
+                    editor.putString("type", type);
                     new LiveUserBottomInfoToastFragment().show(manager,"dialog");
                 }
             });

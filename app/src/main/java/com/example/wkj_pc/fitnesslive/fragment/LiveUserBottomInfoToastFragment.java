@@ -64,7 +64,7 @@ public class LiveUserBottomInfoToastFragment extends BottomSheetDialogFragment i
     public void onResume() {
         super.onResume();
         String getUserInfoAccountUrl=getString(R.string.app_customer_live_getLiveUserInfo_url);
-        SharedPreferences spref = getActivity().getSharedPreferences("clickaccount", Context.MODE_PRIVATE);
+        SharedPreferences spref = getActivity().getSharedPreferences("clickamatar", Context.MODE_PRIVATE);
         account = spref.getString("account", null);
         type = spref.getString("type", null);
         getClickUserInfoByAccount(getUserInfoAccountUrl, account);

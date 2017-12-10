@@ -27,6 +27,7 @@
     <string name="app_get_user_is_attention_url">http://192.168.191.1/customer/live/setUserIsAttention</string>
     <string name="app_get_fans_user_info_url">http://192.168.191.1/customer/login/getFansUserInfo</string>
     <string name="app_get_attention_user_info_url">http://192.168.191.1/customer/login/getAttentionUserInfo</string>
+    <string name="app_get_attention_user_info_by_account_url">http://192.168.191.1/customer/login/getAttentionUserInfoByAccount</string>
     <string name="app_destroy_url">http://192.168.191.1/customer/login/quitLogin</string>
     <string name="app_update_user_info_url">http://192.168.191.1/customer/login/updateUserInfo</string>
     <string name="app_customer_live_updateLiveUserStyle">http://192.168.191.1/customer/live/updateLiveUserStyle</string>

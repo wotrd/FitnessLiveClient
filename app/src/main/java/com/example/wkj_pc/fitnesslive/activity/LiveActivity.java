@@ -1,5 +1,7 @@
 package com.example.wkj_pc.fitnesslive.activity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.hardware.Camera;
 import android.os.Bundle;
@@ -25,6 +27,7 @@ import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.adapter.WatchUserLiveAdapter;
 import com.example.wkj_pc.fitnesslive.adapter.LiveChattingMessagesAdapter;
 import com.example.wkj_pc.fitnesslive.fragment.LiveUserBottomInfoToastFragment;
+import com.example.wkj_pc.fitnesslive.po.Attention;
 import com.example.wkj_pc.fitnesslive.po.LiveChattingMessage;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
@@ -99,6 +102,9 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
     private String closeLiveStatusUrl;
     private Timer timer;
     private List<User> watcherUsers;//观看人信息
+    String getAttentionsUrl; //更新用户关注列表是用的地址
+    private SharedPreferences spref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,6 +112,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_live);
         ButterKnife.bind(this);
+        getAttentionsUrl=getResources().getString(R.string.app_get_attention_user_info_by_account_url);
         closeLiveStatusUrl = getResources().getString(R.string.app_customer_live_closeLiveStatusUrl);
         /** 获取websocket地址，设置聊天*/
         fansPeopleNumber= (TextView) findViewById(R.id.fans_people_number);
@@ -114,6 +121,8 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         getWebSocket(messageWebSocketUrl);  //不用开启子线程,自己开启线程
         /**设置直播推流地址*/
         pushVideoStreamUrl = getResources().getString(R.string.app_video_upload_srs_server_url)+MainApplication.loginUser.getAccount();
+        /**设置底部弹窗sp*/
+        spref = getSharedPreferences("clickamatar", Context.MODE_PRIVATE);
 
         mPublisher = new SrsPublisher((SrsCameraView) findViewById(R.id.live_view));
         if (null!=MainApplication.loginUser.getAmatar()){
@@ -134,10 +143,23 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         initBeautySpinner();
     }
     /**
-     *  更新登录用户的关注信息当有用户进来时。
+     *  更新登录用户的关注信息当有关注用户时
      */
     private void updateLoginUserAttenttions(String account) {
-
+        LoginUtils.getRelativeUserInfo(getAttentionsUrl, account, new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                try{
+                     MainApplication.attentions= GsonUtils.getGson().fromJson(responseData,
+                             new TypeToken<List<Attention>>(){}.getType());
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     /** 直播间聊天websocket*/
@@ -234,13 +256,23 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
             LinearLayoutManager layoutManager = new LinearLayoutManager(this);
             layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
             attentionUserRcyclerView.setLayoutManager(layoutManager);
-            WatchUserLiveAdapter adapter = new WatchUserLiveAdapter(watcherUsers,this,getSupportFragmentManager(),baseWebSocket);
+            WatchUserLiveAdapter adapter = new WatchUserLiveAdapter(watcherUsers,this,
+                    getSupportFragmentManager(),"live",baseWebSocket);
             attentionUserRcyclerView.setAdapter(adapter);
         }
     }
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.login_live_logo:
+                /** 发送更新用户关注信息 */
+                LiveChattingMessage sendMsg=new LiveChattingMessage();
+                sendMsg.setMid(0);
+                sendMsg.setIntent(3);
+                baseWebSocket.send(GsonUtils.getGson().toJson(sendMsg));
+                //弹出用户信息
+                SharedPreferences.Editor editor = spref.edit();
+                editor.putString("account", MainApplication.loginUser.getAccount());
+                editor.putString("type", "live");
                 new LiveUserBottomInfoToastFragment().show(getSupportFragmentManager(),"dialog");
                 break;
             case R.id.start_live_btn:

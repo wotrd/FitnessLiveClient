@@ -1,5 +1,7 @@
 package com.example.wkj_pc.fitnesslive.activity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -70,6 +72,8 @@ public class WatchUserLiveActivity extends AppCompatActivity {
     private User liveuser; //正在直播的用户
     private String getLiveuserInfoUrl;
     private List<User> watcherUsers;//观看直播用户的信息集合
+    private SharedPreferences spref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,6 +88,8 @@ public class WatchUserLiveActivity extends AppCompatActivity {
                 liveUserAccount + "/" + MainApplication.loginUser.getAccount() + "/watchlive";
        /* if (!LibsChecker.checkVitamioLibs(this))websocket/liveaccount/watchaccount/live|watchlive
             return;*/
+        /**设置底部弹窗sp*/
+        spref = getSharedPreferences("clickamatar", Context.MODE_PRIVATE);
         initWatcherUserShowRecyclerView();
         watchVideoView.setVideoPath(watcherVideoUrl);   //设置用户拉取视频流地址
         watchVideoView.setBufferSize(1024);
@@ -181,6 +187,7 @@ public class WatchUserLiveActivity extends AppCompatActivity {
                             });
                         }
                     } catch (Exception e) {
+
                         /** 发生异常后，验证时候能装换成用户集合，然后展示在listview中*/
                         try {
                             watcherUsers = GsonUtils.getGson().fromJson(text, new TypeToken<List<User>>(){}.getType());
@@ -231,7 +238,8 @@ public class WatchUserLiveActivity extends AppCompatActivity {
     private void initWatcherUserShowRecyclerView() {
         if (null!=watcherUsers){
             watcherWatchPeopleNumber.setText("观看人数:" + watcherUsers.size());
-            WatchUserLiveAdapter adapter = new WatchUserLiveAdapter(watcherUsers,this,getSupportFragmentManager());
+            WatchUserLiveAdapter adapter = new WatchUserLiveAdapter(watcherUsers,this,getSupportFragmentManager(),
+                    "",baseWebSocket);
             LinearLayoutManager manager = new LinearLayoutManager(this);
             manager.setOrientation(LinearLayoutManager.HORIZONTAL);
             watcherAttentionUserWatchShowRecyclerView.setLayoutManager(manager);
@@ -245,8 +253,18 @@ public class WatchUserLiveActivity extends AppCompatActivity {
         switch (view.getId()) {
             /** 点击直播用户头像，弹出信息*/
             case R.id.watcher_login_watch_live_logo:
+                /** 发送更新用户关注信息 */
+                LiveChattingMessage sendAttnetionMsg=new LiveChattingMessage();
+                sendAttnetionMsg.setMid(0);
+                sendAttnetionMsg.setIntent(3);
+                baseWebSocket.send(GsonUtils.getGson().toJson(sendAttnetionMsg));
+                //弹出用户信息
+                SharedPreferences.Editor editor = spref.edit();
+                editor.putString("account", MainApplication.loginUser.getAccount());
+                editor.putString("type", "watcher");
                 new LiveUserBottomInfoToastFragment().show(getSupportFragmentManager(),"dialog");
                 break;
+
             case R.id.watcher_ic_send_watch_comment_message_icon:
                 String editTextMsg = watcherWatchVideoChattingEditText.getText().toString().trim();
                 if (TextUtils.isEmpty(editTextMsg)) {
