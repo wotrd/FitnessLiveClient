@@ -10,26 +10,28 @@
         />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:orientation="horizontal">
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/user_bottom_fragment_attention_info_alert_logo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:src="@drawable/head_img" />
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
                 android:ellipsize="end"
+                android:paddingTop="5dp"
                 android:id="@+id/user_bottom_fragment_attention_info_alert_nickname"
-                android:text="小灰灰" />
+                android:text="xxx" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,7 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/user_bottom_fragment_attention_info_alert_fansnum"
-                    android:text="0 粉丝" />
+                    android:text="粉丝：0" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -47,7 +49,7 @@
                     android:layout_width="wrap_content"
                     android:id="@+id/user_bottom_fragment_attention_info_alert_attentionnum"
                     android:layout_height="wrap_content"
-                    android:text="0 关注" />
+                    android:text="关注：0 " />
             </LinearLayout>
         </LinearLayout>
         <TextView

@@ -55,7 +55,11 @@ import okhttp3.Response;
 import okhttp3.WebSocket;
 import okhttp3.WebSocketListener;
 
-
+/**
+ * 直播 activity
+ * 采用yeasea 进行推流
+ * 使用websocket进行聊天室操作。
+ */
 public class LiveActivity extends AppCompatActivity implements View.OnClickListener {
 
     @BindView(R.id.live_chatting_message_recycler_view)
@@ -103,12 +107,12 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_live);
         ButterKnife.bind(this);
         closeLiveStatusUrl = getResources().getString(R.string.app_customer_live_closeLiveStatusUrl);
-        /* 获取websocket地址，设置聊天*/
+        /** 获取websocket地址，设置聊天*/
         fansPeopleNumber= (TextView) findViewById(R.id.fans_people_number);
         messageWebSocketUrl = getResources().getString(R.string.app_message_websocket_customer_live_url) +
                 MainApplication.loginUser.getAccount()+"/" + MainApplication.loginUser.getAccount()+"/live";
         getWebSocket(messageWebSocketUrl);  //不用开启子线程,自己开启线程
-        /*设置直播推流地址*/
+        /**设置直播推流地址*/
         pushVideoStreamUrl = getResources().getString(R.string.app_video_upload_srs_server_url)+MainApplication.loginUser.getAccount();
 
         mPublisher = new SrsPublisher((SrsCameraView) findViewById(R.id.live_view));
@@ -117,10 +121,10 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         }else{
             loginLiveLogo.setImageResource(R.mipmap.ic_amatar_img);
         }
-        /*设置观看者横向显示*/
+        /**设置观看者横向显示*/
         initClientRecyclerView();
         fansPeopleNumber.setText("粉丝: "+MainApplication.loginUser.getFansnum());
-        /*设置聊天信息展示*/
+        /**设置聊天信息展示*/
         initChattingMessageShowRecyclerView();
         mPublishBtn.setOnClickListener(this);
         loginLiveLogo.setOnClickListener(this);
@@ -129,7 +133,14 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         closeLiveIconBtn.setOnClickListener(this);
         initBeautySpinner();
     }
-    /* 直播间聊天websocket*/
+    /**
+     *  更新登录用户的关注信息当有用户进来时。
+     */
+    private void updateLoginUserAttenttions(String account) {
+
+    }
+
+    /** 直播间聊天websocket*/
     public void getWebSocket(String address){
         Request request=new Request.Builder().url(address)
                 .build();
@@ -143,10 +154,10 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onMessage(WebSocket webSocket, String text) {
                 super.onMessage(webSocket, text);
-               /*处理收到的信息*/
-                if (TextUtils.isEmpty(text)) //收到信息为空时，获取 /*如果收到信息为空，则返回不处理*/
+               /**处理收到的信息*/
+                if (TextUtils.isEmpty(text)) //收到信息为空时，获取如果收到信息为空，则返回不处理
                     return;
-                /*如果返回信息为success，表示websocket连接建立成功，发送提示信息*/
+                /**如果返回信息为success，表示websocket连接建立成功，发送提示信息*/
                 if (text.contentEquals("success")){
                     LiveChattingMessage message=new LiveChattingMessage();
                     message.setMid(0);
@@ -157,6 +168,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
                     message.setTime(format.format(new Date()));
                     message.setIntent(1);
                     webSocket.send( GsonUtils.getGson().toJson(message));
+
                 }else {
                     try{
                         message = GsonUtils.getGson().fromJson(text, LiveChattingMessage.class);
@@ -177,9 +189,11 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
                                     fansPeopleNumber.setText("粉丝:"+fansnum);
                                 }
                             });
+                        }else if (message.getIntent() == 3){ //当有用户点击头像后更新关注列表
+                            updateLoginUserAttenttions(MainApplication.loginUser.getAccount());
                         }
                     }catch (Exception e){
-                        /** 发生异常后，验证时候能装换成用户集合，然后展示在listview中*/
+                        /** 发生异常后，验证时候能转换成用户集合，然后展示在listview中*/
                         try {
                             watcherUsers = GsonUtils.getGson().fromJson(text, new TypeToken<List<User>>() {
                            }.getType());
@@ -212,6 +226,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
+
     /** 设置观众列表显示 */
     private void initClientRecyclerView() {
         if (watcherUsers!=null){
@@ -219,7 +234,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
             LinearLayoutManager layoutManager = new LinearLayoutManager(this);
             layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
             attentionUserRcyclerView.setLayoutManager(layoutManager);
-            WatchUserLiveAdapter adapter = new WatchUserLiveAdapter(watcherUsers,this,getSupportFragmentManager());
+            WatchUserLiveAdapter adapter = new WatchUserLiveAdapter(watcherUsers,this,getSupportFragmentManager(),baseWebSocket);
             attentionUserRcyclerView.setAdapter(adapter);
         }
     }
@@ -283,7 +298,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
             }
         },0,3000);
     }
-    /*设置直播聊天信息展示*/
+    /**设置直播聊天信息展示*/
     public void initChattingMessageShowRecyclerView() {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         liveChattingMessageRecyclerView.setLayoutManager(layoutManager);
@@ -327,7 +342,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         }
         mPublisher.startCamera();
     }
-    /*  设置发布直播视频*/
+    /** 设置发布直播视频*/
     private void initPublisher() {
         //设置编码状态回调
         mPublisher.setEncodeHandler(new SrsEncodeHandler(new SrsEncodeHandler.SrsEncodeListener() {
@@ -410,7 +425,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         //打开摄像头，开始预览（未推流）
         mPublisher.startCamera();
     }
-    /*  设置美颜效果*/
+    /**  设置美颜效果*/
     private void initBeautySpinner() {
         final Spinner changeBeautySp = (Spinner) findViewById(R.id.change_beauty_spinner);
         changeBeautySp.setDropDownWidth(300);

@@ -5,16 +5,12 @@ import android.content.Context;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-
 import com.example.wkj_pc.fitnesslive.po.Attention;
 import com.example.wkj_pc.fitnesslive.po.Fans;
 import com.example.wkj_pc.fitnesslive.po.LiveTheme;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.receiver.NetWorkReceiver;
-import com.example.wkj_pc.fitnesslive.service.LiveService;
-
 import org.litepal.LitePal;
-
 import java.util.ArrayList;
 import java.util.List;
 
