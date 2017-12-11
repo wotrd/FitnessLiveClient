@@ -35,7 +35,8 @@ public class LiveUserBottomInfoToastFragment extends BottomSheetDialogFragment i
     private Button attentionBtn;
     private String account;
     private String type;
-    String isAttentionUrl;
+    private String isAttentionUrl;
+    private Attention attention;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -55,26 +56,25 @@ public class LiveUserBottomInfoToastFragment extends BottomSheetDialogFragment i
         switch (v.getId()){
             /** 进行关注与是否关注设置 */
             case R.id.user_bottom_fragment_attention_info_alert_attention_btn:
-
                 if (attentionBtn.getText().toString().equals("关注")){    //进行关注
-                  /*  LoginUtils.setUserIsAttention(isAttentionUrl, attention, "", new Callback() {
+                    LoginUtils.setUserIsAttention(isAttentionUrl, GsonUtils.getGson().toJson(attention), "", new Callback() {
                         @Override
                         public void onFailure(Call call, IOException e) {}
                         @Override
                         public void onResponse(Call call, Response response) throws IOException {
 
                         }
-                    });*/
+                    });
                     attentionBtn.setText("已关注");
                 }else {     //取消关注
-                  /*  LoginUtils.setUserIsAttention(isAttentionUrl, attention, "", new Callback() {
+                    LoginUtils.setUserIsAttention(isAttentionUrl, GsonUtils.getGson().toJson(attention), "", new Callback() {
                         @Override
                         public void onFailure(Call call, IOException e) {}
                         @Override
                         public void onResponse(Call call, Response response) throws IOException {
 
                         }
-                    });*/
+                    });
                     attentionBtn.setText("关注");
                 }
                 break;

@@ -64,7 +64,7 @@ public class UserInfoShowActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         Intent intent = getIntent();
         String url = getResources().getString(R.string.app_get_user_info_url);
-        isAttentionUrl=getResources().getString(R.string.app_get_user_is_attention_url);
+        isAttentionUrl=getResources().getString(R.string.app_set_user_is_attention_url);
         String videoUrl = getResources().getString(R.string.app_customer_live_getUserUploadVideosUrl);
         account = intent.getStringExtra("account");
         //如果type!=attention的话，为粉丝，判断自己是否关注粉丝
