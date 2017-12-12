@@ -273,6 +273,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
                 SharedPreferences.Editor editor = spref.edit();
                 editor.putString("account", MainApplication.loginUser.getAccount());
                 editor.putString("type", "live");
+                editor.apply();
                 new LiveUserBottomInfoToastFragment().show(getSupportFragmentManager(),"dialog");
                 break;
             case R.id.start_live_btn:

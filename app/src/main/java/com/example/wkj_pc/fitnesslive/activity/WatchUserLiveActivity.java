@@ -24,6 +24,7 @@ import com.example.wkj_pc.fitnesslive.tools.AlertProgressDialogUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.OkHttpClientFactory;
+import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
@@ -268,7 +269,7 @@ public class WatchUserLiveActivity extends AppCompatActivity {
         if (null!=watcherUsers){
             watcherWatchPeopleNumber.setText("观看人数:" + watcherUsers.size());
             WatchUserLiveAdapter adapter = new WatchUserLiveAdapter(watcherUsers,this,getSupportFragmentManager(),
-                    "",baseWebSocket);
+                    "watcher",baseWebSocket);
             LinearLayoutManager manager = new LinearLayoutManager(this);
             manager.setOrientation(LinearLayoutManager.HORIZONTAL);
             watcherAttentionUserWatchShowRecyclerView.setLayoutManager(manager);
@@ -289,11 +290,11 @@ public class WatchUserLiveActivity extends AppCompatActivity {
                 baseWebSocket.send(GsonUtils.getGson().toJson(sendAttnetionMsg));
                 //弹出用户信息
                 SharedPreferences.Editor editor = spref.edit();
-                editor.putString("account", MainApplication.loginUser.getAccount());
+                editor.putString("account", liveUserAccount);
                 editor.putString("type", "watcher");
+                editor.apply();
                 new LiveUserBottomInfoToastFragment().show(getSupportFragmentManager(),"dialog");
                 break;
-
             case R.id.watcher_ic_send_watch_comment_message_icon:
                 String editTextMsg = watcherWatchVideoChattingEditText.getText().toString().trim();
                 if (TextUtils.isEmpty(editTextMsg)) {

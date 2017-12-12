@@ -9,15 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.bumptech.glide.Glide;
-import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.fragment.LiveUserBottomInfoToastFragment;
 import com.example.wkj_pc.fitnesslive.po.LiveChattingMessage;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.WebSocket;
@@ -60,6 +56,7 @@ public class WatchUserLiveAdapter extends RecyclerView.Adapter<WatchUserLiveAdap
                     SharedPreferences.Editor editor = context.getSharedPreferences("clickamatar",Context.MODE_PRIVATE).edit();
                     editor.putString("account", alertUser.getAccount());
                     editor.putString("type", type);
+                    editor.apply();
                     new LiveUserBottomInfoToastFragment().show(manager,"dialog");
                 }
             });
