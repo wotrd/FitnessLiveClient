@@ -99,11 +99,13 @@ public class UserInfoShowActivity extends AppCompatActivity {
         });
         if (TextUtils.isEmpty(target)){ //如果target为空的话，代表此时是粉丝，反之为关注。如果是粉丝的话，
             //首先，我们需要查找关注表中是否有自己的账户。有的话证明自己已经关注过该粉丝，反之，没有设置文本
-            for (Attention att:MainApplication.attentions){
-                if (att.getGzaccount().equals(account)){
-                    attention = att;
-                    activityUserInfoShowIsAttentionTextView.setText("已关注");
-                    break;
+            if (null != MainApplication.attentions && MainApplication.attentions.size()>0){
+                for (Attention att:MainApplication.attentions){
+                    if (att.getGzaccount().equals(account)){
+                        attention = att;
+                        activityUserInfoShowIsAttentionTextView.setText("已关注");
+                        break;
+                    }
                 }
             }
             if (null == attention){
