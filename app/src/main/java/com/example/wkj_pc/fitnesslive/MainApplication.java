@@ -13,6 +13,7 @@ import com.example.wkj_pc.fitnesslive.receiver.NetWorkReceiver;
 import org.litepal.LitePal;
 import java.util.ArrayList;
 import java.util.List;
+import cn.jpush.android.api.JPushInterface;
 
 /**
  * Created by wkj_pc on 2017/6/11.
@@ -37,6 +38,9 @@ public class MainApplication extends Application {
         super.onCreate();
         LitePal.initialize(getApplicationContext());
         LitePal.getDatabase();
+        //极光推送注册
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
         //注册网络广播监听事件
         IntentFilter filter=new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE");
         registerReceiver(netWorkReceiver,filter);
