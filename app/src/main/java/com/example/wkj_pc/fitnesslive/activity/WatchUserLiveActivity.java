@@ -24,9 +24,7 @@ import com.example.wkj_pc.fitnesslive.tools.AlertProgressDialogUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.OkHttpClientFactory;
-import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.google.gson.reflect.TypeToken;
-
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

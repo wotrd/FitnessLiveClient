@@ -11,18 +11,15 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.tools.AlertProgressDialogUtils;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

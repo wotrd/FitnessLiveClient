@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.tools.CustomHelper;
 import com.jph.takephoto.app.TakePhotoActivity;

@@ -6,11 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.R;
 import com.jph.takephoto.model.TImage;
-
 import java.io.File;
 
 public class PicResultActivity extends Activity {

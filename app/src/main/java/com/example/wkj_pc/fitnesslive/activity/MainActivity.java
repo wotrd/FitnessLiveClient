@@ -12,7 +12,6 @@ import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.fragment.MainPageFragment;
 import com.example.wkj_pc.fitnesslive.service.LiveService;
 import com.werb.permissionschecker.PermissionChecker;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

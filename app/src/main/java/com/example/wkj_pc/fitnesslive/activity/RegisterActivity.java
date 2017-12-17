@@ -12,18 +12,15 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.example.wkj_pc.fitnesslive.tools.ValidationTools;
-
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

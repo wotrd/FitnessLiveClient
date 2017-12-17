@@ -9,9 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.tools.BottomMenuUtils;
@@ -27,12 +25,10 @@ import com.jph.takephoto.model.LubanOptions;
 import com.jph.takephoto.model.TImage;
 import com.jph.takephoto.model.TResult;
 import com.jph.takephoto.model.TakePhotoOptions;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import de.hdodenhof.circleimageview.CircleImageView;

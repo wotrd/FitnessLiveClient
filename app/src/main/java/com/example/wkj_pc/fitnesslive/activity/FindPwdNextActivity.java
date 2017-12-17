@@ -8,11 +8,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
-
 import java.io.IOException;
 import butterknife.BindView;
 import butterknife.ButterKnife;

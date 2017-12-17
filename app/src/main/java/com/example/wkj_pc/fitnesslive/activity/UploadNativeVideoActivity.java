@@ -17,7 +17,6 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.adapter.UploadNativeVideoAdapter;
 import com.example.wkj_pc.fitnesslive.po.UploadVideo;
@@ -26,7 +25,6 @@ import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

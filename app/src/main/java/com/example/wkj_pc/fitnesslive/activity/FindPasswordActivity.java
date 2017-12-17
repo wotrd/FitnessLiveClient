@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,18 +14,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.example.wkj_pc.fitnesslive.tools.ValidationTools;
-
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
