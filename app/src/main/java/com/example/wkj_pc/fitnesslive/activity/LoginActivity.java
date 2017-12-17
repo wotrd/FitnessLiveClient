@@ -48,8 +48,12 @@ import com.tencent.tauth.UiError;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.IOException;
+import java.util.Set;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.jpush.android.api.JPushInterface;
+import cn.jpush.android.api.TagAliasCallback;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -255,7 +259,7 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
         final String cookies = cookieSp.getString("cookie",null);
-        String userinfo = GsonUtils.getGson().toJson(user);
+        final String userinfo = GsonUtils.getGson().toJson(user);
         LoginUtils.toRequestServerForLogin(loginUrl, userinfo, cookies, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -269,6 +273,7 @@ public class LoginActivity extends AppCompatActivity {
                     String cookie=response.header("set-cookie");
                     if (cookies==null || (!cookies.equals(cookie))) {
                         editor.putString("cookie",cookie);
+                        editor.apply();
                         MainApplication.cookie=cookie;
                     }
                     String responseData=response.body().string();
@@ -277,6 +282,12 @@ public class LoginActivity extends AppCompatActivity {
                         MainApplication.loginUser=user;
                         setNativeLiveThemes();
                         startService(new Intent(LoginActivity.this, LoginService.class));
+                        //注册别名(用户的账号)
+                        JPushInterface.resumePush(LoginActivity.this);
+                        JPushInterface.setAlias(LoginActivity.this, user.getAccount(), new TagAliasCallback() {
+                            @Override
+                            public void gotResult(int i, String s, Set<String> set) {}
+                        });
                         finish();
                     }catch (Exception e) {
                         Message message = handler.obtainMessage();
@@ -399,6 +410,7 @@ public class LoginActivity extends AppCompatActivity {
                     String cookie = response.header("set-cookie");
                     if (null==cookies || (!cookie.equals(cookies))){
                         editor.putString("cookie",cookie);
+                        editor.apply();
                         MainApplication.cookie=cookie;
                     }
                     String responseData=response.body().string();
@@ -423,6 +435,13 @@ public class LoginActivity extends AppCompatActivity {
                             MainApplication.loginUser=user;
                             setNativeLiveThemes();
                             startService(new Intent(LoginActivity.this,LoginService.class));
+                            //注册别名(用户的账号)
+                            JPushInterface.resumePush(LoginActivity.this);
+                            JPushInterface.setAlias(LoginActivity.this, user.getAccount(), new TagAliasCallback() {
+                                @Override
+                                public void gotResult(int i, String s, Set<String> set) {}
+                            });
+
                             finish();
                         }catch (Exception e){
                             Message message = handler.obtainMessage();
@@ -492,7 +511,6 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onSlideDown(float v) {
             }
-
             @Override
             public void onVisibilityChanged(int i) {
                 if (i == View.GONE) {

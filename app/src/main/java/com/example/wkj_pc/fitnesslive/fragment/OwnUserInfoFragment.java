@@ -32,6 +32,11 @@ import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
+
+import java.util.Set;
+
+import cn.jpush.android.api.JPushInterface;
+import cn.jpush.android.api.TagAliasCallback;
 import de.hdodenhof.circleimageview.CircleImageView;
 import static android.content.Context.MODE_PRIVATE;
 
@@ -113,6 +118,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
     }
     /*设置系统消息显示*/
     private void setSysMessageShow() {}
+
     @Override
     public void onClick(View v) {
         switch(v.getId()){
@@ -178,6 +184,12 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                         getActivity().stopService(new Intent(getActivity(), LoginService.class));
                         amatarView.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.head_img));
                         MainApplication.loginUser=null;
+                        //退出极光推送
+                        JPushInterface.setAlias(getActivity(), "", new TagAliasCallback() {
+                            @Override
+                            public void gotResult(int i, String s, Set<String> set) {}
+                        });
+
                         ownNickname.setText("昵称：小灰灰");
                         ownAccount.setText("账号：000000");
                         ownUserInfoGrade.setText("0");

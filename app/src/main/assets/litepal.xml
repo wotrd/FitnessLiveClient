@@ -5,4 +5,7 @@
     <list>
         <mapping class="com.example.wkj_pc.fitnesslive.po.User"></mapping>
     </list>
+    <list>
+        <mapping class="com.example.wkj_pc.fitnesslive.po.SysMessage"></mapping>
+    </list>
 </litepal>
