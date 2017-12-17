@@ -39,7 +39,6 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ExecutorService;
-
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;

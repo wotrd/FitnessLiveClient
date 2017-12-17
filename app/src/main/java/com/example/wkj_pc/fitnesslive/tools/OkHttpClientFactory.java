@@ -1,9 +1,6 @@
 package com.example.wkj_pc.fitnesslive.tools;
 
-
-
 import java.util.concurrent.TimeUnit;
-
 import okhttp3.OkHttpClient;
 
 /**

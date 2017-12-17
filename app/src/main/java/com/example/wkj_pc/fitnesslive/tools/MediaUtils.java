@@ -12,10 +12,7 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
-
-
 import com.example.wkj_pc.fitnesslive.widget.AutoFitTextureView;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

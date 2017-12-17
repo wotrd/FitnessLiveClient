@@ -1,20 +1,13 @@
 package com.example.wkj_pc.fitnesslive.tools;
 
 import android.util.Base64;
-
-
-import com.example.wkj_pc.fitnesslive.po.UploadVideo;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
-
 import okhttp3.Callback;
 import okhttp3.FormBody;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
 
 /**
  * Created by wkj_pc on 2017/6/13.

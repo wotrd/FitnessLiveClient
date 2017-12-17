@@ -5,7 +5,6 @@ import android.os.Environment;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-
 import com.example.wkj_pc.fitnesslive.R;
 import com.jph.takephoto.app.TakePhoto;
 import com.jph.takephoto.compress.CompressConfig;

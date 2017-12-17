@@ -8,7 +8,6 @@ import android.os.Build;
 import android.os.IBinder;
 import android.os.SystemClock;
 import android.text.TextUtils;
-
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.po.LiveTheme;
@@ -17,17 +16,12 @@ import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.ThreadPoolExecutorUtils;
 import com.google.gson.reflect.TypeToken;
-
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
-
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
-
-import static android.os.AsyncTask.execute;
 
 public class LiveService extends Service {
     private String getHomeLiveUserInfoUrl;

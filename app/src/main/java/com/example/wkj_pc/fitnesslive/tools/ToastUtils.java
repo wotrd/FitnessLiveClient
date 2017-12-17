@@ -3,8 +3,6 @@ package com.example.wkj_pc.fitnesslive.tools;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.example.wkj_pc.fitnesslive.MainApplication;
-
 /**
  * Created by wkj_pc on 2017/8/20.
  */
