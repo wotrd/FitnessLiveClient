@@ -5,8 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.widget.Toast;
 import com.example.wkj_pc.fitnesslive.po.SysMessage;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
+import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import cn.jpush.android.api.JPushInterface;
 
 /**
@@ -22,16 +24,18 @@ public class SysMsgReceiver extends BroadcastReceiver {
         //String title = bundle.getString(JPushInterface.EXTRA_TITLE);
         String message = bundle.getString(JPushInterface.EXTRA_MESSAGE);
         //String extras = bundle.getString(JPushInterface.EXTRA_EXTRA);
-        SysMessage message1=new SysMessage();
-        message1.setContent("------gagag");
-        message1.setFrom("server");
         if (!TextUtils.isEmpty(message)){
             try{
                 SysMessage sysMessage = GsonUtils.getGson().fromJson(message, SysMessage.class);
+                sysMessage.save();
             }catch (Exception e){
                 e.printStackTrace();
             }
-            message1.save();
+        }
+        ToastUtils.showToast(context,"tttt", Toast.LENGTH_LONG);
+        SysMessage first = SysMessage.findFirst(SysMessage.class);
+        if (null!=first){
+            ToastUtils.showToast(context,first.getContent()+"tttt", Toast.LENGTH_LONG);
         }
     }
 }

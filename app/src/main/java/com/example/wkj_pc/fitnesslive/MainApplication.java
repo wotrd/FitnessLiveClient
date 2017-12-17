@@ -39,7 +39,7 @@ public class MainApplication extends Application {
         LitePal.initialize(getApplicationContext());
         LitePal.getDatabase();
         //极光推送注册
-        JPushInterface.setDebugMode(true);
+        //JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
         //注册网络广播监听事件
         IntentFilter filter=new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE");

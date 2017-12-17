@@ -12,6 +12,7 @@ import org.litepal.crud.DataSupport;
 public class SysMessage extends DataSupport{
 
     private int smid;
+    private String title;
     private String content;
     private String from;
     private String to;
@@ -19,8 +20,16 @@ public class SysMessage extends DataSupport{
     private int isRead;
     private String owner;   //查看是全部还是个人
     private String time;
-    private boolean result;
+    private String result;
     private int uid;
+
+    public String getTitle() {
+        return this.title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public int getSmid() {
         return this.smid;
@@ -86,11 +95,11 @@ public class SysMessage extends DataSupport{
         this.time = time;
     }
 
-    public boolean isResult() {
+    public String  getResult() {
         return this.result;
     }
 
-    public void setResult(boolean result) {
+    public void setResult(String result) {
         this.result = result;
     }
 
