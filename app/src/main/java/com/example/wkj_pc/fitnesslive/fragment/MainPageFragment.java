@@ -28,12 +28,14 @@ import com.example.wkj_pc.fitnesslive.activity.MainActivity;
 import com.example.wkj_pc.fitnesslive.activity.SysMessageActivity;
 import com.example.wkj_pc.fitnesslive.adapter.HomeLiveVideoShowAdapter;
 import com.example.wkj_pc.fitnesslive.po.LiveTheme;
+import com.example.wkj_pc.fitnesslive.po.SysMessage;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.ThreadPoolExecutorUtils;
 import com.google.gson.reflect.TypeToken;
+import org.litepal.crud.DataSupport;
 import java.io.IOException;
 import java.util.List;
 import java.util.Timer;
@@ -58,7 +60,6 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
     private Handler handler= new Handler(){
         @Override
         public void handleMessage(Message msg) {
-
             super.handleMessage(msg);
             switch (msg.what){
                 case 1:     //跟新主要上直播的用户
@@ -104,6 +105,7 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
         },0,2*60*1000);
         timer.schedule(timerTask,0,500);
         setSysMessageShow();
+
     }
 
     @Override
@@ -195,7 +197,11 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
                 }
                 break;
             case R.id.home_message_receive_btn:     //打开系统消息处理activity
-                startActivity(new Intent(getActivity(), SysMessageActivity.class));
+                if (null==MainApplication.loginUser) {
+                    startActivity(new Intent(getActivity(), LoginActivity.class));
+                }else {
+                    startActivity(new Intent(getActivity(), SysMessageActivity.class));
+                }
                 break;
             case R.id.home_user_search_img_view:    //用户直播搜索框
                 startActivity(new Intent(getActivity(), HomeSearchActivity.class));
@@ -207,18 +213,23 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
                 break;
         }
     }
-    /*设置系统消息显示*/
+
+    /**设置系统消息显示*/
     private void setSysMessageShow() {
-        int count = 3;
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.icon_action_message_receiver)
-                .copy(Bitmap.Config.ARGB_8888, true);
-        if (count < 1) {
-            homeMessageReceiverBtn.setImageBitmap(bitmap);
-        } else {
-            Bitmap showBitmap = BitmapUtils.decorateBitmapWithNums(bitmap, getActivity(), count);
-            homeMessageReceiverBtn.setImageBitmap(showBitmap);
+        if (MainApplication.loginUser!=null){
+            List<SysMessage> messageSList = DataSupport.where("isread = ?", "0").
+                    order("time").find(SysMessage.class);
+            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.icon_action_message_receiver)
+                    .copy(Bitmap.Config.ARGB_8888, true);
+            if (null == messageSList || messageSList.size() < 1) {
+                homeMessageReceiverBtn.setImageBitmap(bitmap);
+            } else {
+                Bitmap showBitmap = BitmapUtils.decorateBitmapWithNums(bitmap, getActivity(), messageSList.size());
+                homeMessageReceiverBtn.setImageBitmap(showBitmap);
+            }
         }
     }
+
     @Override
     public void onDestroy() {
         super.onDestroy();

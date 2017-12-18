@@ -26,12 +26,17 @@ import com.example.wkj_pc.fitnesslive.activity.MainActivity;
 import com.example.wkj_pc.fitnesslive.activity.OwnUploadVideoActivity;
 import com.example.wkj_pc.fitnesslive.activity.SysMessageActivity;
 import com.example.wkj_pc.fitnesslive.activity.UserInfoEditActivity;
+import com.example.wkj_pc.fitnesslive.po.SysMessage;
 import com.example.wkj_pc.fitnesslive.service.LiveService;
 import com.example.wkj_pc.fitnesslive.service.LoginService;
 import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
+
+import org.litepal.crud.DataSupport;
+
+import java.util.List;
 import java.util.Set;
 import cn.jpush.android.api.JPushInterface;
 import cn.jpush.android.api.TagAliasCallback;
@@ -61,7 +66,6 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
     private SharedPreferences relativeUsershowfragtype;
     private LinearLayout ownUserInfoMyAttentionLinearLayout;
     private LinearLayout ownUserInfoMyFansLinearLayout;
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,20 +106,21 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
         ownUserInfoMyFansLinearLayout.setOnClickListener(this);
         return view;
     }
-    /*设置系统消息*/
-    private void initMessageReceiver() {
-        int count = 3;
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.icon_action_message_receiver)
-                .copy(Bitmap.Config.ARGB_8888, true);
-        if (count < 1) {
-            ownMessageReceiverBtn.setImageBitmap(bitmap);
-        } else {
-            Bitmap showBitmap = BitmapUtils.decorateBitmapWithNums(bitmap, getActivity(), count);
-            ownMessageReceiverBtn.setImageBitmap(showBitmap);
+    /*设置系统消息显示*/
+    private void setSysMessageShow() {
+        if (null!=MainApplication.loginUser){
+            List<SysMessage> messageSList = DataSupport.where("isread = ?", "0").
+                    order("time").find(SysMessage.class);
+            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.icon_action_message_receiver)
+                    .copy(Bitmap.Config.ARGB_8888, true);
+            if (null == messageSList || messageSList.size() < 1) {
+                ownMessageReceiverBtn.setImageBitmap(bitmap);
+            } else {
+                Bitmap showBitmap = BitmapUtils.decorateBitmapWithNums(bitmap, getActivity(), messageSList.size());
+                ownMessageReceiverBtn.setImageBitmap(showBitmap);
+            }
         }
     }
-    /*设置系统消息显示*/
-    private void setSysMessageShow() {}
 
     @Override
     public void onClick(View v) {
@@ -163,7 +168,12 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                 tran.commit();
                 break;
             case R.id.own_message_receive_btn:  // 跳转去处理系统的通知消息
-                startActivity(new Intent(getActivity(), SysMessageActivity.class));
+                if (null==MainApplication.loginUser)
+                {
+                    startActivity(new Intent(getActivity(),LoginActivity.class));
+                }else {
+                    startActivity(new Intent(getActivity(), SysMessageActivity.class));
+                }
                 break;
             case R.id.own_user_info_destroy_linearlayout:   //退出登录
                 if (null==MainApplication.loginUser)
@@ -240,8 +250,9 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
             ownFansNum.setText((null==MainApplication.loginUser.getFansnum())?"0":
                     MainApplication.loginUser.getFansnum()+"");
         }
-        setSysMessageShow();
-        initMessageReceiver();
+        if (null!=MainApplication.loginUser){
+            setSysMessageShow();
+        }
     }
 
     @Override

@@ -26,6 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/own_message_receive_btn"
+            android:src="@drawable/icon_action_message_receiver"
             android:layout_marginTop="10dp"
             android:layout_gravity="right"
             android:layout_marginRight="10dp"
@@ -72,7 +73,6 @@
                         android:layout_height="wrap_content"
                         android:text="昵称：小灰灰"
                         android:textSize="20sp" />
-
                     <TextView
                         android:id="@+id/own_account"
                         android:layout_width="wrap_content"
