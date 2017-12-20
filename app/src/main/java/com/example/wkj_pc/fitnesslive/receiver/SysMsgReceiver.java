@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import com.example.wkj_pc.fitnesslive.po.SysMessage;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import cn.jpush.android.api.JPushInterface;
 
 /**
@@ -25,6 +29,7 @@ public class SysMsgReceiver extends BroadcastReceiver {
         if (!TextUtils.isEmpty(message)){
             try{
                 SysMessage sysMessage = GsonUtils.getGson().fromJson(message, SysMessage.class);
+                sysMessage.setTime(new Date().getTime()+"");
                 sysMessage.save();
             }catch (Exception e){
                 e.printStackTrace();
