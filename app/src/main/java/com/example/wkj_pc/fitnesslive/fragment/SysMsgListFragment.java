@@ -1,6 +1,7 @@
 package com.example.wkj_pc.fitnesslive.fragment;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -31,13 +32,19 @@ public class SysMsgListFragment extends Fragment {
                 find(SysMessage.class);
     }
     @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_sys_msg_list, container, false);
         RecyclerView msgs = view.findViewById(R.id.fragment_sys_msg_recycler_view);
         LinearLayoutManager manager=new LinearLayoutManager(getActivity());
+        FragmentManager fragmentManager = getFragmentManager();
         msgs.setLayoutManager(manager);
-        SysMessageListAdapter adapter=new SysMessageListAdapter(messageList,getActivity());
+        SysMessageListAdapter adapter=new SysMessageListAdapter(messageList,getActivity(),fragmentManager);
         msgs.setAdapter(adapter);
         ImageView backimg = view.findViewById(R.id.fragment_sys_msg_back_img_view);
         backimg.setOnClickListener(new View.OnClickListener() {
