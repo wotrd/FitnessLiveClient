@@ -1,5 +1,6 @@
 package com.example.wkj_pc.fitnesslive.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -18,15 +19,23 @@ import java.util.List;
 
 public class SysMessageListAdapter extends RecyclerView.Adapter<SysMessageListAdapter.ViewHolder>{
     private final List<SysMessage> messageList;
+    private final Context context;
 
-    public SysMessageListAdapter(List<SysMessage> messageList) {
+    public SysMessageListAdapter(List<SysMessage> messageList, Context context) {
         this.messageList=messageList;
+        this.context=context;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate
                 (R.layout.fragment_sys_msg_list_item, parent, false);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         return new ViewHolder(view);
     }
 

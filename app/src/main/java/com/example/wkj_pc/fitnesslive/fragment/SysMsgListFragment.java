@@ -37,7 +37,7 @@ public class SysMsgListFragment extends Fragment {
         RecyclerView msgs = view.findViewById(R.id.fragment_sys_msg_recycler_view);
         LinearLayoutManager manager=new LinearLayoutManager(getActivity());
         msgs.setLayoutManager(manager);
-        SysMessageListAdapter adapter=new SysMessageListAdapter(messageList);
+        SysMessageListAdapter adapter=new SysMessageListAdapter(messageList,getActivity());
         msgs.setAdapter(adapter);
         ImageView backimg = view.findViewById(R.id.fragment_sys_msg_back_img_view);
         backimg.setOnClickListener(new View.OnClickListener() {
