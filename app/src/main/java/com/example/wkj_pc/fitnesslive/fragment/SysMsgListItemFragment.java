@@ -13,16 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.wkj_pc.fitnesslive.R;
-import com.example.wkj_pc.fitnesslive.adapter.SysMessageListAdapter;
 import com.example.wkj_pc.fitnesslive.po.SysMessage;
-import com.github.faucamp.simplertmp.packets.Data;
-
 import org.litepal.crud.DataSupport;
-
-import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
