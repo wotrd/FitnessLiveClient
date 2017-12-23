@@ -109,8 +109,8 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        设置页面布局方向，当该window对用户可见时，让设备屏幕处于高亮（bright）状态。
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_live);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         getAttentionsUrl=getResources().getString(R.string.app_get_attention_user_info_by_account_url);
         closeLiveStatusUrl = getResources().getString(R.string.app_customer_live_closeLiveStatusUrl);

@@ -1,5 +1,6 @@
 package com.example.wkj_pc.fitnesslive.tools;
 
+import android.text.TextUtils;
 import android.util.Base64;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -38,8 +39,14 @@ public class LoginUtils {
     public static void longRequestServer(String path,String account,String cookie, Callback callback) {
         RequestBody body=new FormBody.Builder()
                 .add("account",account).build();
-        Request request = new Request.Builder().url(path)
+        Request request=null;
+        if (TextUtils.isEmpty(cookie)){
+            request= new Request.Builder().url(path)
+                    .post(body).build();
+        }else {
+            request = new Request.Builder().url(path)
                     .post(body).addHeader("cookie",cookie).build();
+        }
         OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
     }
     /**退出登录请求*/

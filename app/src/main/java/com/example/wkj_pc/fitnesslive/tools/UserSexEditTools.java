@@ -117,6 +117,6 @@ public class UserSexEditTools implements View.OnClickListener{
     public void show(){
         View rootView=((ViewGroup)context.findViewById(content)).getChildAt(0);
         popupWindow.setClippingEnabled(false);
-        popupWindow.showAtLocation(rootView, Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0);
+        popupWindow.showAtLocation(rootView, Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0, -70);
     }
 }

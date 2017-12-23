@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
@@ -50,6 +51,7 @@ public class UserInfoEditActivity extends TakePhotoActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_info_edit);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         updateUserInfoUrl=getResources().getString(R.string.app_update_user_info_url);
         amatarImageView = (CircleImageView) findViewById(R.id.about_user_edit_amatar_img_view);

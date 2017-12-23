@@ -3,22 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="@drawable/sys_gray_bg"
     android:layout_height="match_parent">
-        <android.support.v7.widget.Toolbar
-            android:layout_width="match_parent"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            android:id="@+id/login_toolbar"
-            android:background="@color/colorWhite"
-            android:backgroundTintMode="add"
-            android:layout_height="?attr/actionBarSize">
-        </android.support.v7.widget.Toolbar>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        />
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/login_toolbar"
+        android:backgroundTintMode="add"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:id="@+id/activity_user_login_back_img_view"
+            android:src="@mipmap/icon_about_us_finish_img"
+            />
+    </android.support.v7.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingTop="10dp">
-
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="350dp"
@@ -31,7 +40,6 @@
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
             android:orientation="vertical">
-
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"

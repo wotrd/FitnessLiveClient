@@ -3,6 +3,7 @@ package com.example.wkj_pc.fitnesslive.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.R;
@@ -14,6 +15,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_player);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         String videourl = getIntent().getStringExtra("videourl");
         String thumbnailurl = getIntent().getStringExtra("thumbnailurl");
         final JCVideoPlayerStandard jcVideoPlayerStandard = (JCVideoPlayerStandard) findViewById(R.id.videoplayer);

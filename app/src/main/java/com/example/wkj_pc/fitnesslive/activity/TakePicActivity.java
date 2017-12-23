@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
+
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.tools.CustomHelper;
 import com.jph.takephoto.app.TakePhotoActivity;
@@ -19,6 +21,7 @@ public class TakePicActivity extends TakePhotoActivity {
         super.onCreate(savedInstanceState);
         View contentView= LayoutInflater.from(this).inflate(R.layout.activity_take_pic,null);
         setContentView(contentView);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         customHelper=CustomHelper.of(contentView);
     }
 

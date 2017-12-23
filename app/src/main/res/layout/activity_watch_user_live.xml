@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.wkj_pc.fitnesslive.activity.VideoPlayerActivity">
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorToolbar"
+        />
     <io.vov.vitamio.widget.VideoView
         android:id="@+id/watch_video_view"
         android:layout_width="match_parent"

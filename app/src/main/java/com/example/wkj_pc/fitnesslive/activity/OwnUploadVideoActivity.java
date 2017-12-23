@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.example.wkj_pc.fitnesslive.MainApplication;
@@ -23,6 +24,9 @@ import butterknife.OnClick;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
+/**
+ *用户视频显示
+ */
 
 public class OwnUploadVideoActivity extends AppCompatActivity {
 
@@ -41,6 +45,7 @@ public class OwnUploadVideoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_own_upload_video);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         getUploadVideoUrl = getResources().getString(R.string.app_customer_live_getUserUploadVideoUrl);
         if (null !=MainApplication.loginUser){

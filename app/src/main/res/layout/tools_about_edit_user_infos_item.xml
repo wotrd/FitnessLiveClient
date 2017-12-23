@@ -11,6 +11,10 @@
         android:id="@+id/tools_user_sex_edit_pop_layout"
         android:gravity="center"
         android:orientation="vertical" >
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorToolbar"
+            android:layout_height="20dp"/>
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"

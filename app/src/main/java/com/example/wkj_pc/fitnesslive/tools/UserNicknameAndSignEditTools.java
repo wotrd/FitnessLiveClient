@@ -56,7 +56,7 @@ public class UserNicknameAndSignEditTools implements View.OnClickListener{
             dataEditText.setText(edithint);
             dataEditText.setSelection(edithint.length());
         }
-        popupWindow = new PopupWindow(contentView, ViewPager.LayoutParams.MATCH_PARENT,ViewPager.LayoutParams.MATCH_PARENT,true);
+        popupWindow = new PopupWindow(contentView, ViewPager.LayoutParams.MATCH_PARENT,ViewPager.LayoutParams.FILL_PARENT,true);
         popupWindow.setAnimationStyle(R.style.popwin_anim_style);
         ColorDrawable dw = new ColorDrawable(context.getResources().getColor(R.color.bottom_menu));
         popupWindow.setBackgroundDrawable(dw);
@@ -64,7 +64,7 @@ public class UserNicknameAndSignEditTools implements View.OnClickListener{
     public void show(){
         View rootView=((ViewGroup)context.findViewById(android.R.id.content)).getChildAt(0);
         popupWindow.setClippingEnabled(false);
-        popupWindow.showAtLocation(rootView, Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0);
+        popupWindow.showAtLocation(rootView, Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0, -70);
     }
  
     @Override

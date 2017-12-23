@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 import com.example.wkj_pc.fitnesslive.R;
@@ -28,7 +29,9 @@ import java.util.concurrent.ExecutorService;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-
+/**
+ * 本用户视频显示
+ */
 public class UploadNativeVideoActivity extends AppCompatActivity {
 
     List<UploadVideo> nativeVideos;
@@ -53,6 +56,7 @@ public class UploadNativeVideoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_native_video);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE)
                 !=PackageManager.PERMISSION_GRANTED){

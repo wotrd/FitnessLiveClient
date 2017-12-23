@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.wkj_pc.fitnesslive.activity.VideoPlayerActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
     <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
         android:id="@+id/videoplayer"
         android:layout_width="match_parent"
