@@ -47,7 +47,6 @@ public class BottomMenuUtils implements  View.OnClickListener,View.OnTouchListen
         });
         mMenuView.setOnTouchListener(this);
     }
-
     /**
      * 显示菜单
      */
@@ -56,7 +55,6 @@ public class BottomMenuUtils implements  View.OnClickListener,View.OnTouchListen
         View rootView=((ViewGroup)mContext.findViewById(android.R.id.content)).getChildAt(0);
         popupWindow.showAtLocation(rootView, Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0);
     }
-
     @Override
     public void onClick(View view) {
         popupWindow.dismiss();
@@ -69,7 +67,6 @@ public class BottomMenuUtils implements  View.OnClickListener,View.OnTouchListen
                 break;
         }
     }
-
     @Override
     public boolean onTouch(View arg0, MotionEvent event) {
         int height = mMenuView.findViewById(R.id.pop_layout).getTop();
@@ -81,5 +78,4 @@ public class BottomMenuUtils implements  View.OnClickListener,View.OnTouchListen
         }
         return true;
     }
-
 }

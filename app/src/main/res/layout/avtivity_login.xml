@@ -29,7 +29,6 @@
         android:gravity="center"
         android:paddingTop="10dp">
         <ImageView
-            android:id="@+id/imageView2"
             android:layout_width="350dp"
             android:layout_height="120dp"
             android:src="@drawable/login_logo" />
@@ -47,7 +46,6 @@
                 android:id="@+id/account_linearlayout"
                 android:background="@drawable/shape_nostroke_bg_btn"
                 android:gravity="center">
-
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="24dp"
@@ -180,73 +178,17 @@
                 />
           </LinearLayout>
         </LinearLayout>
-
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="bottom">
-
-        <ImageView
-            android:id="@+id/open_slide_select_login_img"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:src="@drawable/open_slide_login_btn" />
-        <!--滑出视图-->
-        <LinearLayout
-            android:id="@+id/show_slide_out_img"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:id="@+id/close_select_slide_btn"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/open_slide_login_btn" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-                <ImageView
-                    android:id="@+id/qq_login_view"
-                    android:layout_width="50dp"
-                    android:padding="5dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_height="70dp"
-                    android:onClick="qqLogin"
-                    android:src="@drawable/qq_login_btn" />
-                <ImageView
-                    android:id="@+id/wechat_login_view"
-                    android:layout_width="50dp"
-                    android:padding="5dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_height="50dp"
-                    android:onClick="wechatLogin"
-                    android:src="@drawable/wechat_login_btn" />
-                <ImageView
-                    android:id="@+id/weibo_login_view"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:onClick="weboLogin"
-                    android:padding="5dp"
-                    android:src="@drawable/weibo_login_btn" />
-            </LinearLayout>
-        </LinearLayout>
+    <View
+        android:id="@+id/activity_login_user_bottom_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/open_slide_login_btn"
+        />
     </android.support.design.widget.CoordinatorLayout>
 
 </LinearLayout>

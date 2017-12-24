@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -26,11 +27,12 @@ import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.service.LoginService;
 import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
+import com.example.wkj_pc.fitnesslive.tools.BottomMenuUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LogUtils;
+import com.example.wkj_pc.fitnesslive.tools.LoginBottomSelectTools;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
-import com.mancj.slideup.SlideUp;
 import com.sina.weibo.sdk.WbSdk;
 import com.sina.weibo.sdk.auth.AuthInfo;
 import com.sina.weibo.sdk.auth.Oauth2AccessToken;
@@ -69,24 +71,15 @@ public class LoginActivity extends AppCompatActivity {
     EditText mobileNum;
     @BindView(R.id.edit_password)
     EditText editPassword;
-    @BindView(R.id.open_slide_select_login_img)
-    ImageView openSlideSelectLoginImg;
-    @BindView(R.id.imageView)
-    ImageView imageView;
-    @BindView(R.id.close_select_slide_btn)
-    LinearLayout closeSelectSlideBtn;
-    @BindView(R.id.qq_login_view)
-    ImageView qqLoginView;
-    @BindView(R.id.wechat_login_view)
-    ImageView wechatLoginView;
-    @BindView(R.id.weibo_login_view)
-    ImageView weiboLoginView;
-    @BindView(R.id.show_slide_out_img)
+
     LinearLayout showSlideOutImg;
     @BindView(R.id.account_linearlayout)
     LinearLayout accountLinearlayout;
     @BindView(R.id.password_linearlayout)
     LinearLayout passwordLinearlayout;
+    @BindView(R.id.activity_login_user_bottom_image_view)
+    View activityLoginUserBottomImageView;
+
     private String loginUrl;
     private Tencent mTencent;
     private User user;
@@ -124,9 +117,8 @@ public class LoginActivity extends AppCompatActivity {
         cookieSp = getSharedPreferences("cookie", MODE_PRIVATE);
         editor = cookieSp.edit();
         loginUrl = getString(R.string.app_login_url);
-        initSlideUp();
+        //   initSlideUp();
         initListener();
-
     }
 
     /**
@@ -146,7 +138,7 @@ public class LoginActivity extends AppCompatActivity {
     /**
      * 响应微博图片点击登录
      */
-    public void weboLogin(View view) {
+    public void weboLogin() {
         loginType = "weibo";
         AuthInfo mAuthInfo = new AuthInfo(this, com.example.wkj_pc.fitnesslive.weiboapi.Constants.APP_KEY,
                 com.example.wkj_pc.fitnesslive.weiboapi.Constants.REDIRECT_URL,
@@ -157,12 +149,34 @@ public class LoginActivity extends AppCompatActivity {
         mSsoHandler.authorize(new MyWiboAuthListener());
 
     }
-    /**
-     * 返回登录
-     */
-    @OnClick(R.id.activity_user_login_back_img_view)
-    public void onViewClicked() {
-        finish();
+
+    @OnClick({R.id.activity_user_login_back_img_view, R.id.activity_login_user_bottom_image_view})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.activity_user_login_back_img_view:
+                finish();
+                break;
+            case R.id.activity_login_user_bottom_image_view:
+               getWindow().setBackgroundDrawable( new ColorDrawable(getResources().getColor(R.color.bottom_menu)));
+               LoginBottomSelectTools bottomMenuUtils=new LoginBottomSelectTools(this, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        switch (v.getId()) {
+                            case R.id.wechat_login_view:
+                                wechatLogin();
+                                break;
+                            case R.id.qq_login_view:
+                                qqLogin();
+                                break;
+                            case R.id.weibo_login_view:
+                                weboLogin();
+                                break;
+                        }
+                    }
+                });
+                bottomMenuUtils.show();
+                break;
+        }
     }
 
 
@@ -234,7 +248,7 @@ public class LoginActivity extends AppCompatActivity {
     /**
      * 响应微信图片点击进行登录
      */
-    public void wechatLogin(View view) {
+    public void wechatLogin() {
         IWXAPI wxapi = WXAPIFactory.createWXAPI(this, APPID, true);
         if (!wxapi.isWXAppInstalled()) {
             ToastUtils.showToast(this, "您还未安装微信客户端", Toast.LENGTH_SHORT);
@@ -377,8 +391,8 @@ public class LoginActivity extends AppCompatActivity {
         }
     };
 
-    /* 响应qq图片点击进行登录 */
-    public void qqLogin(View view) {
+    /* 响应弹窗qq图片点击进行登录 */
+    public void qqLogin() {
         loginType = "qq";
         /*进行权限请求*/
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_NETWORK_STATE) !=
@@ -539,41 +553,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
-    /**
-     * 设置第三方滑动view
-     */
-    private void initSlideUp() {
-        final SlideUp slideUp = new SlideUp(showSlideOutImg);
-        slideUp.hideImmediately();
-        closeSelectSlideBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //openSlideSelectLoginImg.setVisibility(View.VISIBLE);
-                slideUp.animateOut();
-            }
-        });
-        openSlideSelectLoginImg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                slideUp.animateIn();
-                openSlideSelectLoginImg.setVisibility(View.GONE);
-            }
-        });
-        slideUp.setSlideListener(new SlideUp.SlideListener() {
-            @Override
-            public void onSlideDown(float v) {
-            }
-
-            @Override
-            public void onVisibilityChanged(int i) {
-                if (i == View.GONE) {
-                    openSlideSelectLoginImg.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-    }
-
     /**
      * 处理菜单的点击事件
      */
