@@ -13,7 +13,7 @@
         android:orientation="vertical" >
         <View
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="30dp"
             android:background="@color/colorToolbar"
             />
         <android.support.v7.widget.Toolbar
@@ -28,7 +28,7 @@
                 android:layout_gravity="left"
                 android:text="取消"
                 android:textSize="20dp"
-                android:textColor="#f5f5f5"
+                android:textColor="#b4b1b1"
                 android:id="@+id/tools_user_sex_edit_cancel_text_view"
                 />
             <TextView
@@ -47,14 +47,14 @@
                 android:layout_gravity="right"
                 android:text="确定"
                 android:textSize="20dp"
-                android:textColor="#0598f4"
+                android:textColor="#ffffff"
                 android:layout_marginRight="10dp"
                 >
             </TextView>
         </android.support.v7.widget.Toolbar>
         <View
             android:layout_width="match_parent"
-            android:layout_height="15dp"
+            android:layout_height="5dp"
             android:background="#f2ebeb"
             />
             <LinearLayout
@@ -85,13 +85,12 @@
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#f2ebeb"
+                android:layout_height="2dp"
+                android:background="#f2f2f2"
                 />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:background="@color/color_white"
-                android:layout_marginTop="1dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/tools_user_sex_edit_woman_select_linearlayout"
                 android:orientation="horizontal"

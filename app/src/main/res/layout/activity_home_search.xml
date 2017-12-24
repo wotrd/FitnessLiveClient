@@ -35,7 +35,7 @@
                 android:src="@mipmap/icon_home_user_search_black_img"
                 />
             <EditText
-                android:id="@+id/user_login_mobile_num_edit_text"
+                android:id="@+id/activity_home_user_search_input_edit_text"
                 android:layout_width="0dp"
                 android:textSize="18sp"
                 android:layout_height="38sp"
@@ -43,8 +43,8 @@
                 android:singleLine="true"
                 android:ellipsize="end"
                 android:background="@null"
-                android:imeOptions="actionSend"
-                android:hint="请输入关键字"
+                android:imeOptions="actionSearch"
+                android:hint="请输入昵称/账户"
                 android:maxLines="1" />
         </LinearLayout>
         <TextView
@@ -53,6 +53,7 @@
             android:text="取消"
             android:layout_weight="2"
             android:textSize="24sp"
+            android:id="@+id/activity_home_user_search_cancel_text_view"
             android:textColor="@color/color_white"
             android:layout_marginTop="5dp"
             android:gravity="center"
