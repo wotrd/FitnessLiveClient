@@ -9,7 +9,7 @@
     tools:context="com.example.wkj_pc.fitnesslive.activity.HomeSearchActivity">
     <View
         android:layout_width="match_parent"
-        android:layout_height="24dp"
+        android:layout_height="20dp"
         android:background="@color/colorToolbar"
         />
     <!--搜索框显示-->
@@ -20,15 +20,19 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="8"
+            android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@drawable/shape_home_user_search_circle_bg"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
             android:id="@+id/account_linearlayout"
             android:gravity="center">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/activity_home_user_search_back_img_view"
-                android:src="@mipmap/icon_about_us_finish_img"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_home_user_search_black_img"
                 />
             <EditText
                 android:id="@+id/user_login_mobile_num_edit_text"
@@ -37,23 +41,21 @@
                 android:layout_height="38sp"
                 android:layout_weight="8"
                 android:singleLine="true"
-                android:background="@null"
                 android:ellipsize="end"
+                android:background="@null"
                 android:imeOptions="actionSend"
                 android:hint="请输入关键字"
                 android:maxLines="1" />
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@mipmap/icon_user_destroy_login_img"
-                />
         </LinearLayout>
-        <ImageView
+        <TextView
             android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            android:src="@mipmap/icon_home_user_search_img"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_weight="2"
+            android:textSize="24sp"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
             />
     </LinearLayout>
     <android.support.v7.widget.RecyclerView
