@@ -260,4 +260,15 @@ public class LoginUtils {
                 .build();
         OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
     }
+    /** 根据输入搜索用户*/
+    public static void searchUser(String searchUserUrl,String searchText,Callback callback) {
+        RequestBody body=new FormBody.Builder()
+                .add("searchtext",searchText)
+                .build();
+        Request request=new Request.Builder()
+                .url(searchUserUrl)
+                .post(body)
+                .build();
+        OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
+    }
 }

@@ -29,6 +29,7 @@
     <string name="app_get_attention_user_info_url">http://192.168.191.1/customer/login/getAttentionUserInfo</string>
     <string name="app_get_attention_user_info_by_account_url">http://192.168.191.1/customer/login/getAttentionUserInfoByAccount</string>
     <string name="app_destroy_url">http://192.168.191.1/customer/login/quitLogin</string>
+    <string name="app_customer_login_searchUser">http://192.168.191.1/customer/login/customerSearchUser</string>
     <string name="app_update_user_info_url">http://192.168.191.1/customer/login/updateUserInfo</string>
     <string name="app_customer_live_updateLiveUserStyle">http://192.168.191.1/customer/live/updateLiveUserStyle</string>
     <string name="app_customer_live_getHomeLiveUserInfos_url">http://192.168.191.1/customer/live/getHomeLiveUserInfos</string>
