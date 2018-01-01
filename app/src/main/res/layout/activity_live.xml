@@ -102,6 +102,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
                 android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:imeOptions="actionSend"
                 android:textColor="@color/colorStroke"
                 android:textColorHint="#f104f2da"
                 android:hint="@string/app_edit_comment_text"

@@ -10,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
@@ -77,8 +78,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
             Spinner changeBeautySpinner;
     @BindView(R.id.start_live_btn)      //开始直播按钮
             Button mPublishBtn;
-    @BindView(R.id.editText)        //聊天信息输入框
-            EditText editText;
+
     @BindView(R.id.swCam)           //切换摄像头
             ImageView mCameraSwitchBtn;
     @BindView(R.id.close_live_icon)     //关闭直播按钮
@@ -104,6 +104,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
     private List<User> watcherUsers;//观看人信息
     String getAttentionsUrl; //更新用户关注列表是用的地址
     private SharedPreferences spref;
+    private EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,6 +113,35 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_live);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
+        //聊天信息输入框
+        editText = (EditText) findViewById(R.id.editText);
+        editText.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode==KeyEvent.KEYCODE_ENTER && event.getAction()==KeyEvent.ACTION_UP){
+                    String editTextMsg = editText.getText().toString().trim();
+                    if (TextUtils.isEmpty(editTextMsg)){
+                        return false;
+                    }
+                    final LiveChattingMessage sendMsg=new LiveChattingMessage();
+                    sendMsg.setFrom(MainApplication.loginUser.getNickname());
+                    sendMsg.setContent(editTextMsg);
+                    sendMsg.setTo("server");
+                    sendMsg.setMid(0);
+                    sendMsg.setIntent(1);
+                    SimpleDateFormat format=new SimpleDateFormat("HH:mm:ss");
+                    sendMsg.setTime(format.format(new Date()));
+                    if (null!=baseWebSocket){
+                        baseWebSocket.send(GsonUtils.getGson().toJson(sendMsg));
+                    }else{
+                        getWebSocket(messageWebSocketUrl);
+                        baseWebSocket.send(GsonUtils.getGson().toJson(sendMsg));
+                    }
+                    editText.setText("");
+                }
+                return false;
+            }
+        });
         getAttentionsUrl=getResources().getString(R.string.app_get_attention_user_info_by_account_url);
         closeLiveStatusUrl = getResources().getString(R.string.app_customer_live_closeLiveStatusUrl);
         /** 获取websocket地址，设置聊天*/
