@@ -50,7 +50,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
     private TextView ownNickname;
     private TextView ownAccount;
     private TextView ownUserInfoMyAttention;
-    private TextView ownUserRank;
+    private ImageView ownUserRank;
     private TextView ownUserInfoGrade;
     private LinearLayout ownUserVideoLinearLayout;
     private LinearLayout ownUserInfoAboutUsLinearlayout;
@@ -90,7 +90,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
         ownAccount = (TextView) view.findViewById(R.id.own_account);
         ownUserInfoMyAttention = (TextView) view.findViewById(R.id.own_user_info_my_attention);
         ownFansNum = (TextView) view.findViewById(R.id.own_user_fansnum);
-        ownUserRank = (TextView) view.findViewById(R.id.icon_own_user_rank);
+        ownUserRank = (ImageView) view.findViewById(R.id.icon_own_user_rank);
         ownUserInfoGrade = (TextView) view.findViewById(R.id.own_user_info_grade);
         ownUserVideoLinearLayout = (LinearLayout) view.findViewById(R.id.own_user_video_linearlayout);
         ownUserVideoLinearLayout.setOnClickListener(this);
@@ -245,6 +245,13 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
             ownAccount.setText("账号："+MainApplication.loginUser.getAccount());
             ownUserInfoGrade.setText((null==MainApplication.loginUser.getGrade())?"0":
                     MainApplication.loginUser.getGrade().toString());
+            if (null!=MainApplication.loginUser){
+                if (MainApplication.loginUser.getGrade()>100){
+                 ownUserRank.setImageResource(R.mipmap.grade_huangjin);
+                }else if (MainApplication.loginUser.getGrade()>50){
+                    ownUserRank.setImageResource(R.mipmap.grade_baiyin);
+                }
+            }
             ownUserInfoMyAttention.setText((null==MainApplication.loginUser.getAttentionnum())?"0"
                     :MainApplication.loginUser.getAttentionnum()+"");
             ownFansNum.setText((null==MainApplication.loginUser.getFansnum())?"0":

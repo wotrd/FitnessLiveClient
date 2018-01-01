@@ -180,16 +180,17 @@
                     android:gravity="center|left"
                     android:layout_marginLeft="20dp"
                     android:text="等级" />
-                <TextView
+                <ImageView
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:textSize="24sp"
                     android:gravity="center"
                     android:layout_marginRight="15dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="right"
+                    android:padding="5dp"
+                    android:src="@mipmap/grade_qingtong"
                     android:id="@+id/icon_own_user_rank"
-                    android:text=">" />
+                    />
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
@@ -216,13 +217,13 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:textSize="24sp"
+                    android:textSize="16sp"
                     android:gravity="center"
                     android:layout_marginRight="15dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="right"
                     android:id="@+id/own_user_info_grade"
-                    android:text=">" />
+                    android:text="0" />
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
