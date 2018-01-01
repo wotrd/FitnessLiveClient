@@ -1,5 +1,6 @@
 package com.example.wkj_pc.fitnesslive.activity;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,23 +9,22 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.adapter.SearchUserShowAdapter;
+import com.example.wkj_pc.fitnesslive.po.Attention;
+import com.example.wkj_pc.fitnesslive.po.Fans;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.google.gson.reflect.TypeToken;
-
-import org.w3c.dom.Text;
-
 import java.io.IOException;
 import java.util.List;
-
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -60,6 +60,8 @@ public class HomeSearchActivity extends AppCompatActivity {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if (keyCode==KeyEvent.KEYCODE_ENTER && event.getAction()==KeyEvent.ACTION_UP){
+                    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), 0);
                     if (!TextUtils.isEmpty(input.getText().toString())){
                         searchUser(input.getText().toString());
                     }
@@ -100,5 +102,59 @@ public class HomeSearchActivity extends AppCompatActivity {
         showUserRecyclerView.setLayoutManager(manager);
         SearchUserShowAdapter adapter=new SearchUserShowAdapter(users, this);
         showUserRecyclerView.setAdapter(adapter);
+    }
+    @Override
+    protected void onDestroy() {
+        /** 在退出之前获取登录用户的信息*/
+        String longRequestUrl = getResources().getString(R.string.app_get_user_info_url);
+        LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(),
+                MainApplication.cookie, new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {}
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        String responseData = response.body().string();
+                        try {
+                            User loginUser = GsonUtils.getGson().fromJson(responseData, User.class);
+                            MainApplication.loginUser = loginUser;
+                        } catch (Exception e) {
+                            MainApplication.loginUser = null;
+                            e.printStackTrace();
+                        }
+                    }
+                });
+        /**  获取登录用户的关注和粉丝用户 */
+        String attentionUserUrl = getResources().getString(R.string.app_get_attention_user_info_url);
+        LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                try {
+                    List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
+                    }.getType());
+                    MainApplication.attentions = attentions;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        String fansUserUrl= getResources().getString(R.string.app_get_fans_user_info_url);
+        LoginUtils.getRelativeUserInfo(fansUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                try {
+                    List<Fans> fans = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Fans>>() {}.getType());
+                    MainApplication.fans = fans;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        super.onDestroy();
     }
 }

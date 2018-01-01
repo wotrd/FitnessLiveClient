@@ -5,6 +5,14 @@
     android:layout_height="50dp"
     android:id="@+id/activity_home_search_user_item_linearlayout"
     >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:id="@+id/activity_home_search_user_item_logo_image_view"
+        android:src="@mipmap/ic_amatar_img"
+        />
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -38,7 +46,7 @@
                     />
             </LinearLayout>
             <ImageView
-                android:id="@+id/activity_home_search_user_item_logo_image_view"
+                android:id="@+id/activity_home_search_user_item_add_attention_image_view"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"

@@ -204,7 +204,11 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
                 }
                 break;
             case R.id.home_user_search_img_view:    //用户直播搜索框
-                startActivity(new Intent(getActivity(), HomeSearchActivity.class));
+                if (null == MainApplication.loginUser){
+                    startActivity(new Intent(getActivity(),LoginActivity.class));
+                }else {
+                    startActivity(new Intent(getActivity(), HomeSearchActivity.class));
+                }
                 break;
             case R.id.home_personinfo_image_view:   //切换到个人中心fragment
                 FragmentTransaction tran = manager.beginTransaction();
