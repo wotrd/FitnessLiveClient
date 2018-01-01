@@ -1,5 +1,7 @@
 package com.example.wkj_pc.fitnesslive.activity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
@@ -8,12 +10,17 @@ import android.os.Environment;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
+import com.example.wkj_pc.fitnesslive.service.LiveService;
+import com.example.wkj_pc.fitnesslive.service.LoginService;
+import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
 import com.example.wkj_pc.fitnesslive.tools.BottomMenuUtils;
+import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.example.wkj_pc.fitnesslive.tools.UserNicknameAndSignEditTools;
@@ -30,8 +37,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Set;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.jpush.android.api.JPushInterface;
+import cn.jpush.android.api.TagAliasCallback;
 import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -46,28 +56,61 @@ public class UserInfoEditActivity extends TakePhotoActivity {
     private TakePhoto takePhoto=getTakePhoto();
     private Uri imageUri;
     String updateUserInfoUrl;
-
+    private Button backLoginBtn;
+    private String loginQuitUrl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_info_edit);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
+        loginQuitUrl=getResources().getString(R.string.app_destroy_url);
         updateUserInfoUrl=getResources().getString(R.string.app_update_user_info_url);
         amatarImageView = (CircleImageView) findViewById(R.id.about_user_edit_amatar_img_view);
         nickname = (TextView) findViewById(R.id.about_user_edit_nickname_text_view);
         account = (TextView) findViewById(R.id.about_user_edit_user_account_text_view);
         sex = (TextView) findViewById(R.id.about_user_edit_sex_text_view);
         personalSign = (TextView) findViewById(R.id.about_user_edit_person_sign_text_view);
+        backLoginBtn = (Button)findViewById(R.id.about_user_edit_person_back_login_button);
+
     }
 
     @OnClick({R.id.about_user_info_edit_back_text_view, R.id.about_user_edit_amatar_linearlayout,
             R.id.about_user_edit_nickname_linearlayout, R.id.about_user_edit_sex_linearlayout,
-            R.id.about_user_edit_person_sign_linearlayout})
+            R.id.about_user_edit_person_sign_linearlayout,R.id.about_user_edit_person_back_login_button,
+            R.id.about_user_edit_person_video_linearlayout})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.about_user_edit_person_video_linearlayout:
+                startActivity(new Intent(this,OwnUploadVideoActivity.class));
+                break;
+            case R.id.about_user_edit_person_back_login_button:
+                //退出登录
+                if (null==MainApplication.loginUser)
+                    return;
+                AlertDialogTools.showDialog(this, R.mipmap.icon_user_destroy_login, true, "确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                LoginUtils.toRequestQuitLogin(loginQuitUrl, GsonUtils.getGson().toJson(MainApplication.loginUser),
+                                        MainApplication.cookie);
+                            }
+                        }).start();
+                        stopService(new Intent(UserInfoEditActivity.this, LiveService.class));
+                        stopService(new Intent(UserInfoEditActivity.this, LoginService.class));
+                        MainApplication.loginUser=null;
+                        //退出极光推送
+                        JPushInterface.setAlias(UserInfoEditActivity.this, "", new TagAliasCallback() {
+                            @Override
+                            public void gotResult(int i, String s, Set<String> set) {}
+                        });
+                       finish();
+                    }
+                },"取消",null, "提醒","您将退出登录!");
+                break;
             case R.id.about_user_edit_sex_linearlayout:
-                getWindow().setBackgroundDrawable( new ColorDrawable(getResources().getColor(R.color.bottom_menu)));
                 UserSexEditTools userInfoEditTools=new UserSexEditTools(this,MainApplication.loginUser.getGender(),updateUserInfoUrl);
                 userInfoEditTools.show();
                 break;

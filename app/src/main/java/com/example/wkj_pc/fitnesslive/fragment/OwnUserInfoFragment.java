@@ -33,9 +33,7 @@ import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
-
 import org.litepal.crud.DataSupport;
-
 import java.util.List;
 import java.util.Set;
 import cn.jpush.android.api.JPushInterface;
@@ -121,7 +119,6 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
             }
         }
     }
-
     @Override
     public void onClick(View v) {
         switch(v.getId()){
@@ -175,43 +172,20 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                     startActivity(new Intent(getActivity(), SysMessageActivity.class));
                 }
                 break;
-            case R.id.own_user_info_destroy_linearlayout:   //退出登录
-                if (null==MainApplication.loginUser)
-                    return;
-                AlertDialogTools.showDialog(getActivity(), R.mipmap.icon_user_destroy_login, true, "确定", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                LoginUtils.toRequestQuitLogin(loginQuitUrl, GsonUtils.getGson().toJson(MainApplication.loginUser),
-                                        MainApplication.cookie);
-                            }
-                        }).start();
-                        getActivity().stopService(new Intent(getActivity(), LiveService.class));
-                        getActivity().stopService(new Intent(getActivity(), LoginService.class));
-                        amatarView.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.head_img));
-                        MainApplication.loginUser=null;
-                        //退出极光推送
-                        JPushInterface.setAlias(getActivity(), "", new TagAliasCallback() {
-                            @Override
-                            public void gotResult(int i, String s, Set<String> set) {}
-                        });
+            case R.id.own_user_info_destroy_linearlayout:   //清楚缓存
 
-                        ownNickname.setText("昵称：小灰灰");
-                        ownAccount.setText("账号：000000");
-                        ownUserInfoGrade.setText("0");
-                        ownUserInfoMyAttention.setText("0");
-                        ownFansNum.setText("0");
-                    }
-                },"取消",null, "提醒","您将退出登录!");
+
                 break;
             case R.id.own_user_video_linearlayout:   //个人视频
+
+
                 if (null==MainApplication.loginUser){
                     startActivity(new Intent(getActivity(),LoginActivity.class));
                 }else {
                     startActivity(new Intent(getActivity(),OwnUploadVideoActivity.class));
                 }
+
+
                 break;
             case R.id.own_user_info_amatar_account_linearlayout:
                 if (null==MainApplication.loginUser){
@@ -256,6 +230,14 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                     :MainApplication.loginUser.getAttentionnum()+"");
             ownFansNum.setText((null==MainApplication.loginUser.getFansnum())?"0":
                     MainApplication.loginUser.getFansnum()+"");
+        }else {
+            amatarView.setImageResource(R.drawable.head_img);
+            ownNickname.setText("昵称：小灰灰");
+            ownAccount.setText("账号：0000000");
+            ownUserInfoGrade.setText("0");
+            ownUserRank.setImageResource(R.mipmap.grade_qingtong);
+            ownUserInfoMyAttention.setText("0");
+            ownFansNum.setText("0");
         }
         if (null!=MainApplication.loginUser){
             setSysMessageShow();
