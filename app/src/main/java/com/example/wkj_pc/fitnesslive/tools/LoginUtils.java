@@ -271,4 +271,14 @@ public class LoginUtils {
                 .build();
         OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
     }
+    /** 获取系统视频 */
+    public static void  getSysVideo(String videoUrl,Callback callback) {
+        RequestBody body=new FormBody.Builder()
+                .build();
+        Request request=new Request.Builder()
+                .url(videoUrl)
+                .post(body)
+                .build();
+        OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
+    }
 }

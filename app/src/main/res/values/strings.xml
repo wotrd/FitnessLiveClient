@@ -20,6 +20,7 @@
     <string name="app_message_websocket_customer_live_url">ws://192.168.191.1/websocket/</string>
     <string name="app_longrequest_url">192.168.191.1</string>
     <string name="app_customer_register_user_url">http://192.168.191.1/customer/login/registerUser</string>
+    <string name="app_customer_get_sys_video">http://192.168.191.1/customer/login/getSysVideos</string>
     <string name="app_customer_user_update_password_url">http://192.168.191.1/customer/login/updateUserPassword</string>
     <string name="app_get_verifycode_url">http://192.168.191.1/customer/login/getVerifycode</string>
     <string name="app_login_url">http://192.168.191.1/customer/login/toLogin</string>
