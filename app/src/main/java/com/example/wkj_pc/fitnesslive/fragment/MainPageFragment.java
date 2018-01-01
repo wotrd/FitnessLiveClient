@@ -1,6 +1,5 @@
 package com.example.wkj_pc.fitnesslive.fragment;
 
-
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -11,6 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -33,14 +33,13 @@ import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
-import com.example.wkj_pc.fitnesslive.tools.ThreadPoolExecutorUtils;
 import com.google.gson.reflect.TypeToken;
 import org.litepal.crud.DataSupport;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.ExecutorService;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -56,6 +55,8 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
     private HomeLiveVideoShowAdapter liveadapter;
     private String getHomeLiveUserInfoUrl;
     private String getHomeLiveUserTagUrl;
+    private SwipeRefreshLayout refreshLayout;
+
     /** 接收到定时器的消息，跟新页面 */
     private Handler handler= new Handler(){
         @Override
@@ -65,6 +66,10 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
                 case 1:     //跟新主要上直播的用户
                     initRecyclerView();
                     break;
+                case 2:
+                    getLiveInfos(getHomeLiveUserTagUrl, getHomeLiveUserInfoUrl);
+                    refreshLayout.setRefreshing(false);
+                    initRecyclerView();
             }
         }
     };
@@ -112,6 +117,20 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main_page, container, false);
+        refreshLayout = (SwipeRefreshLayout)view.findViewById(R.id.home_user_live_show_swipe_refresh_layout);
+        refreshLayout.setColorScheme(android.R.color.holo_blue_bright, android.R.color.holo_green_light,
+                android.R.color.holo_orange_light, android.R.color.holo_red_light);
+        refreshLayout.setProgressViewEndTarget(false, 55);
+        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                //处理刷新业务
+                Message msg=Message.obtain();
+                msg.what=2;
+                handler.sendMessage(msg);
+            }
+        });
+
         homeMessageReceiverBtn = (ImageView) view.findViewById(R.id.home_message_receive_btn);
         homeMessageReceiverBtn.setOnClickListener(this);
         TextView ownInfo= (TextView) view.findViewById(R.id.home_personinfo_image_view);
@@ -131,6 +150,7 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
     /** 初始化直播用户的页面，头像风格和大图 */
     private void initRecyclerView() {
         if (null!=MainApplication.liveUsers && MainApplication.liveUsers.size()>0){
+            Collections.reverse(MainApplication.liveUsers);
             LinearLayoutManager lMamager=new LinearLayoutManager(getActivity());
             homeUserLiveShowRecyclerView.setLayoutManager(lMamager);
             liveadapter = new HomeLiveVideoShowAdapter(MainApplication.liveUsers,getActivity());
@@ -140,50 +160,42 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
     }
     /**  fragment创建的时候获取直播用户的信息 */
     private void getLiveInfos(final String getHomeLiveUserTagUrl, final String getHomeLiveUserInfoUrl) {
-        ExecutorService poolExecutors = ThreadPoolExecutorUtils.getCachedThreaPoolExecutors();
-        poolExecutors.execute(new Runnable() {
+        LoginUtils.longGetUserLiveTagFromServer(getHomeLiveUserTagUrl, new Callback() {
             @Override
-            public void run() {
-                LoginUtils.longGetUserLiveTagFromServer(getHomeLiveUserTagUrl, new Callback() {
-                    @Override
-                    public void onFailure(Call call, IOException e) {}
-                    @Override
-                    public void onResponse(Call call, Response response) throws IOException {
-                        String responseData = response.body().string();
-                        try{
-                            List<LiveTheme> liveTags = GsonUtils.getGson().fromJson(responseData,
-                                    new TypeToken<List<LiveTheme>>() {}.getType());
-                            MainApplication.liveThemes=liveTags;
-                        }catch (Exception e){
-                            e.printStackTrace();
-                        }
-                    }
-                });
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                try {
+                    List<LiveTheme> liveTags = GsonUtils.getGson().fromJson(responseData,
+                            new TypeToken<List<LiveTheme>>() {
+                            }.getType());
+                    MainApplication.liveThemes = liveTags;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
-        poolExecutors.execute(new Runnable() {
+        LoginUtils.longGetUserLiveInfosFromServer(getHomeLiveUserInfoUrl, new Callback() {
             @Override
-            public void run() {
-                LoginUtils.longGetUserLiveInfosFromServer(getHomeLiveUserInfoUrl, new Callback() {
-                    @Override
-                    public void onFailure(Call call, IOException e) {}
-                    @Override
-                    public void onResponse(Call call, Response response) throws IOException {
-                        String responseData = response.body().string();
-                        if (!TextUtils.isEmpty(responseData)){
-                            try{
-                                List<User> users= GsonUtils.getGson().fromJson(responseData,
-                                        new TypeToken<List<User>>(){}.getType());
-                                MainApplication.liveUsers = users;
-                            }catch (Exception e){
-                                e.printStackTrace();
-                            }
-                        }
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                if (!TextUtils.isEmpty(responseData)) {
+                    try {
+                        List<User> users = GsonUtils.getGson().fromJson(responseData,
+                                new TypeToken<List<User>>() {
+                                }.getType());
+                        MainApplication.liveUsers = users;
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
-                });
+                }
             }
         });
     }
+
     @Override
     public void onClick(View v) {
         switch(v.getId()){
@@ -233,7 +245,6 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
             }
         }
     }
-
     @Override
     public void onDestroy() {
         super.onDestroy();
