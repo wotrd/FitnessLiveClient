@@ -247,7 +247,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center|left"
                     android:layout_marginLeft="20dp"
-                    android:text="视频" />
+                    android:text="系统视频" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -259,40 +259,6 @@
                     android:text=">"
                     />
             </LinearLayout>
-         <!--   <View
-                android:layout_width="match_parent"
-                android:layout_height="7dp"
-                android:background="#f7f6f6" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_gravity="center"
-                    android:src="@mipmap/icon_own_user_light_img" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="8"
-                    android:layout_height="match_parent"
-                    android:gravity="center|left"
-                    android:layout_marginLeft="20dp"
-                    android:text="夜间模式" />
-                <com.kyleduo.switchbutton.SwitchButton
-                    android:id="@+id/own_user_dark_switch_button"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:textColorHint="#ccc"
-                    app:kswTintColor="@color/colorToolbar"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginTop="13dp"
-                    android:gravity="center_vertical"
-                    />
-            </LinearLayout>-->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp"
@@ -300,7 +266,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/own_user_info_destroy_linearlayout"
+                android:id="@+id/own_user_info_clear_cache_linearlayout"
                 android:orientation="horizontal">
                 <ImageView
                     android:layout_width="0dp"
@@ -315,7 +281,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center|left"
                     android:layout_marginLeft="20dp"
-                    android:text="注销" />
+                    android:text="清理缓存" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"

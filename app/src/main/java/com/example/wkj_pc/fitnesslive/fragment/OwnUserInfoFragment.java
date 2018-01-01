@@ -23,21 +23,14 @@ import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.activity.LoginActivity;
 import com.example.wkj_pc.fitnesslive.activity.MainActivity;
-import com.example.wkj_pc.fitnesslive.activity.OwnUploadVideoActivity;
 import com.example.wkj_pc.fitnesslive.activity.SysMessageActivity;
+import com.example.wkj_pc.fitnesslive.activity.SysVideoActivity;
 import com.example.wkj_pc.fitnesslive.activity.UserInfoEditActivity;
 import com.example.wkj_pc.fitnesslive.po.SysMessage;
-import com.example.wkj_pc.fitnesslive.service.LiveService;
-import com.example.wkj_pc.fitnesslive.service.LoginService;
-import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
+import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
-import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
-import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import org.litepal.crud.DataSupport;
 import java.util.List;
-import java.util.Set;
-import cn.jpush.android.api.JPushInterface;
-import cn.jpush.android.api.TagAliasCallback;
 import de.hdodenhof.circleimageview.CircleImageView;
 import static android.content.Context.MODE_PRIVATE;
 
@@ -94,7 +87,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
         ownUserVideoLinearLayout.setOnClickListener(this);
         ownUserInfoAboutUsLinearlayout = (LinearLayout) view.findViewById(R.id.own_user_info_about_us_linearlayout);
         ownUserInfoAboutUsLinearlayout.setOnClickListener(this);
-        ownUserInfoDestroyLinearLayout = (LinearLayout) view.findViewById(R.id.own_user_info_destroy_linearlayout);
+        ownUserInfoDestroyLinearLayout = (LinearLayout) view.findViewById(R.id.own_user_info_clear_cache_linearlayout);
         ownUserInfoDestroyLinearLayout.setOnClickListener(this);
         ownUserInfoAmatartAccountLinearLayout = (LinearLayout) view.findViewById(R.id.own_user_info_amatar_account_linearlayout);
         ownUserInfoAmatartAccountLinearLayout.setOnClickListener(this);
@@ -172,20 +165,12 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                     startActivity(new Intent(getActivity(), SysMessageActivity.class));
                 }
                 break;
-            case R.id.own_user_info_destroy_linearlayout:   //清楚缓存
-
-
+            case R.id.own_user_info_clear_cache_linearlayout:   //清楚缓存
+                DataSupport.deleteAll(User.class,"");
+                Glide.get(getActivity()).clearDiskCache();
                 break;
             case R.id.own_user_video_linearlayout:   //个人视频
-
-
-                if (null==MainApplication.loginUser){
-                    startActivity(new Intent(getActivity(),LoginActivity.class));
-                }else {
-                    startActivity(new Intent(getActivity(),OwnUploadVideoActivity.class));
-                }
-
-
+                startActivity(new Intent(getActivity(),SysVideoActivity.class));
                 break;
             case R.id.own_user_info_amatar_account_linearlayout:
                 if (null==MainApplication.loginUser){

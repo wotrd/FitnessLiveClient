@@ -49,6 +49,7 @@
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -58,8 +59,10 @@
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="1106140497" />
             </intent-filter>
         </activity>
@@ -143,6 +146,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.DaemonService" />
+
                 <category android:name="com.example.wkj_pc.fitnesslive" />
             </intent-filter>
         </service>
@@ -152,6 +156,7 @@
             android:enabled="true">
             <intent-filter android:priority="1000">
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
                 <category android:name="com.example.wkj_pc.fitnesslive" />
             </intent-filter>
             <intent-filter>
@@ -162,6 +167,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED" />
                 <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
@@ -174,6 +180,7 @@
             android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="cn.jpush.android.ui.PushActivity" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.example.wkj_pc.fitnesslive" />
             </intent-filter>
@@ -194,7 +201,7 @@
         <service
             android:name="cn.jpush.android.service.DownloadService"
             android:enabled="true"
-            android:exported="false"></service>
+            android:exported="false" />
         <!-- Required SDK核心功能 -->
         <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
         <!-- Required since 3.0.7 -->
@@ -215,16 +222,18 @@
             android:name=".receiver.SysMsgReceiver"
             android:enabled="true">
             <intent-filter>
-                <!--&lt;!&ndash;Required 用户注册SDK的intent&ndash;&gt;-->
+
+                <!-- &lt;!&ndash;Required 用户注册SDK的intent&ndash;&gt; -->
                 <action android:name="cn.jpush.android.intent.REGISTRATION" />
-                <!--&lt;!&ndash;Required 用户接收SDK消息的intent&ndash;&gt;-->
+                <!-- &lt;!&ndash;Required 用户接收SDK消息的intent&ndash;&gt; -->
                 <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
-                <!--&lt;!&ndash;Required 用户接收SDK通知栏信息的intent&ndash;&gt;-->
+                <!-- &lt;!&ndash;Required 用户接收SDK通知栏信息的intent&ndash;&gt; -->
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
-                <!--&lt;!&ndash;Required 用户打开自定义通知栏的intent&ndash;&gt;-->
+                <!-- &lt;!&ndash;Required 用户打开自定义通知栏的intent&ndash;&gt; -->
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
-                <!--&lt;!&ndash; 接收网络变化 连接/断开 since 1.6.3 &ndash;&gt;-->
+                <!-- &lt;!&ndash; 接收网络变化 连接/断开 since 1.6.3 &ndash;&gt; -->
                 <action android:name="cn.jpush.android.intent.CONNECTION" />
+
                 <category android:name="com.example.wkj_pc.fitnesslive" />
             </intent-filter>
         </receiver>
@@ -240,5 +249,8 @@
         <meta-data
             android:name="JPUSH_APPKEY"
             android:value="cfba3350c246148b460d429c" />
+
+        <activity android:name=".activity.SysVideoActivity"></activity>
     </application>
+
 </manifest>
