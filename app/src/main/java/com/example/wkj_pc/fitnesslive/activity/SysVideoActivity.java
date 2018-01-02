@@ -2,9 +2,10 @@ package com.example.wkj_pc.fitnesslive.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.view.WindowManager;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.adapter.SysVideoShowAdapter;
 import com.example.wkj_pc.fitnesslive.po.UploadVideo;
@@ -19,7 +20,6 @@ import butterknife.OnClick;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
-
 /**
  * 系统视频显示
  */
@@ -34,6 +34,7 @@ public class SysVideoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sys_video);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         videoUrl=getResources().getString(R.string.app_customer_get_sys_video);
         getSysVideo();
@@ -46,7 +47,7 @@ public class SysVideoActivity extends AppCompatActivity {
     /** 显示系统视频*/
     private void initRecyclerView(){
         if (null!=sysVideos && sysVideos.size()>0){
-            LinearLayoutManager manager=new LinearLayoutManager(this);
+            GridLayoutManager manager=new GridLayoutManager(this,2);
             sysVideoShowRecyclerView.setLayoutManager(manager);
             SysVideoShowAdapter adapter=new SysVideoShowAdapter(sysVideos,this);
             sysVideoShowRecyclerView.setAdapter(adapter);
@@ -64,6 +65,12 @@ public class SysVideoActivity extends AppCompatActivity {
                     if (!TextUtils.isEmpty(responseData)){
                         sysVideos = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<UploadVideo>>() {
                         }.getType());
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                initRecyclerView();
+                            }
+                        });
                     }
                 }catch (Exception e){
                     e.printStackTrace();

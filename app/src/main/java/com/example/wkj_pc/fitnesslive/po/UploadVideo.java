@@ -10,6 +10,7 @@ public class UploadVideo{
     private String videourl;    //视频地址
     private String thumbnailurl;    //视频缩略图地址
     private String uploadtime;      //上传时间
+    private int type;
     private boolean isselected;
     private int uid;
 

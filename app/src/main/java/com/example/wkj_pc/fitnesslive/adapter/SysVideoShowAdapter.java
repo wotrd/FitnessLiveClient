@@ -1,6 +1,7 @@
 package com.example.wkj_pc.fitnesslive.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.R;
+import com.example.wkj_pc.fitnesslive.activity.VideoPlayerActivity;
 import com.example.wkj_pc.fitnesslive.po.UploadVideo;
 import java.util.List;
 
@@ -16,7 +18,6 @@ import java.util.List;
  * Created by wotrd on 20181/1.
  * 系统视频显示adapter
  */
-
 public class SysVideoShowAdapter extends RecyclerView.Adapter<SysVideoShowAdapter.ViewHolder>{
     private final List<UploadVideo> videos;
     private final Context context;
@@ -29,7 +30,11 @@ public class SysVideoShowAdapter extends RecyclerView.Adapter<SysVideoShowAdapte
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    Intent intent = new Intent(context, VideoPlayerActivity.class);
+                    UploadVideo video = videos.get(getAdapterPosition());
+                    intent.putExtra("videourl",video.getVideourl());
+                    intent.putExtra("thumbnailurl",video.getThumbnailurl());
+                    context.startActivity(intent);
                 }
             });
             bigpic = itemView.findViewById(R.id.sys_video_show_img_view);
@@ -45,7 +50,7 @@ public class SysVideoShowAdapter extends RecyclerView.Adapter<SysVideoShowAdapte
     public void onBindViewHolder(ViewHolder holder, int position) {
         Glide.with(context).load(videos.get(position).getThumbnailurl()).asBitmap().into(holder.bigpic);
         holder.title.setText(videos.get(position).getTitle());
-
+        Glide.with(context).load(videos.get(position).getThumbnailurl()).asBitmap().into(holder.bigpic);
     }
     @Override
     public int getItemCount() {

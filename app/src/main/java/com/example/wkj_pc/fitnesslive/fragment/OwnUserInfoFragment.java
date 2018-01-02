@@ -167,7 +167,13 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                 break;
             case R.id.own_user_info_clear_cache_linearlayout:   //清楚缓存
                 DataSupport.deleteAll(User.class,"");
-                Glide.get(getActivity()).clearDiskCache();
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Glide.get(getActivity()).clearDiskCache();
+                    }
+                }).start();
+
                 break;
             case R.id.own_user_video_linearlayout:   //个人视频
                 startActivity(new Intent(getActivity(),SysVideoActivity.class));
