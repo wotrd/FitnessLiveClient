@@ -18,7 +18,7 @@ public class User extends DataSupport{
     private String phonenum;
     private Integer role;       //1:main admin 2:personal admin 3: user;
     private String amatar;
-    private int age;
+    private String borndata;
     private String token;
     private Boolean islive;
     private String personalsign;
@@ -180,11 +180,11 @@ public class User extends DataSupport{
         this.amatar = amatar;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getBorndata() {
+        return borndata;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setBorndata(String borndata) {
+        this.borndata = borndata;
     }
 }
