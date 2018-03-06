@@ -98,11 +98,11 @@ public class WatchUserLiveActivity extends AppCompatActivity {
                 return false;
             }
         });
-        getAttentionsUrl=getResources().getString(R.string.app_get_attention_user_info_by_account_url);
+        getAttentionsUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/login/getAttentionUserInfoByAccount";
         liveUserAccount = getIntent().getStringExtra("liveuseraccount");
         liveMessages = new ArrayList<>();
         watcherVideoUrl = getResources().getString(R.string.app_video_upload_srs_server_url) + liveUserAccount;
-        getLiveuserInfoUrl = getResources().getString(R.string.app_customer_live_getLiveUserInfo_url);
+        getLiveuserInfoUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/live/getLiveUserInfo";
         watchChattingWsUrl = getResources().getString(R.string.app_message_websocket_customer_live_url) +
                 liveUserAccount + "/" + MainApplication.loginUser.getAccount() + "/watchlive";
        /* if (!LibsChecker.checkVitamioLibs(this))websocket/liveaccount/watchaccount/live|watchlive

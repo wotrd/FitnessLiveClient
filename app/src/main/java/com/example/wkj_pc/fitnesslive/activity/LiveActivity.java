@@ -142,8 +142,8 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
                 return false;
             }
         });
-        getAttentionsUrl=getResources().getString(R.string.app_get_attention_user_info_by_account_url);
-        closeLiveStatusUrl = getResources().getString(R.string.app_customer_live_closeLiveStatusUrl);
+        getAttentionsUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/login/getAttentionUserInfoByAccount";
+        closeLiveStatusUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/live/closeLiveStatus";
         /** 获取websocket地址，设置聊天*/
         fansPeopleNumber= (TextView) findViewById(R.id.fans_people_number);
         messageWebSocketUrl = getResources().getString(R.string.app_message_websocket_customer_live_url) +

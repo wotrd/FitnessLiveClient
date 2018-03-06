@@ -37,7 +37,7 @@ public class SearchUserShowAdapter extends RecyclerView.Adapter<SearchUserShowAd
     public SearchUserShowAdapter(List<User> searchUsers, Context context) {
         this.searchUsers = searchUsers;
         this.context = context;
-        isAttentionUrl=context.getResources().getString(R.string.app_set_user_is_attention_url);
+        isAttentionUrl=context.getResources().getString(R.string.app_server_prefix_url)+"customer/live/setUserIsAttention";
     }
     class ViewHolder extends RecyclerView.ViewHolder {
 

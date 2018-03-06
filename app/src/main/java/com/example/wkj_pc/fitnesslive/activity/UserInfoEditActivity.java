@@ -64,8 +64,9 @@ public class UserInfoEditActivity extends TakePhotoActivity {
         setContentView(R.layout.activity_user_info_edit);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
-        loginQuitUrl=getResources().getString(R.string.app_destroy_url);
-        updateUserInfoUrl=getResources().getString(R.string.app_update_user_info_url);
+        loginQuitUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/login/quitLogin";
+
+        updateUserInfoUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/login/updateUserInfo";
         amatarImageView = (CircleImageView) findViewById(R.id.about_user_edit_amatar_img_view);
         nickname = (TextView) findViewById(R.id.about_user_edit_nickname_text_view);
         account = (TextView) findViewById(R.id.about_user_edit_user_account_text_view);

@@ -69,8 +69,9 @@ public class PreparedLiveActivity extends TakePhotoActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         takePhoto = getTakePhoto();
-        updateUserLiveThemesUrl = getResources().getString(R.string.app_customer_live_updateLiveUserStyle);
-        updateUserInfoUrl = getResources().getString(R.string.app_update_user_info_url);
+        updateUserLiveThemesUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/live/updateLiveUserStyle";
+        updateUserInfoUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/updateUserInfo";
+
         Glide.with(this).load(MainApplication.loginUser.getLivebigpic()).
                 error(R.drawable.biglivepic).into(preparedLiveBigImgSetImgView);
     }

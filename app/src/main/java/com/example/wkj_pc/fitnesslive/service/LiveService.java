@@ -32,8 +32,8 @@ public class LiveService extends Service {
     public void onCreate() {
         super.onCreate();
         cachedThreaPoolExecutors = ThreadPoolExecutorUtils.getCachedThreaPoolExecutors();
-        getHomeLiveUserInfoUrl=getResources().getString(R.string.app_customer_live_getHomeLiveUserInfos_url);
-        getHomeLiveUserTagUrl=getResources().getString(R.string.app_customer_live_getHomeLivetags_url);
+        getHomeLiveUserInfoUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/live/getHomeLiveUserInfos";
+        getHomeLiveUserTagUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/live/getHomeUserLiveThemes";
     }
     @Override
     public int onStartCommand(final Intent intent, int flags, int startId) {

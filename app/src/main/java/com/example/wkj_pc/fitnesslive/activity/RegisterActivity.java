@@ -72,7 +72,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
-        getVerifyCodeUrl = getResources().getString(R.string.app_get_verifycode_url);
+        getVerifyCodeUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getVerifycode";
         registerUserMobileEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {

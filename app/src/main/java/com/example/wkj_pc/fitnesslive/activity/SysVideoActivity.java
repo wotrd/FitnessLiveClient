@@ -36,7 +36,7 @@ public class SysVideoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sys_video);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
-        videoUrl=getResources().getString(R.string.app_customer_get_sys_video);
+        videoUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/login/getSysVideos";
         getSysVideo();
     }
     /** 退出*/

@@ -89,8 +89,8 @@ public class LiveUserBottomInfoToastFragment extends BottomSheetDialogFragment i
     @Override
     public void onResume() {
         super.onResume();
-        isAttentionUrl=getString(R.string.app_set_user_is_attention_url);
-        String getUserInfoAccountUrl=getString(R.string.app_customer_live_getLiveUserInfo_url);
+        isAttentionUrl=getString(R.string.app_server_prefix_url)+"customer/live/setUserIsAttention";
+        String getUserInfoAccountUrl=getString(R.string.app_server_prefix_url)+"customer/live/getLiveUserInfo";
         SharedPreferences spref = getActivity().getSharedPreferences("clickamatar", Context.MODE_PRIVATE);
         account = spref.getString("account", "");
         type = spref.getString("type", "");
@@ -181,7 +181,7 @@ public class LiveUserBottomInfoToastFragment extends BottomSheetDialogFragment i
     public void onDestroy() {
         super.onDestroy();
         clickUser=null;
-        String updateUserInfoUrl = getResources().getString(R.string.app_get_user_info_url);
+        String updateUserInfoUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getUserInfo";
         //更新登录用户的信息，在退出时。
         LoginUtils.getLiveUserInfo(updateUserInfoUrl, MainApplication.loginUser.getAccount(), new Callback() {
             @Override

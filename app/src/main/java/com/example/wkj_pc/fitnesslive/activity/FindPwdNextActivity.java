@@ -40,7 +40,7 @@ public class FindPwdNextActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         mobileNum = getIntent().getStringExtra("mobileNum");
-        userUpdatePasswordUrl = getResources().getString(R.string.app_customer_user_update_password_url);
+        userUpdatePasswordUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/updateUserPassword";
     }
 
     @OnClick({R.id.login_user_find_pwd_back_text_view, R.id.alter_pwd_nextstep_btn})

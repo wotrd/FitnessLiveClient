@@ -110,7 +110,7 @@ public class LoginActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         cookieSp = getSharedPreferences("cookie", MODE_PRIVATE);
         editor = cookieSp.edit();
-        loginUrl = getString(R.string.app_login_url);
+        loginUrl = getString(R.string.app_server_prefix_url)+"customer/login/toLogin";
         //   initSlideUp();
         initListener();
     }

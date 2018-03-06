@@ -47,7 +47,7 @@ public class OwnUploadVideoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_own_upload_video);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
-        getUploadVideoUrl = getResources().getString(R.string.app_customer_live_getUserUploadVideoUrl);
+        getUploadVideoUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/live/getUserUploadVideo";
         if (null !=MainApplication.loginUser){
             getUploadVideo(getUploadVideoUrl, MainApplication.loginUser.getUid());
         }

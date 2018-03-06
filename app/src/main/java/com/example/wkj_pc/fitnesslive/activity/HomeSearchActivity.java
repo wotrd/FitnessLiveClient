@@ -46,7 +46,8 @@ public class HomeSearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_search);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        searchUserUrl=getResources().getString(R.string.app_customer_login_searchUser);
+        searchUserUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/login/customerSearchUser";
+
         TextView backText = (TextView) findViewById(R.id.activity_home_user_search_cancel_text_view);
         backText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,7 +107,7 @@ public class HomeSearchActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         /** 在退出之前获取登录用户的信息*/
-        String longRequestUrl = getResources().getString(R.string.app_get_user_info_url);
+        String longRequestUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getUserInfo";
         LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(),
                 MainApplication.cookie, new Callback() {
                     @Override
@@ -124,7 +125,7 @@ public class HomeSearchActivity extends AppCompatActivity {
                     }
                 });
         /**  获取登录用户的关注和粉丝用户 */
-        String attentionUserUrl = getResources().getString(R.string.app_get_attention_user_info_url);
+        String attentionUserUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getAttentionUserInfo";
         LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {}
@@ -140,7 +141,7 @@ public class HomeSearchActivity extends AppCompatActivity {
                 }
             }
         });
-        String fansUserUrl= getResources().getString(R.string.app_get_fans_user_info_url);
+        String fansUserUrl= getResources().getString(R.string.app_server_prefix_url)+"customer/login/getFansUserInfo";
         LoginUtils.getRelativeUserInfo(fansUserUrl, MainApplication.loginUser.getUid(), new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {}

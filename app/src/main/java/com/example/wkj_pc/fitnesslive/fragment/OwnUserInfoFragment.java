@@ -60,7 +60,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        loginQuitUrl=getResources().getString(R.string.app_destroy_url);
+        loginQuitUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/login/quitLogin";
         cookieSp = getActivity().getSharedPreferences("cookie", MODE_PRIVATE);
         relativeUsershowfragtype = getActivity().getSharedPreferences("own_userinfo_show_frag_type", MODE_PRIVATE);
         manager = getFragmentManager();

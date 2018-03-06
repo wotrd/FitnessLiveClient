@@ -36,9 +36,9 @@ public class LoginService extends Service {
     @Override
     public void onCreate() {
         cachedThreaPoolExecutors = ThreadPoolExecutorUtils.getCachedThreaPoolExecutors();
-        longRequestUrl = getResources().getString(R.string.app_get_user_info_url);
-        fansUserUrl = getResources().getString(R.string.app_get_fans_user_info_url);
-        attentionUserUrl = getResources().getString(R.string.app_get_attention_user_info_url);
+        longRequestUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getUserInfo";
+        fansUserUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getFansUserInfo";
+        attentionUserUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getAttentionUserInfo";
         super.onCreate();
     }
 

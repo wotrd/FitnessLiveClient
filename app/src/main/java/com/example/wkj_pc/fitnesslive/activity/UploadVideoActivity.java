@@ -44,7 +44,7 @@ public class UploadVideoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_upload_video);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
-        uploadVideoUrl = getResources().getString(R.string.app_customer_live_uploadUserVideoUrl);
+        uploadVideoUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/live/uploadRecoderVideo";
         path = getIntent().getStringExtra("path");
         initThumbnails();
     }

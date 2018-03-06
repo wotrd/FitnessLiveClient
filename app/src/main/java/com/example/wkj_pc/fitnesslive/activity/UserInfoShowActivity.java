@@ -65,9 +65,9 @@ public class UserInfoShowActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         Intent intent = getIntent();
-        String url = getResources().getString(R.string.app_get_user_info_url);
-        isAttentionUrl=getResources().getString(R.string.app_set_user_is_attention_url);
-        String videoUrl = getResources().getString(R.string.app_customer_live_getUserUploadVideosUrl);
+        String url = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getUserInfo";
+        isAttentionUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/live/setUserIsAttention";
+        String videoUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/live/getUserUploadVideos";
         account = intent.getStringExtra("account");
         //如果type!=attention的话，为粉丝，判断自己是否关注粉丝
         String target = intent.getStringExtra("target");
@@ -199,7 +199,7 @@ public class UserInfoShowActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         /** 在退出之前获取登录用户的信息*/
-        String longRequestUrl = getResources().getString(R.string.app_get_user_info_url);
+        String longRequestUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getUserInfo";
         LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(),
                 MainApplication.cookie, new Callback() {
                     @Override
@@ -217,7 +217,7 @@ public class UserInfoShowActivity extends AppCompatActivity {
                     }
                 });
         /**  获取登录用户的关注和粉丝用户 */
-        String attentionUserUrl = getResources().getString(R.string.app_get_attention_user_info_url);
+        String attentionUserUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getAttentionUserInfo";
         LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {}
@@ -233,7 +233,7 @@ public class UserInfoShowActivity extends AppCompatActivity {
                 }
             }
         });
-        String fansUserUrl= getResources().getString(R.string.app_get_fans_user_info_url);
+        String fansUserUrl= getResources().getString(R.string.app_server_prefix_url)+"customer/login/getFansUserInfo";
         LoginUtils.getRelativeUserInfo(fansUserUrl, MainApplication.loginUser.getUid(), new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {}

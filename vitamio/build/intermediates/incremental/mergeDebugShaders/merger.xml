@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\project\android\mycode\FitnessLiveClient\vitamio\src\main\shaders"/></dataSet><dataSet config="debug"><source path="F:\project\android\mycode\FitnessLiveClient\vitamio\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="F:\project\android\prj\FitnessLiveClient\vitamio\src\main\shaders"/></dataSet><dataSet config="debug"><source path="F:\project\android\prj\FitnessLiveClient\vitamio\src\debug\shaders"/></dataSet></merger>

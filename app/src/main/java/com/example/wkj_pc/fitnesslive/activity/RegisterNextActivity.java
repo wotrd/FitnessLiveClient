@@ -40,7 +40,8 @@ public class RegisterNextActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         mobileNum = getIntent().getStringExtra("mobileNum");
-        registerUserUrl = getResources().getString(R.string.app_customer_register_user_url);
+        registerUserUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/registerUser";
+
     }
 
     @OnClick({R.id.register_user_next_back_text_view, R.id.register_user_nextstep_btn})
