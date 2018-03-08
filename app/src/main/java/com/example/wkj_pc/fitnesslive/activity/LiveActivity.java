@@ -91,7 +91,6 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
             "ROMANCE", "SUNRISE", "SUNSET", "TENDER", "TOASTER2", "VALENCIA", "WALDEN", "WARM", "NONE"};
     //滤镜类型
     private String pushVideoStreamUrl;  //srs服务器推流地址
-    private List<Integer> amatarLists = new ArrayList<>();  //观看者头像集合
     private String messageWebSocketUrl; //直播聊天传输地址
     private SrsPublisher mPublisher;       //直播推流发着者
     private WebSocket baseWebSocket; //聊天用websocket
@@ -148,9 +147,11 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         fansPeopleNumber= (TextView) findViewById(R.id.fans_people_number);
         messageWebSocketUrl = getResources().getString(R.string.app_message_websocket_customer_live_url) +
                 MainApplication.loginUser.getAccount()+"/" + MainApplication.loginUser.getAccount()+"/live";
+        System.out.println("------------------livewebsocketurl="+messageWebSocketUrl);
         getWebSocket(messageWebSocketUrl);  //不用开启子线程,自己开启线程
         /**设置直播推流地址*/
         pushVideoStreamUrl = getResources().getString(R.string.app_video_upload_srs_server_url)+MainApplication.loginUser.getAccount();
+        System.out.println("--------------------videourl="+pushVideoStreamUrl);
         /**设置底部弹窗sp*/
         spref = getSharedPreferences("clickamatar", Context.MODE_PRIVATE);
 
@@ -279,7 +280,7 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
-    /** 设置观众列表显示 */
+    /** 设置观众信息列表显示 */
     private void initClientRecyclerView() {
         if (watcherUsers!=null){
             watchPeopleNumber.setText("观看人数:"+watcherUsers.size());

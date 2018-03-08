@@ -105,6 +105,7 @@ public class WatchUserLiveActivity extends AppCompatActivity {
         getLiveuserInfoUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/live/getLiveUserInfo";
         watchChattingWsUrl = getResources().getString(R.string.app_message_websocket_customer_live_url) +
                 liveUserAccount + "/" + MainApplication.loginUser.getAccount() + "/watchlive";
+        System.out.println("------------------watchChattingWsUrl="+watchChattingWsUrl);
        /* if (!LibsChecker.checkVitamioLibs(this))websocket/liveaccount/watchaccount/live|watchlive
             return;*/
         /**设置底部弹窗sp*/
@@ -178,7 +179,6 @@ public class WatchUserLiveActivity extends AppCompatActivity {
             @Override
             public void onMessage(WebSocket webSocket, String text) {
                 super.onMessage(webSocket, text);
-//                System.out.println("----------" + text);
                /*处理收到的信息*/
                 if (TextUtils.isEmpty(text)) //收到信息为空时，获取 /*如果收到信息为空，则返回不处理*/
                     return;
@@ -226,12 +226,11 @@ public class WatchUserLiveActivity extends AppCompatActivity {
                                     watcherWatchFansPeopleNumber.setText("粉丝:" + fansnum);
                                 }
                             });
-                        }else if (message.getIntent() == 3) {   //用户头像地址
+                        }else if (message.getIntent() == 3) {   //当有用户点击头像后更新关注列表
                             updateLoginUserAttenttions(MainApplication.loginUser.getAccount());
-
                         }
                     } catch (Exception e) {
-                        /** 发生异常后，验证时候能装换成用户集合，然后展示在listview中*/
+                        /** 发生异常后，验证时候能转换成用户集合，然后展示在listview中*/
                         try {
                             watcherUsers = GsonUtils.getGson().fromJson(text, new TypeToken<List<User>>(){}.getType());
                             runOnUiThread(new Runnable() {
