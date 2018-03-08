@@ -56,7 +56,6 @@ public class UserInfoEditActivity extends TakePhotoActivity {
     private TakePhoto takePhoto=getTakePhoto();
     private Uri imageUri;
     String updateUserInfoUrl;
-    private Button backLoginBtn;
     private String loginQuitUrl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,14 +64,12 @@ public class UserInfoEditActivity extends TakePhotoActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         loginQuitUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/login/quitLogin";
-
         updateUserInfoUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/login/updateUserInfo";
         amatarImageView = (CircleImageView) findViewById(R.id.about_user_edit_amatar_img_view);
         nickname = (TextView) findViewById(R.id.about_user_edit_nickname_text_view);
         account = (TextView) findViewById(R.id.about_user_edit_user_account_text_view);
         sex = (TextView) findViewById(R.id.about_user_edit_sex_text_view);
         personalSign = (TextView) findViewById(R.id.about_user_edit_person_sign_text_view);
-        backLoginBtn = (Button)findViewById(R.id.about_user_edit_person_back_login_button);
 
     }
 
@@ -124,7 +121,7 @@ public class UserInfoEditActivity extends TakePhotoActivity {
                 editSign.show();
                 break;
             case R.id.about_user_edit_amatar_linearlayout: //弹出底部获取图片菜单，使用takephotoactivity，修改头像
-                getWindow().setBackgroundDrawable( new ColorDrawable(getResources().getColor(R.color.bottom_menu)));
+                getWindow().setBackgroundDrawable( new ColorDrawable(getResources().getColor(R.color.square_bottom_menu)));
                 BottomMenuUtils bottomMenuUtils=new BottomMenuUtils(this, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

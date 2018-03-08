@@ -164,7 +164,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                     startActivity(new Intent(getActivity(), SysMessageActivity.class));
                 }
                 break;
-            case R.id.own_user_info_clear_cache_linearlayout:   //清楚缓存
+            case R.id.own_user_info_clear_cache_linearlayout:   //清除缓存
                 DataSupport.deleteAll(User.class,"");
                 new Thread(new Runnable() {
                     @Override
@@ -193,7 +193,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
         }
     }
     /**
-     *   /处于活动界面的时候，显示登录信息
+     *   处于活动界面的时候，显示登录信息
      *   有系统消息来到后，显示在toolbar中
      */
     @Override

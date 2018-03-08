@@ -135,7 +135,7 @@ public class PreparedLiveActivity extends TakePhotoActivity {
     }
     /** 弹出底部菜单选项，选择获取图片方法*/
     private void showBottomSelectorMenu() {
-        getWindow().setBackgroundDrawable( new ColorDrawable(getResources().getColor(R.color.bottom_menu)));
+        getWindow().setBackgroundDrawable( new ColorDrawable(getResources().getColor(R.color.prepared_live_bottom_pic_toast_menu)));
         BottomMenuUtils bottomMenuUtils=new BottomMenuUtils(this, new View.OnClickListener() {
             private Uri imageUri;
             @Override
