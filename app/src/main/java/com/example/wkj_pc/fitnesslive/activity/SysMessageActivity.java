@@ -5,14 +5,12 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
-
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.fragment.SysMsgListFragment;
 
 /**
  * 系统消息显示处理activity
  */
-
 public class SysMessageActivity extends AppCompatActivity {
 
     @Override

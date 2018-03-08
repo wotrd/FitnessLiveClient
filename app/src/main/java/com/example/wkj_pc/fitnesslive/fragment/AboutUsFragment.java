@@ -18,7 +18,6 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override

@@ -195,7 +195,6 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
             }
         });
     }
-
     @Override
     public void onClick(View v) {
         switch(v.getId()){
@@ -229,7 +228,6 @@ public class MainPageFragment extends Fragment implements View.OnClickListener{
                 break;
         }
     }
-
     /**设置系统消息显示*/
     private void setSysMessageShow() {
         if (MainApplication.loginUser!=null){

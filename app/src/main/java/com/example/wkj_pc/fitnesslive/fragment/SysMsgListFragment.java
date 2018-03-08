@@ -13,6 +13,7 @@ import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.adapter.SysMessageListAdapter;
 import com.example.wkj_pc.fitnesslive.po.SysMessage;
+import com.example.wkj_pc.fitnesslive.tools.LogUtils;
 import org.litepal.crud.DataSupport;
 import java.util.List;
 
@@ -22,15 +23,15 @@ import java.util.List;
 public class SysMsgListFragment extends Fragment {
 
     private List<SysMessage> messageList;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        messageList = DataSupport.where("isread=?","0").
-                where("owner='all' or owner=?", MainApplication.loginUser.getAccount()).
-                order("time desc").
-                find(SysMessage.class);
+        messageList = DataSupport.where("isread = ?", "0").
+                where("owner='all' or owner=?" , MainApplication.loginUser.getAccount()).
+                order("time desc").find(SysMessage.class);
+        LogUtils.logDebug("SysMSgFragment","messageList.size="+messageList.size());
     }
+    //
     @Override
     public void onResume() {
         super.onResume();

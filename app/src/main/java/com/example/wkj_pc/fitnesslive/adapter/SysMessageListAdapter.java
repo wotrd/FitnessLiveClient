@@ -10,15 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.example.wkj_pc.fitnesslive.R;
-import com.example.wkj_pc.fitnesslive.fragment.SysMsgListFragment;
 import com.example.wkj_pc.fitnesslive.fragment.SysMsgListItemFragment;
 import com.example.wkj_pc.fitnesslive.po.SysMessage;
 import com.example.wkj_pc.fitnesslive.tools.TimeUtils;
-import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
-
 import java.util.List;
 
 /**
@@ -28,12 +23,10 @@ import java.util.List;
 
 public class SysMessageListAdapter extends RecyclerView.Adapter<SysMessageListAdapter.ViewHolder>{
     private final List<SysMessage> messageList;
-    private final Context context;
     private final FragmentManager manager;
     private SharedPreferences spref;
     public SysMessageListAdapter(List<SysMessage> messageList, Context context,FragmentManager manager) {
         this.messageList=messageList;
-        this.context=context;
         this.manager=manager;
         spref = context.getSharedPreferences("sysmessage_id", Context.MODE_PRIVATE);
     }
@@ -60,7 +53,6 @@ public class SysMessageListAdapter extends RecyclerView.Adapter<SysMessageListAd
         return messageList.size();
     }
     class ViewHolder extends RecyclerView.ViewHolder{
-
         private final TextView title;
         private final TextView content;
         private final TextView time;
@@ -83,8 +75,6 @@ public class SysMessageListAdapter extends RecyclerView.Adapter<SysMessageListAd
                     tran.commit();
                 }
             });
-
-
         }
     }
 }
