@@ -109,14 +109,17 @@ public class UserInfoEditActivity extends TakePhotoActivity {
                 },"取消",null, "提醒","您将退出登录!");
                 break;
             case R.id.about_user_edit_sex_linearlayout:
+                getWindow().setBackgroundDrawable( new ColorDrawable(getResources().getColor(R.color.user_info_edit_toast_menu)));
                 UserSexEditTools userInfoEditTools=new UserSexEditTools(this,MainApplication.loginUser.getGender(),updateUserInfoUrl);
                 userInfoEditTools.show();
                 break;
             case R.id.about_user_edit_nickname_linearlayout:
+                getWindow().setBackgroundDrawable( new ColorDrawable(getResources().getColor(R.color.user_info_edit_toast_menu)));
                 UserNicknameAndSignEditTools editNickname=new UserNicknameAndSignEditTools(this,"修改昵称",MainApplication.loginUser.getNickname(),updateUserInfoUrl);
                 editNickname.show();
                 break;
             case R.id.about_user_edit_person_sign_linearlayout:
+                getWindow().setBackgroundDrawable( new ColorDrawable(getResources().getColor(R.color.user_info_edit_toast_menu)));
                 UserNicknameAndSignEditTools editSign=new UserNicknameAndSignEditTools(this,"个人签名",MainApplication.loginUser.getPersonalsign(),updateUserInfoUrl);
                 editSign.show();
                 break;

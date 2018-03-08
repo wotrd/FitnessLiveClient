@@ -11,11 +11,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import com.example.wkj_pc.fitnesslive.R;
-
 /**
  * Created by wkj_pc on 2017/8/28.
  */
-
 public class BottomMenuUtils implements  View.OnClickListener,View.OnTouchListener{
     private PopupWindow popupWindow;
     private Button btn1, btn2, btnCancel;

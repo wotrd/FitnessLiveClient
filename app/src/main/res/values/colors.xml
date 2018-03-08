@@ -16,5 +16,6 @@
     <color name="bottom_menu">#00000000</color>
     <color name="square_bottom_menu">#ccc</color>
     <color name="prepared_live_bottom_pic_toast_menu">#ccc</color>
+    <color name="user_info_edit_toast_menu">#f2ebeb</color>
     <color name="btn_bg">#e9e9e9</color>
 </resources>

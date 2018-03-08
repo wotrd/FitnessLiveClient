@@ -24,7 +24,6 @@ import okhttp3.Response;
 /**
  * Created by wkj_pc on 2017/9/1.
  */
-
 public class UserNicknameAndSignEditTools implements View.OnClickListener{
     private Activity context;
     private PopupWindow popupWindow;
@@ -56,7 +55,7 @@ public class UserNicknameAndSignEditTools implements View.OnClickListener{
             dataEditText.setText(edithint);
             dataEditText.setSelection(edithint.length());
         }
-        popupWindow = new PopupWindow(contentView, ViewPager.LayoutParams.MATCH_PARENT,ViewPager.LayoutParams.FILL_PARENT,true);
+        popupWindow = new PopupWindow(contentView, ViewPager.LayoutParams.MATCH_PARENT,ViewPager.LayoutParams.MATCH_PARENT,true);
         popupWindow.setAnimationStyle(R.style.popwin_anim_style);
         ColorDrawable dw = new ColorDrawable(context.getResources().getColor(R.color.bottom_menu));
         popupWindow.setBackgroundDrawable(dw);
