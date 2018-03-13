@@ -73,7 +73,8 @@ public class HomeSearchActivity extends AppCompatActivity {
     }
     /** 根据输入信息搜索用户 */
     public void searchUser(String searchText){
-        LoginUtils.searchUser(searchUserUrl, searchText, new Callback() {
+        LoginUtils.searchUser(searchUserUrl, searchText,MainApplication.loginUser.getAccount(),
+                 new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {}
             @Override

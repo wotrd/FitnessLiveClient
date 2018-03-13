@@ -261,9 +261,10 @@ public class LoginUtils {
         OkHttpClientFactory.getOkHttpClientInstance().newCall(request).enqueue(callback);
     }
     /** 根据输入搜索用户*/
-    public static void searchUser(String searchUserUrl,String searchText,Callback callback) {
+    public static void searchUser(String searchUserUrl,String searchText,String account,Callback callback) {
         RequestBody body=new FormBody.Builder()
                 .add("searchtext",searchText)
+                .add("account",account)
                 .build();
         Request request=new Request.Builder()
                 .url(searchUserUrl)
