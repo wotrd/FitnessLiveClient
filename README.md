@@ -5,6 +5,6 @@
 
 <img width="300" height="500" src="https://github.com/wotrd/FitnessLiveClient/blob/master/app/images/a.png"/></br></br>
 
-下面用户登录、用户注册和找回密码页面和用户登录页面</br></br></br>
+下面用户登录、用户注册和找回密码页面和用户登录页面</br></br>
 
 <img width="850" height="500" src="https://github.com/wotrd/FitnessLiveClient/blob/master/app/images/b.png"/></br></br>
