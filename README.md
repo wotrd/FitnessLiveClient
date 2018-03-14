@@ -17,3 +17,7 @@
 下图是修改昵称、更换头像、更改性别页面。在个人信息编辑页面点击昵称弹出昵称修改页面，点击头像弹出头像选择页面可以从本地相册选取也可以拍摄选取。点击修改性别弹出性别选择框，选择好点击确定完成修改。</br></br>
 
 <img width="850" height="500" src="https://github.com/wotrd/FitnessLiveClient/blob/master/app/images/d.png"/></br></br>
+
+下面是用户搜索、系统视频和系统消息页面，点击首页右上角的搜索按钮，进入用户搜索页面。用户在搜索的编辑框中输入账户或者昵称点击搜索按钮就可以将搜索到的所有用户显示到下拉列表。并且，用户可以通过点击列表条目后面的圆形图标取消和关注用户。在系统消息页面显示管理员上传的所有健身指导视频。点击视频可以进行播放。在系统消息页面显示系统推送的所有未读信息，点击进入信息的详情页。</br></br>
+
+<img width="850" height="500" src="https://github.com/wotrd/FitnessLiveClient/blob/master/app/images/e.png"/></br></br>
