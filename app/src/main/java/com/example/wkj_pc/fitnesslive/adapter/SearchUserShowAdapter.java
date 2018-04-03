@@ -57,10 +57,10 @@ public class SearchUserShowAdapter extends RecyclerView.Adapter<SearchUserShowAd
                 public void onClick(View v) {
                     if (type.equals("attentioned")){
                         type="canceled";
-                        addAttention.setImageResource(R.mipmap.icon_home_search_attention);
+                        Glide.with(context).load(R.mipmap.icon_home_search_attention).override(70,70).into(addAttention);
                     }else {
                         type="attentioned";
-                        addAttention.setImageResource(R.mipmap.icon_home_search_success);
+                        Glide.with(context).load(R.mipmap.icon_home_search_success).override(60,60).into(addAttention);
                     }
                     Attention attention=new Attention();
                     attention.setUid(MainApplication.loginUser.getUid());
@@ -83,7 +83,7 @@ public class SearchUserShowAdapter extends RecyclerView.Adapter<SearchUserShowAd
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context, UserInfoShowActivity.class);
-                    intent.putExtra("",searchUsers.get(getAdapterPosition()).getAccount());
+                    intent.putExtra("account",searchUsers.get(getAdapterPosition()).getAccount());
                     context.startActivity(intent);
                 }
             });
@@ -112,7 +112,10 @@ public class SearchUserShowAdapter extends RecyclerView.Adapter<SearchUserShowAd
         }
         if (verifyIsAttention(user.getAccount())){
             holder.type="attentioned";
-            holder.addAttention.setImageResource(R.mipmap.icon_home_search_success);
+            Glide.with(context).load(R.mipmap.icon_home_search_success).override(60,60).into(holder.addAttention);
+        }else {
+            holder.type="canceled";
+            Glide.with(context).load(R.mipmap.icon_home_search_attention).override(70,70).into(holder.addAttention);
         }
     }
     @Override

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
@@ -54,10 +55,10 @@ public class UserInfoShowActivity extends AppCompatActivity {
     private User user;
     private String type;
     private String account;
-    private Attention attention=null;
+    private Attention attention;
     String isAttentionUrl;
     private Fans fans;
-
+    private String target;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,12 +66,68 @@ public class UserInfoShowActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
         Intent intent = getIntent();
+        //如果type!=attention的话，为粉丝，判断自己是否关注粉丝
+        target = intent.getStringExtra("target");
         String url = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getUserInfo";
         isAttentionUrl=getResources().getString(R.string.app_server_prefix_url)+"customer/live/setUserIsAttention";
         String videoUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/live/getUserUploadVideos";
         account = intent.getStringExtra("account");
-        //如果type!=attention的话，为粉丝，判断自己是否关注粉丝
-        String target = intent.getStringExtra("target");
+        String attentionUserUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getAttentionUserInfo";
+        LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                try {
+                    List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
+                    }.getType());
+                    MainApplication.attentions = attentions;
+                    if (TextUtils.isEmpty(target)){ //如果target为空的话，代表此时是粉丝，反之为关注。如果是粉丝的话，
+                        //首先，我们需要查找关注表中是否有该账户。有的话证明自己已经关注过该粉丝，反之，没有设置文本
+                        if (null != MainApplication.attentions && MainApplication.attentions.size()>0){
+                            for (Attention att:MainApplication.attentions){
+                                if (att.getGzaccount().equals(account)){
+                                    attention = att;
+                                    activityUserInfoShowIsAttentionTextView.setText("已关注");
+                                    break;
+                                }
+                            }
+                        }
+                        if (null == attention){
+                            activityUserInfoShowIsAttentionTextView.setText("关注");
+          /*      attention=new Attention();
+                attention.setUid(MainApplication.loginUser.getUid());
+                attention.setGzaccount(user.getAccount());
+                attention.setGzamatar(user.getAmatar());
+                attention.setGznickname(user.getNickname());
+                attention.setGzphonenumber(user.getPhonenum());*/
+                /* for (Fans f:MainApplication.fans){
+                    if (account.equals(f.getFaccount())){
+                        attention=new Attention();
+                        attention.setUid(f.getUid());
+                        attention.setGzaccount(f.getFaccount());
+                        attention.setGzamatar(f.getFamatar());
+                        attention.setGznickname(f.getFnickname());
+                        attention.setGzphonenumber(f.getFphonenumber());
+                        break;
+                    }
+                }*/
+                        }
+                    }else{
+                        for (Attention att:MainApplication.attentions){
+                            if (att.getGzaccount().equals(account)){
+                                attention=att;
+                                break;
+                            }
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
         /** 设置用户信息显示 */
         LoginUtils.getRelativeUserInfo(url, account, new Callback() {
             @Override
@@ -99,39 +156,6 @@ public class UserInfoShowActivity extends AppCompatActivity {
                 }
             }
         });
-        if (TextUtils.isEmpty(target)){ //如果target为空的话，代表此时是粉丝，反之为关注。如果是粉丝的话，
-            //首先，我们需要查找关注表中是否有自己的账户。有的话证明自己已经关注过该粉丝，反之，没有设置文本
-            if (null != MainApplication.attentions && MainApplication.attentions.size()>0){
-                for (Attention att:MainApplication.attentions){
-                    if (att.getGzaccount().equals(account)){
-                        attention = att;
-                        activityUserInfoShowIsAttentionTextView.setText("已关注");
-                        break;
-                    }
-                }
-            }
-            if (null == attention){
-                activityUserInfoShowIsAttentionTextView.setText("关注");
-                for (Fans f:MainApplication.fans){
-                    if (account.equals(f.getFaccount())){
-                        attention=new Attention();
-                        attention.setUid(f.getUid());
-                        attention.setGzaccount(f.getFaccount());
-                        attention.setGzamatar(f.getFamatar());
-                        attention.setGznickname(f.getFnickname());
-                        attention.setGzphonenumber(f.getFphonenumber());
-                        break;
-                    }
-                }
-            }
-        }else{
-            for (Attention att:MainApplication.attentions){
-                if (att.getGzaccount().equals(account)){
-                    attention=att;
-                    break;
-                }
-            }
-        }
 
         /** 设置下方的视频显示*/
         LoginUtils.getUserUploadVideosByAccount(videoUrl, account, new Callback() {
@@ -184,6 +208,14 @@ public class UserInfoShowActivity extends AppCompatActivity {
                 }else {
                     activityUserInfoShowIsAttentionTextView.setText("已关注");
                     type="attentioned";
+                }
+                if (null==attention){
+                    attention=new Attention();
+                    attention.setUid(MainApplication.loginUser.getUid());
+                    attention.setGzaccount(user.getAccount());
+                    attention.setGzamatar(user.getAmatar());
+                    attention.setGznickname(user.getNickname());
+                    attention.setGzphonenumber(user.getPhonenum());
                 }
                 LoginUtils.setUserIsAttention(isAttentionUrl,GsonUtils.getGson().toJson(attention), type,
                         new Callback() {

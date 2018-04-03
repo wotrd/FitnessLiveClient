@@ -40,7 +40,8 @@ public class HomeSearchActivity extends AppCompatActivity {
     private RecyclerView showUserRecyclerView;
     private EditText input;
     private String searchUserUrl;
-
+    private List<User> users;
+    private String searchtext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +65,7 @@ public class HomeSearchActivity extends AppCompatActivity {
                     InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                     imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), 0);
                     if (!TextUtils.isEmpty(input.getText().toString())){
+                        searchtext=input.getText().toString();
                         searchUser(input.getText().toString());
                     }
                 }
@@ -82,7 +84,7 @@ public class HomeSearchActivity extends AppCompatActivity {
                 String responseData = response.body().string();
                 if (!TextUtils.isEmpty(responseData)){
                     try {
-                        final List<User> users = GsonUtils.getGson().fromJson(responseData,new TypeToken<List<User>>(){}.getType());
+                        users = GsonUtils.getGson().fromJson(responseData,new TypeToken<List<User>>(){}.getType());
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -98,6 +100,39 @@ public class HomeSearchActivity extends AppCompatActivity {
             }
         });
     }
+    /**
+     * 当在用户信息页面返回之后，显示信息
+     */
+    @Override
+    protected void onResume() {
+        super.onResume();
+        String attentionUserUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getAttentionUserInfo";
+        LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {}
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responseData = response.body().string();
+                try {
+                    List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
+                    }.getType());
+                    MainApplication.attentions = attentions;
+                    if (null!=users&&users.size()>0){
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                initRecyclerView(users);
+                            }
+                        });
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+    }
+
     /** 展示搜索用户列表 */
     private void initRecyclerView(List<User> users) {
         LinearLayoutManager manager=new LinearLayoutManager(this);
