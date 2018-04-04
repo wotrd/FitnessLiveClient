@@ -43,27 +43,21 @@ public class MediaUtils implements SurfaceHolder.Callback {
     private boolean isZoomIn = false;
     private int or = 90;
     private int cameraPosition = 1;//0代表前置摄像头，1代表后置摄像头
-
     public MediaUtils(Activity activity) {
         this.activity = activity;
     }
-
     public void setRecorderType(int type) {
         this.recorderType = type;
     }
-
     public void setTargetDir(File file) {
         this.targetDir = file;
     }
-
     public void setTargetName(String name) {
         this.targetName = name;
     }
-
     public String getTargetFilePath() {
         return targetFile.getPath();
     }
-
     public boolean deleteTargetFile() {
         if (targetFile.exists()) {
             return targetFile.delete();
@@ -71,7 +65,6 @@ public class MediaUtils implements SurfaceHolder.Callback {
             return false;
         }
     }
-
     public void setSurfaceView(SurfaceView view) {
         this.mSurfaceView = view;
         mSurfaceHolder = mSurfaceView.getHolder();
@@ -87,7 +80,6 @@ public class MediaUtils implements SurfaceHolder.Callback {
             }
         });
     }
-
 //    public void setTextureView(AutoFitTextureView view) {
 //        this.textureView = view;
 //        initCamera();
@@ -100,19 +92,15 @@ public class MediaUtils implements SurfaceHolder.Callback {
 //            }
 //        });
 //    }
-
     public int getPreviewWidth() {
         return previewWidth;
     }
-
     public int getPreviewHeight() {
         return previewHeight;
     }
-
     public boolean isRecording() {
         return isRecording;
     }
-
     public void record() {
         if (isRecording) {
             try {
@@ -131,10 +119,8 @@ public class MediaUtils implements SurfaceHolder.Callback {
             startRecordThread();
         }
     }
-
     private boolean prepareRecord() {
         try {
-
             mMediaRecorder = new MediaRecorder();
             if (recorderType == MEDIA_VIDEO) {
                 mCamera.unlock();
@@ -284,7 +270,6 @@ public class MediaUtils implements SurfaceHolder.Callback {
 
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-
     }
 
     @Override

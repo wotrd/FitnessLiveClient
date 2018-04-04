@@ -85,14 +85,16 @@ public class RelativeUserInfoFragment extends Fragment {
                 public void onResponse(Call call, Response response) throws IOException {
                     String responseData = response.body().string();
                     try {
-                        List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
+                        MainApplication.attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
                         }.getType());
-                        MainApplication.attentions = attentions;
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                if (null!=MainApplication.attentions){
+                                if (null!=MainApplication.attentions && MainApplication.attentions.size()>0){
                                     AttentionsShowAdapter adpter=new AttentionsShowAdapter(MainApplication.attentions,getActivity());
+                                    userRecyclearview.setAdapter(adpter);
+                                }else {
+                                    AttentionsShowAdapter adpter=new AttentionsShowAdapter(new ArrayList<Attention>(),getActivity());
                                     userRecyclearview.setAdapter(adpter);
                                 }
                             }
