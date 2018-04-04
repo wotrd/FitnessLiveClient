@@ -17,7 +17,7 @@
     <string name="app_exit">退出</string>
     <string name="app_edit_comment_text">请输入信息</string>
     <string name="app_video_upload_srs_server_url">rtmp://119.29.154.229:1935/live/</string>
-    <string name="app_message_websocket_customer_live_url">ws://172.20.10.2/websocket/</string>
-    <string name="app_server_prefix_url">http://172.20.10.2/</string>
+    <string name="app_message_websocket_customer_live_url">ws://192.168.191.6/websocket/</string>
+    <string name="app_server_prefix_url">http://192.168.191.6/</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

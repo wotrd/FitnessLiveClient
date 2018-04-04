@@ -14,7 +14,6 @@ import com.example.wkj_pc.fitnesslive.activity.UserInfoShowActivity;
 import com.example.wkj_pc.fitnesslive.po.Attention;
 import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
-
 /**
  * Created by wkj on 2017/11/4.
  */

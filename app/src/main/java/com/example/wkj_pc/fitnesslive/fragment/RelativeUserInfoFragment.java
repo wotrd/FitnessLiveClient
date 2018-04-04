@@ -18,7 +18,17 @@ import com.example.wkj_pc.fitnesslive.adapter.AttentionsShowAdapter;
 import com.example.wkj_pc.fitnesslive.adapter.FansShowAdapter;
 import com.example.wkj_pc.fitnesslive.po.Attention;
 import com.example.wkj_pc.fitnesslive.po.Fans;
+import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
+import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 
 /** 在个人信息页面点击关注和粉丝跳转显示的页面 */
 public class RelativeUserInfoFragment extends Fragment {
@@ -30,6 +40,8 @@ public class RelativeUserInfoFragment extends Fragment {
     private List<Fans> fans;
     private List<Attention> attentions;
     private String type;
+    private TextView textView;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +53,7 @@ public class RelativeUserInfoFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_relative_user_info, container, false);
 
-        TextView textView = (TextView) view.findViewById(R.id.own_user_info_fragment_title_content_text_view);
+        textView = (TextView) view.findViewById(R.id.own_user_info_fragment_title_content_text_view);
         backImg = (ImageView) view.findViewById(R.id.own_user_info_relative_fragment_back_img_view);
         backImg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +63,13 @@ public class RelativeUserInfoFragment extends Fragment {
             }
         });
         userRecyclearview = (RecyclerView) view.findViewById(R.id.own_user_info_user_recycler_view);
+
+        return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         LinearLayoutManager manager = new LinearLayoutManager(getActivity());
         userRecyclearview.setLayoutManager(manager);
         if (type.equals("fansnum")){
@@ -61,11 +80,38 @@ public class RelativeUserInfoFragment extends Fragment {
             }
         }else {
             textView.setText("关注");
-            if (null!=MainApplication.attentions){
-                AttentionsShowAdapter adpter=new AttentionsShowAdapter(MainApplication.attentions,getActivity());
-                userRecyclearview.setAdapter(adpter);
-            }
+            String attentionUserUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getAttentionUserInfo";
+            LoginUtils.getRelativeUserInfo(attentionUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {}
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    String responseData = response.body().string();
+                    try {
+                        List<Attention> attentions = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Attention>>() {
+                        }.getType());
+                        MainApplication.attentions = attentions;
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                if (null!=MainApplication.attentions){
+                                    AttentionsShowAdapter adpter=new AttentionsShowAdapter(MainApplication.attentions,getActivity());
+                                    userRecyclearview.setAdapter(adpter);
+                                }
+                            }
+                        });
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                AttentionsShowAdapter adpter=new AttentionsShowAdapter(new ArrayList<Attention>(),getActivity());
+                                userRecyclearview.setAdapter(adpter);
+                            }
+                        });
+                    }
+                }
+            });
         }
-        return view;
     }
 }
