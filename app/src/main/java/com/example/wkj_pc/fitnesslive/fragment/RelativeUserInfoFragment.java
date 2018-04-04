@@ -21,11 +21,9 @@ import com.example.wkj_pc.fitnesslive.po.Fans;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.google.gson.reflect.TypeToken;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -63,7 +61,6 @@ public class RelativeUserInfoFragment extends Fragment {
             }
         });
         userRecyclearview = (RecyclerView) view.findViewById(R.id.own_user_info_user_recycler_view);
-
         return view;
     }
 

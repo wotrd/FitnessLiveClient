@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.wkj_pc.fitnesslive.MainApplication;
 import com.example.wkj_pc.fitnesslive.R;
@@ -156,7 +155,6 @@ public class UserInfoShowActivity extends AppCompatActivity {
                 }
             }
         });
-
         /** 设置下方的视频显示*/
         LoginUtils.getUserUploadVideosByAccount(videoUrl, account, new Callback() {
             @Override
