@@ -28,9 +28,18 @@ import com.example.wkj_pc.fitnesslive.activity.UserInfoEditActivity;
 import com.example.wkj_pc.fitnesslive.po.SysMessage;
 import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
+import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
+import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
+
 import org.litepal.crud.DataSupport;
+
+import java.io.IOException;
 import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
+
 import static android.content.Context.MODE_PRIVATE;
 
 
@@ -200,27 +209,7 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
     public void onResume() {
         super.onResume();
         //显示登录用户信息
-        if (null != MainApplication.loginUser) {
-            if (!TextUtils.isEmpty(MainApplication.loginUser.getAmatar())){
-                Glide.with(this).load(MainApplication.loginUser.getAmatar())
-                        .asBitmap().into(amatarView);
-            }
-            ownNickname.setText("昵称："+MainApplication.loginUser.getNickname());
-            ownAccount.setText("账号："+MainApplication.loginUser.getAccount());
-            ownUserInfoGrade.setText((null==MainApplication.loginUser.getGrade())?"0":
-                    MainApplication.loginUser.getGrade().toString());
-            if (null!=MainApplication.loginUser){
-                if (MainApplication.loginUser.getGrade()>100){
-                 ownUserRank.setImageResource(R.mipmap.grade_huangjin);
-                }else if (MainApplication.loginUser.getGrade()>50){
-                    ownUserRank.setImageResource(R.mipmap.grade_baiyin);
-                }
-            }
-            ownUserInfoMyAttention.setText((null==MainApplication.loginUser.getAttentionnum())?"0"
-                    :MainApplication.loginUser.getAttentionnum()+"");
-            ownFansNum.setText((null==MainApplication.loginUser.getFansnum())?"0":
-                    MainApplication.loginUser.getFansnum()+"");
-        }else {
+        if (null==MainApplication.loginUser) {
             amatarView.setImageResource(R.drawable.head_img);
             ownNickname.setText("昵称：小灰灰");
             ownAccount.setText("账号：0000000");
@@ -228,7 +217,58 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
             ownUserRank.setImageResource(R.mipmap.grade_qingtong);
             ownUserInfoMyAttention.setText("0");
             ownFansNum.setText("0");
+            return;
         }
+        String longRequestUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getUserInfo";
+        LoginUtils.longRequestServer(longRequestUrl, MainApplication.loginUser.getAccount(),
+                MainApplication.cookie, new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {}
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        String responseData = response.body().string();
+                        try {
+                            User loginUser = GsonUtils.getGson().fromJson(responseData, User.class);
+                            MainApplication.loginUser = loginUser;
+                            getActivity().runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (null != MainApplication.loginUser) {
+                                        if (!TextUtils.isEmpty(MainApplication.loginUser.getAmatar())){
+                                            Glide.with(getActivity()).load(MainApplication.loginUser.getAmatar())
+                                                    .asBitmap().into(amatarView);
+                                        }
+                                        ownNickname.setText("昵称："+MainApplication.loginUser.getNickname());
+                                        ownAccount.setText("账号："+MainApplication.loginUser.getAccount());
+                                        ownUserInfoGrade.setText((null==MainApplication.loginUser.getGrade())?"0":
+                                                MainApplication.loginUser.getGrade().toString());
+                                        if (null!=MainApplication.loginUser){
+                                            if (MainApplication.loginUser.getGrade()>100){
+                                                ownUserRank.setImageResource(R.mipmap.grade_huangjin);
+                                            }else if (MainApplication.loginUser.getGrade()>50){
+                                                ownUserRank.setImageResource(R.mipmap.grade_baiyin);
+                                            }
+                                        }
+                                        ownUserInfoMyAttention.setText((null==MainApplication.loginUser.getAttentionnum())?"0"
+                                                :MainApplication.loginUser.getAttentionnum()+"");
+                                        ownFansNum.setText((null==MainApplication.loginUser.getFansnum())?"0":
+                                                MainApplication.loginUser.getFansnum()+"");
+                                    }
+                                }
+                            });
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            MainApplication.loginUser = null;
+                            amatarView.setImageResource(R.drawable.head_img);
+                            ownNickname.setText("昵称：小灰灰");
+                            ownAccount.setText("账号：0000000");
+                            ownUserInfoGrade.setText("0");
+                            ownUserRank.setImageResource(R.mipmap.grade_qingtong);
+                            ownUserInfoMyAttention.setText("0");
+                            ownFansNum.setText("0");
+                        }
+                    }
+                });
         if (null!=MainApplication.loginUser){
             setSysMessageShow();
         }

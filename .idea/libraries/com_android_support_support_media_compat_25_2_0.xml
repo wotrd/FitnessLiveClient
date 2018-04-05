@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.android.support:support-media-compat-25.2.0">
     <CLASSES>
-      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/93e684373cd03bc69f77eaa4bbc36ab9/res" />
-      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/93e684373cd03bc69f77eaa4bbc36ab9/jars/classes.jar!/" />
+      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/8a74b0735b7a24a3367dca7c1581f17c/res" />
+      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/8a74b0735b7a24a3367dca7c1581f17c/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://F:/ideinstall/sdk/extras/android/m2repository/com/android/support/support-media-compat/25.2.0/support-media-compat-25.2.0-javadoc.jar!/" />

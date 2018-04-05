@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.werb.permissionschecker:permissionschecker-0.0.1-beta2">
     <CLASSES>
-      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/permissionschecker-0.0.1-beta2.aar/1fdfdc12c33f4d4f0c89a891fa6eca8e/res" />
-      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/permissionschecker-0.0.1-beta2.aar/1fdfdc12c33f4d4f0c89a891fa6eca8e/jars/classes.jar!/" />
+      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/permissionschecker-0.0.1-beta2.aar/df0653380f2adca453f6b6430c62bd1c/jars/classes.jar!/" />
+      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/permissionschecker-0.0.1-beta2.aar/df0653380f2adca453f6b6430c62bd1c/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

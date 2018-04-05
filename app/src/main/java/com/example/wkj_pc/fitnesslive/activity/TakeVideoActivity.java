@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,7 +19,6 @@ import com.example.wkj_pc.fitnesslive.R;
 import com.example.wkj_pc.fitnesslive.tools.MediaUtils;
 import com.example.wkj_pc.fitnesslive.widget.SendView;
 import com.example.wkj_pc.fitnesslive.widget.VideoProgressBar;
-
 import java.util.UUID;
 
 /** 拍摄视频上传到服务器*/
@@ -42,7 +40,6 @@ public class TakeVideoActivity extends AppCompatActivity {
         surfaceView = (SurfaceView) findViewById(R.id.main_surface_view);
         startVideo(surfaceView);
     }
-
     private void startVideo(SurfaceView surfaceView) {
         // setting
         mediaUtils = new MediaUtils(this);

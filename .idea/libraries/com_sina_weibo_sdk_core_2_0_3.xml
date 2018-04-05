@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.sina.weibo.sdk:core-2.0.3">
     <CLASSES>
-      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/core-2.0.3-openDefaultRelease.aar/859ec3de33b6531a88186669e159f99d/res" />
-      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/core-2.0.3-openDefaultRelease.aar/859ec3de33b6531a88186669e159f99d/jars/classes.jar!/" />
+      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/core-2.0.3-openDefaultRelease.aar/bdefb3cd7c193a3e994ea6e815b07645/jars/classes.jar!/" />
+      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/core-2.0.3-openDefaultRelease.aar/bdefb3cd7c193a3e994ea6e815b07645/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

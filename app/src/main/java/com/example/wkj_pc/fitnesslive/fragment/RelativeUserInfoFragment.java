@@ -71,10 +71,35 @@ public class RelativeUserInfoFragment extends Fragment {
         userRecyclearview.setLayoutManager(manager);
         if (type.equals("fansnum")){
             textView.setText("粉丝");
-            if (null!=MainApplication.fans){
-                FansShowAdapter adpter=new FansShowAdapter(MainApplication.fans,getActivity());
-                userRecyclearview.setAdapter(adpter);
-            }
+            String fansUserUrl= getResources().getString(R.string.app_server_prefix_url)+"customer/login/getFansUserInfo";
+            LoginUtils.getRelativeUserInfo(fansUserUrl, MainApplication.loginUser.getUid(), new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {}
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    String responseData = response.body().string();
+                    try {
+                        List<Fans> fans = GsonUtils.getGson().fromJson(responseData, new TypeToken<List<Fans>>() {}.getType());
+                        MainApplication.fans = fans;
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                FansShowAdapter adpter=new FansShowAdapter(MainApplication.fans,getActivity());
+                                userRecyclearview.setAdapter(adpter);
+                            }
+                        });
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                FansShowAdapter adpter=new FansShowAdapter(new ArrayList<Fans>(),getActivity());
+                                userRecyclearview.setAdapter(adpter);
+                            }
+                        });
+                    }
+                }
+            });
         }else {
             textView.setText("关注");
             String attentionUserUrl = getResources().getString(R.string.app_server_prefix_url)+"customer/login/getAttentionUserInfo";

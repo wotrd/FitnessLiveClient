@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.github.xxl6097:okhttputils-2.4.1">
     <CLASSES>
-      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/okhttputils-2.4.1.aar/9f033c8c07ac5b1ca6e36a534d1b0a8e/jars/classes.jar!/" />
-      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/okhttputils-2.4.1.aar/9f033c8c07ac5b1ca6e36a534d1b0a8e/res" />
+      <root url="file://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/okhttputils-2.4.1.aar/592ba89fd05d39db2e6db4486b2734f8/res" />
+      <root url="jar://F:/ideinstall/gradle-4.2.1/caches/transforms-1/files-1.1/okhttputils-2.4.1.aar/592ba89fd05d39db2e6db4486b2734f8/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
