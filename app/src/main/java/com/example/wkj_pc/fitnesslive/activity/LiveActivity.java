@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
@@ -34,6 +35,7 @@ import com.example.wkj_pc.fitnesslive.po.User;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
 import com.example.wkj_pc.fitnesslive.tools.OkHttpClientFactory;
+import com.example.wkj_pc.fitnesslive.tools.SoftKeyBoardListener;
 import com.example.wkj_pc.fitnesslive.tools.ToastUtils;
 import com.github.faucamp.simplertmp.RtmpHandler;
 import com.google.gson.reflect.TypeToken;
@@ -58,7 +60,6 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.WebSocket;
 import okhttp3.WebSocketListener;
-
 /**
  * 直播 activity
  * 采用yeasea 进行推流
@@ -112,6 +113,23 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_live);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         ButterKnife.bind(this);
+   /*     //监听键盘弹起和关闭
+        SoftKeyBoardListener.setListener(LiveActivity.this, new SoftKeyBoardListener.OnSoftKeyBoardChangeListener() {
+            @Override
+            public void keyBoardShow(int height) {
+//                Toast.makeText(LiveActivity.this, "键盘显示 高度" + height, Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void keyBoardHide(int height) {
+                Toast.makeText(LiveActivity.this, "键盘隐藏 高度" + height, Toast.LENGTH_SHORT).show();
+                if (null!=baseWebSocket){
+                    baseWebSocket.send("whenthekeyboeadclosedshowclient");
+                }else{
+                    getWebSocket(messageWebSocketUrl);
+                    baseWebSocket.send("whenthekeyboeadclosedshowclient");
+                }
+        }
+        });*/
         //聊天信息输入框
         editText = (EditText) findViewById(R.id.editText);
         editText.setOnKeyListener(new View.OnKeyListener() {
@@ -210,7 +228,15 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
                /**处理收到的信息*/
                 if (TextUtils.isEmpty(text)) //收到信息为空时，获取如果收到信息为空，则返回不处理
                     return;
-                /**如果返回信息为success，表示websocket连接建立成功，发送提示信息*/
+                /**如果返回信息,用来显示client*/
+              /*  if (text.equals("whenthekeyboeadclosedshowclient")){
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            initClientRecyclerView();
+                        }
+                    });
+                }*/
                 if (text.contentEquals("success")){
                     LiveChattingMessage message=new LiveChattingMessage();
                     message.setMid(0);
@@ -221,7 +247,6 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
                     message.setTime(format.format(new Date()));
                     message.setIntent(1);
                     webSocket.send( GsonUtils.getGson().toJson(message));
-
                 }else {
                     try{
                         message = GsonUtils.getGson().fromJson(text, LiveChattingMessage.class);
@@ -359,8 +384,18 @@ public class LiveActivity extends AppCompatActivity implements View.OnClickListe
                 if (null!=baseWebSocket){
                     baseWebSocket.send("");
                 }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (null!=MainApplication.loginUser.getAmatar()){
+                            Glide.with(LiveActivity.this).load(MainApplication.loginUser.getAmatar()).asBitmap().into(loginLiveLogo);
+                        }else{
+                            loginLiveLogo.setImageResource(R.mipmap.ic_amatar_img);
+                        }
+                    }
+                });
             }
-        },0,3000);
+        },0,2000);
     }
     /**设置直播聊天信息展示*/
     public void initChattingMessageShowRecyclerView() {
