@@ -69,7 +69,6 @@ public class UserInfoEditActivity extends TakePhotoActivity {
         account = (TextView) findViewById(R.id.about_user_edit_user_account_text_view);
         sex = (TextView) findViewById(R.id.about_user_edit_sex_text_view);
         personalSign = (TextView) findViewById(R.id.about_user_edit_person_sign_text_view);
-
     }
 
     @OnClick({R.id.about_user_info_edit_back_text_view, R.id.about_user_edit_amatar_linearlayout,

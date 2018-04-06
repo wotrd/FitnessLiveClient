@@ -27,6 +27,7 @@ import com.example.wkj_pc.fitnesslive.activity.SysVideoActivity;
 import com.example.wkj_pc.fitnesslive.activity.UserInfoEditActivity;
 import com.example.wkj_pc.fitnesslive.po.SysMessage;
 import com.example.wkj_pc.fitnesslive.po.User;
+import com.example.wkj_pc.fitnesslive.tools.AlertDialogTools;
 import com.example.wkj_pc.fitnesslive.tools.BitmapUtils;
 import com.example.wkj_pc.fitnesslive.tools.GsonUtils;
 import com.example.wkj_pc.fitnesslive.tools.LoginUtils;
@@ -174,6 +175,9 @@ public class OwnUserInfoFragment extends Fragment implements View.OnClickListene
                 }
                 break;
             case R.id.own_user_info_clear_cache_linearlayout:   //清除缓存
+                AlertDialogTools.showDialog(getActivity(), R.mipmap.icon_user_destroy_login,
+                        true, "确定", null, "取消",
+                        null, "提醒", "确定将清楚缓存！");
                 DataSupport.deleteAll(User.class,"");
                 new Thread(new Runnable() {
                     @Override

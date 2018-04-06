@@ -65,7 +65,6 @@ public class LoginActivity extends AppCompatActivity {
     EditText mobileNum;
     @BindView(R.id.edit_password)
     EditText editPassword;
-
     LinearLayout showSlideOutImg;
     @BindView(R.id.account_linearlayout)
     LinearLayout accountLinearlayout;
@@ -73,17 +72,14 @@ public class LoginActivity extends AppCompatActivity {
     LinearLayout passwordLinearlayout;
     @BindView(R.id.activity_login_user_bottom_image_view)
     View activityLoginUserBottomImageView;
-
     private String loginUrl;
     private Tencent mTencent;
     private User user;
-
     /**
      * 微信
      */
     public static final String APPID = "wxc2ddb5d13625b5f5";
     public static final String APPSECRET = "90895c3c8ecc7a8d443d55bb74233ec1";
-
     private SharedPreferences cookieSp;
     private SharedPreferences.Editor editor;
     public static final int LOGINSUCCESS = 1;
@@ -114,19 +110,19 @@ public class LoginActivity extends AppCompatActivity {
         //   initSlideUp();
         initListener();
     }
-
     /**
      * 找回密码
      */
     public void forgetPassword(View view) {
         startActivity(new Intent(this, FindPasswordActivity.class));
+        finish();
     }
-
     /**
      * 用户注册
      */
     public void toRegister(View view) {
         startActivity(new Intent(this, RegisterActivity.class));
+        finish();
     }
 
     /**
@@ -331,14 +327,16 @@ public class LoginActivity extends AppCompatActivity {
                         JPushInterface.resumePush(LoginActivity.this);
                         JPushInterface.setAlias(LoginActivity.this, user.getAccount(), new TagAliasCallback() {
                             @Override
-                            public void gotResult(int i, String s, Set<String> set) {
-                            }
+                            public void gotResult(int i, String s, Set<String> set) {}
                         });
                         finish();
                     } catch (Exception e) {
-                        Message message = handler.obtainMessage();
-                        message.what = LOGINFAILED;
-                        handler.sendMessage(message);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                ToastUtils.showToast(LoginActivity.this, "服务器繁忙，请稍后再试...", Toast.LENGTH_SHORT);
+                            }
+                        });
                     }
                 }
             }
@@ -430,10 +428,10 @@ public class LoginActivity extends AppCompatActivity {
      * 手机号登录
      */
     public void toLogin(View view) {
-
         loginType = "account";
         if (!MainApplication.networkinfo) {   //如果当前网络不可用的话，停止登录活动
-            AlertDialogTools.showDialog(this, R.mipmap.ic_begin_live_icon, true, "确定", null, null, null, "提醒", "网络状态异常！");
+            AlertDialogTools.showDialog(this, R.mipmap.ic_begin_live_icon, true,
+                    "确定", null, null, null, "提醒", "网络状态异常！");
             return;
         }
         if (TextUtils.isEmpty(mobileNum.getText().toString().trim())) {
@@ -493,8 +491,7 @@ public class LoginActivity extends AppCompatActivity {
                             JPushInterface.resumePush(LoginActivity.this);
                             JPushInterface.setAlias(LoginActivity.this, user.getAccount(), new TagAliasCallback() {
                                 @Override
-                                public void gotResult(int i, String s, Set<String> set) {
-                                }
+                                public void gotResult(int i, String s, Set<String> set) {}
                             });
                             finish();
                         } catch (Exception e) {
@@ -503,15 +500,10 @@ public class LoginActivity extends AppCompatActivity {
                             handler.sendMessage(message);
                         }
                     }
-                } else {
-                    Message message = handler.obtainMessage();
-                    message.what = LOGINFAILED;
-                    handler.sendMessage(message);
                 }
             }
         });
     }
-
     private void setNativeLiveThemes() {
         MainApplication.nativeLiveThemes.clear();
         for (int i = 0; i < MainApplication.liveThemes.size(); i++) {
@@ -521,7 +513,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
     }
-
     /**
      * 初始化监听事件，设置文本输入框的颜色变化
      */

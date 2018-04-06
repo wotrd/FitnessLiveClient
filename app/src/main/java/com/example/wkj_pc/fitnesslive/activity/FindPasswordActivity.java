@@ -124,7 +124,6 @@ public class FindPasswordActivity extends AppCompatActivity {
             }
         },0,1000);
     }
-
     @OnClick({R.id.login_user_find_pwd_back_text_view,R.id.getVerifycodeTextView, R.id.find_pwd_nextstep_btn})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -185,6 +184,7 @@ public class FindPasswordActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.login_user_find_pwd_back_text_view:
+                startActivity(new Intent(this,LoginActivity.class));
                 finish();
                 break;
         }

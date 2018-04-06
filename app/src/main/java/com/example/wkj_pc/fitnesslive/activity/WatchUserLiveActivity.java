@@ -361,6 +361,16 @@ public class WatchUserLiveActivity extends AppCompatActivity {
                 if (null != baseWebSocket) {
                     baseWebSocket.send("");
                 }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (null!=MainApplication.loginUser.getAmatar()){
+                            Glide.with(WatchUserLiveActivity.this).load(liveuser.getAmatar()).asBitmap().into(loginWatchLiveLogo);
+                        }else{
+                            loginWatchLiveLogo.setImageResource(R.mipmap.ic_amatar_img);
+                        }
+                    }
+                });
             }
         }, 0, 3000);
     }
